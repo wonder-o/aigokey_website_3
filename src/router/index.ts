@@ -15,6 +15,11 @@ export const routes = [
     component: () => import('@/views/CodexHelpView.vue'),
   },
   {
+    path: '/enterprise-service',
+    name: 'enterprise-service',
+    component: () => import('@/views/EnterpriseServiceView.vue'),
+  },
+  {
     path: '/free-trial',
     name: 'free-trial',
     component: () => import('@/views/FreeTrialView.vue'),

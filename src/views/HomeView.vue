@@ -8,10 +8,11 @@
           <span>AigoKey</span>
         </router-link>
         <div class="flex items-center gap-3 max-[720px]:w-full max-[720px]:grid max-[720px]:grid-cols-[repeat(auto-fit,minmax(76px,1fr))] max-[720px]:gap-2">
-          <button class="btn btn-ghost min-w-[58px] max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" type="button" @click="toggleLang">{{ t.navButtons.toggle }}</button>
+          <LanguageMenu />
           <a class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" :href="registerUrl" target="_top">{{ t.navButtons.register }}</a>
           <a class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" :href="loginUrl" target="_top">{{ t.navButtons.login }}</a>
           <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/codex-help">{{ t.navButtons.help }}</router-link>
+          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/enterprise-service">{{ t.navButtons.enterprise }}</router-link>
           <button class="btn btn-primary max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" type="button" @click="showModal = true">{{ t.navButtons.trial }}</button>
         </div>
       </div>
@@ -240,14 +241,14 @@
 
     <!-- Footer -->
     <footer class="py-8 px-6 text-[#667583] border-t border-line bg-white">
-      <div class="flex items-center justify-between gap-4 max-w-[1180px] mx-auto text-[14px] max-[720px]:flex-col max-[720px]:items-start">
-        <div class="inline-flex items-center gap-3 text-[21px] font-black">
+      <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-4 max-w-[1180px] mx-auto text-[14px] max-[720px]:grid-cols-1 max-[720px]:justify-items-center max-[720px]:text-center">
+        <div class="inline-flex items-center gap-3 text-[21px] font-black text-[#111b24]">
           <img src="/assets/aigokey-logo.png" alt="AigoKey Logo" class="w-[42px] h-[42px] rounded-[10px] object-cover" />
           <span>AigoKey</span>
         </div>
-        <div>{{ t.footer.text }}</div>
+        <div class="text-[#83909c] text-[13px]">{{ t.footer.copyright }}</div>
+        <div class="justify-self-end max-[720px]:justify-self-center">{{ t.footer.text }}</div>
       </div>
-      <div class="max-w-[1180px] mx-auto mt-[18px] text-[#83909c] text-[13px]">{{ t.footer.copyright }}</div>
     </footer>
 
     <!-- Trial Modal -->
@@ -271,6 +272,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useHead } from '@unhead/vue'
+import LanguageMenu from '@/components/LanguageMenu.vue'
 import { useI18n } from '@/composables/useI18n'
 import { useHostUrl } from '@/composables/useHostUrl'
 
@@ -286,7 +288,7 @@ useHead({
   ],
 })
 
-const { t, toggleLang } = useI18n()
+const { t } = useI18n()
 const { loginUrl, registerUrl } = useHostUrl()
 const showModal = ref(false)
 </script>

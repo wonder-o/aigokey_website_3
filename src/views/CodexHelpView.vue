@@ -1,35 +1,38 @@
 <template>
   <div class="codex-page">
-    <header class="site-header">
-      <div class="topbar">
-        <a class="brand" href="javascript:void(0)" @click="scrollTo('top')">
-          <img src="/assets/aigokey-logo.png" alt="AigoKey" />
-          <span>Codex 安装使用教程</span>
-        </a>
-        <nav class="nav" aria-label="页面目录">
-          <a v-for="item in navItems" :key="item.id" href="javascript:void(0)" @click="scrollTo(item.id)">
-            {{ item.label }}
-          </a>
-        </nav>
+    <header class="sticky top-0 z-20 border-b border-line/80 bg-[#f8fbfd]/90 backdrop-blur-[18px]">
+      <div class="flex items-center justify-between gap-5 max-w-[1180px] min-h-[72px] mx-auto px-6 max-[720px]:flex-col max-[720px]:items-start max-[720px]:py-3.5 max-[720px]:px-4">
+        <router-link to="/" class="inline-flex items-center gap-3 text-[21px] font-black" aria-label="AigoKey">
+          <img src="/assets/aigokey-logo.png" alt="AigoKey Logo" class="w-[42px] h-[42px] rounded-[10px] object-cover shadow-[0_10px_24px_rgba(36,104,242,0.16)]" />
+          <span>AigoKey</span>
+        </router-link>
+        <div class="flex items-center gap-3 max-[720px]:w-full max-[720px]:grid max-[720px]:grid-cols-[repeat(auto-fit,minmax(76px,1fr))] max-[720px]:gap-2">
+          <LanguageMenu />
+          <a class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" :href="registerUrl" target="_top">{{ t.navButtons.register }}</a>
+          <a class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" :href="loginUrl" target="_top">{{ t.navButtons.login }}</a>
+          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/codex-help">{{ t.navButtons.help }}</router-link>
+          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/enterprise-service">{{ t.navButtons.enterprise }}</router-link>
+          <button class="btn btn-primary max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" type="button" @click="showModal = true">{{ t.navButtons.trial }}</button>
+        </div>
       </div>
     </header>
 
     <main id="top">
       <section class="hero">
-        <p class="eyebrow">Codex App · CC-Switch · VS Code · AigoKey</p>
-        <h1>Codex 安装使用教程手册</h1>
+        <p class="eyebrow">{{ t.codexHelp.hero.eyebrow }}</p>
+        <h1>{{ t.codexHelp.hero.title }}</h1>
         <p class="hero-copy">
-          根据飞书教程重新整理页面顺序：先给非编程用户放 Windows / Mac 图文安装流程，再把程序员需要的 CLI、VS Code 插件和 CC-Switch 配置放到后面。
+          {{ t.codexHelp.hero.copy }}
         </p>
         <div class="hero-actions">
-          <a class="button" href="javascript:void(0)" @click="scrollTo('config-video')">配置视频</a>
-          <a class="button secondary" href="javascript:void(0)" @click="scrollTo('non-developer')">非程序员安装</a>
-          <a class="button secondary" href="javascript:void(0)" @click="scrollTo('developer')">程序员安装</a>
+          <a class="button" href="javascript:void(0)" @click="scrollTo('config-video')">{{ t.codexHelp.hero.buttons.video }}</a>
+          <a class="button secondary" href="javascript:void(0)" @click="scrollTo('non-developer')">{{ t.codexHelp.hero.buttons.nonDeveloper }}</a>
+          <a class="button secondary" href="javascript:void(0)" @click="scrollTo('developer')">{{ t.codexHelp.hero.buttons.developer }}</a>
         </div>
       </section>
 
-      <section class="jumpbar" aria-label="快速跳转">
-        <a v-for="item in tocItems" :key="item.id" href="javascript:void(0)" @click="scrollTo(item.id)">
+      <section class="jumpbar" :aria-label="t.codexHelp.quickJump">
+        <a v-for="item in t.codexHelp.toc" :key="item.id" href="javascript:void(0)" @click="scrollTo(item.id)">
           {{ item.label }}
         </a>
       </section>
@@ -38,27 +41,27 @@
         <section id="prep" class="guide-section">
           <div class="section-head">
             <span class="section-kicker">01</span>
-            <h2>前置：联系客服和打开订阅站点</h2>
+            <h2>{{ t.codexHelp.prep.head }}</h2>
           </div>
           <p class="lead">
-            有使用问题、充值问题、密钥不可用或导入后没有生效，请先联系微信客服确认。
+            {{ t.codexHelp.prep.lead }}
           </p>
           <ul class="link-list">
-            <li>Codex 订阅站点：<a href="https://www.aigokey.cc/" target="_blank" rel="noopener">https://www.aigokey.cc/</a></li>
-            <li>网站首页：<router-link to="/">返回 AigoKey 首页</router-link></li>
+            <li>{{ t.codexHelp.prep.siteLabel }}<a href="https://www.aigokey.cc/" target="_blank" rel="noopener">https://www.aigokey.cc/</a></li>
+            <li>{{ t.codexHelp.prep.homeBefore }}<router-link to="/">{{ t.codexHelp.prep.homeLink }}</router-link></li>
           </ul>
           <figure class="qr-figure">
-            <img src="/assets/01_联系客服_微信二维码.png" alt="联系客服微信二维码" />
-            <figcaption>飞书截图 01：联系客服微信二维码</figcaption>
+            <img src="/assets/01_联系客服_微信二维码.png" :alt="t.codexHelp.prep.qrAlt" />
+            <figcaption>{{ t.codexHelp.prep.qrCaption }}</figcaption>
           </figure>
         </section>
 
         <section id="config-video" class="guide-section">
           <div class="section-head">
             <span class="section-kicker">02</span>
-            <h2>配置教程视频</h2>
+            <h2>{{ t.codexHelp.video.head }}</h2>
           </div>
-          <p class="lead">飞书文档里的配置视频已放入页面，可直接播放查看完整配置过程。</p>
+          <p class="lead">{{ t.codexHelp.video.lead }}</p>
           <figure class="video-figure">
             <video
               src="/assets/codex_config_tutorial.mp4"
@@ -66,34 +69,30 @@
               controls
               preload="metadata"
             ></video>
-            <figcaption>飞书视频：Codex 配置教程</figcaption>
+            <figcaption>{{ t.codexHelp.video.caption }}</figcaption>
           </figure>
         </section>
 
         <section id="non-developer" class="guide-section">
           <div class="section-head">
             <span class="section-kicker">03</span>
-            <h2>非程序员用户安装流程</h2>
+            <h2>{{ t.codexHelp.nonDeveloper.head }}</h2>
           </div>
           <p class="lead">
-            产品经理、电商运营、品牌营销、自媒体等用户，优先按这一段操作。安装 Codex App 后不要登录，直接退出程序，再通过 CC-Switch 导入密钥。
+            {{ t.codexHelp.nonDeveloper.lead }}
           </p>
 
           <div id="windows-user" class="step-block">
-            <h3>Windows 安装方法</h3>
+            <h3>{{ t.codexHelp.nonDeveloper.windowsHead }}</h3>
             <ol class="steps">
-              <li>下载安装 Codex App。安装好之后不要登录，直接退出程序。</li>
-              <li>下载安装 CC-Switch。GitHub Release 页面里的 Windows 下载包可能被折叠，需要先展开资源列表。</li>
-              <li>登录 AigoKey 网站，进入 API 密钥管理页面，创建密钥并选择分组。</li>
-              <li>把创建好的密钥导入 CC-Switch，然后启用刚导入的密钥。</li>
-              <li>重启 Codex App 即可开始使用。</li>
+              <li v-for="step in t.codexHelp.nonDeveloper.windowsSteps" :key="step">{{ step }}</li>
             </ol>
             <ul class="link-list">
-              <li>Codex App：<a href="https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-cn&gl=GP" target="_blank" rel="noopener">Microsoft Store Codex</a></li>
-              <li>CC-Switch：<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
+              <li>{{ t.codexHelp.links.app }}<a href="https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-cn&gl=GP" target="_blank" rel="noopener">Microsoft Store Codex</a></li>
+              <li>{{ t.codexHelp.links.ccSwitch }}<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
             </ul>
             <div class="media-list">
-              <figure v-for="shot in windowsUserScreenshots" :key="shot.src" class="screenshot">
+              <figure v-for="shot in t.codexHelp.screenshots.windows" :key="shot.src" class="screenshot">
                 <img :src="shot.src" :alt="shot.alt" />
                 <figcaption>{{ shot.caption }}</figcaption>
               </figure>
@@ -101,25 +100,21 @@
           </div>
 
           <div id="mac-user" class="step-block">
-            <h3>Mac 安装方法</h3>
+            <h3>{{ t.codexHelp.nonDeveloper.macHead }}</h3>
             <ol class="steps">
-              <li>下载安装 Codex App。安装好之后不要登录，直接退出程序。</li>
-              <li>下载安装 CC-Switch。不会使用命令行时，直接从 Release 页面下载 Mac 安装包。</li>
-              <li>登录 AigoKey 网站创建密钥。创建密钥的页面和 Windows 流程相同。</li>
-              <li>把创建好的密钥导入 CC-Switch，然后启用刚导入的密钥。</li>
-              <li>重启 Codex App 即可开始使用。</li>
+              <li v-for="step in t.codexHelp.nonDeveloper.macSteps" :key="step">{{ step }}</li>
             </ol>
             <ul class="link-list">
-              <li>Codex App：<a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">OpenAI Codex 官网</a></li>
-              <li>CC-Switch：<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
+              <li>{{ t.codexHelp.links.app }}<a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">OpenAI Codex</a></li>
+              <li>{{ t.codexHelp.links.ccSwitch }}<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
             </ul>
             <div class="command">
-              <span>Mac 可选命令</span>
+              <span>{{ t.codexHelp.links.macCommand }}</span>
               <code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code>
-              <button type="button" @click="copyText('brew tap farion1231/ccswitch && brew install --cask cc-switch', $event)">复制</button>
+              <button type="button" @click="copyText('brew tap farion1231/ccswitch && brew install --cask cc-switch', $event)">{{ t.codexHelp.copy.action }}</button>
             </div>
             <div class="media-list">
-              <figure v-for="shot in macUserScreenshots" :key="shot.src" class="screenshot">
+              <figure v-for="shot in t.codexHelp.screenshots.mac" :key="shot.src" class="screenshot">
                 <img :src="shot.src" :alt="shot.alt" />
                 <figcaption>{{ shot.caption }}</figcaption>
               </figure>
@@ -130,42 +125,42 @@
         <section id="developer" class="guide-section">
           <div class="section-head">
             <span class="section-kicker">04</span>
-            <h2>程序员用户安装流程</h2>
+            <h2>{{ t.codexHelp.developer.head }}</h2>
           </div>
           <p class="lead">
-            用于编程开发的用户再继续完成 CLI、CC-Switch、VS Code 插件和 Codex App 配置。
+            {{ t.codexHelp.developer.lead }}
           </p>
 
           <div id="cli-install" class="step-block">
-            <h3>安装 Codex CLI</h3>
+            <h3>{{ t.codexHelp.developer.cliHead }}</h3>
             <div class="command-group">
               <div class="command">
                 <span>Windows</span>
                 <code>npm install -g @openai/codex</code>
-                <button type="button" @click="copyText('npm install -g @openai/codex', $event)">复制</button>
+                <button type="button" @click="copyText('npm install -g @openai/codex', $event)">{{ t.codexHelp.copy.action }}</button>
               </div>
               <div class="command">
                 <span>Mac</span>
                 <code>brew install --cask codex</code>
-                <button type="button" @click="copyText('brew install --cask codex', $event)">复制</button>
+                <button type="button" @click="copyText('brew install --cask codex', $event)">{{ t.codexHelp.copy.action }}</button>
               </div>
             </div>
           </div>
 
           <div id="cc-switch" class="step-block">
-            <h3>安装 CC-Switch 并导入密钥</h3>
-            <p>导入密钥后，记得在 CC-Switch 里启用刚导入的密钥，再回到 Codex App 或 VS Code 使用。</p>
+            <h3>{{ t.codexHelp.developer.ccHead }}</h3>
+            <p>{{ t.codexHelp.developer.ccText }}</p>
             <ul class="link-list">
-              <li>项目地址：<a href="https://github.com/farion1231/cc-switch" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch</a></li>
-              <li>Windows / Mac 下载地址：<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
+              <li>{{ t.codexHelp.links.project }}<a href="https://github.com/farion1231/cc-switch" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch</a></li>
+              <li>{{ t.codexHelp.links.download }}<a href="https://github.com/farion1231/cc-switch/releases" target="_blank" rel="noopener">https://github.com/farion1231/cc-switch/releases</a></li>
             </ul>
             <div class="command">
-              <span>Mac 命令行安装</span>
+              <span>{{ t.codexHelp.links.macCliCommand }}</span>
               <code>brew tap farion1231/ccswitch &amp;&amp; brew install --cask cc-switch</code>
-              <button type="button" @click="copyText('brew tap farion1231/ccswitch && brew install --cask cc-switch', $event)">复制</button>
+              <button type="button" @click="copyText('brew tap farion1231/ccswitch && brew install --cask cc-switch', $event)">{{ t.codexHelp.copy.action }}</button>
             </div>
             <div class="media-list">
-              <figure v-for="shot in developerCcScreenshots" :key="shot.src" class="screenshot">
+              <figure v-for="shot in t.codexHelp.screenshots.developerCc" :key="shot.src" class="screenshot">
                 <img :src="shot.src" :alt="shot.alt" />
                 <figcaption>{{ shot.caption }}</figcaption>
               </figure>
@@ -173,10 +168,10 @@
           </div>
 
           <div id="vscode-plugin" class="step-block">
-            <h3>安装 VS Code Codex 插件</h3>
-            <p>如果你主要在 VS Code 里开发，可以安装 Codex 插件，并从侧边栏打开 Codex。</p>
+            <h3>{{ t.codexHelp.developer.vscodeHead }}</h3>
+            <p>{{ t.codexHelp.developer.vscodeText }}</p>
             <div class="media-list">
-              <figure v-for="shot in vscodeScreenshots" :key="shot.src" class="screenshot">
+              <figure v-for="shot in t.codexHelp.screenshots.vscode" :key="shot.src" class="screenshot">
                 <img :src="shot.src" :alt="shot.alt" />
                 <figcaption>{{ shot.caption }}</figcaption>
               </figure>
@@ -184,13 +179,13 @@
           </div>
 
           <div id="codex-app" class="step-block">
-            <h3>安装 Codex App</h3>
+            <h3>{{ t.codexHelp.developer.appHead }}</h3>
             <ul class="link-list">
-              <li>Windows 下载地址：<a href="https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-cn&gl=GP" target="_blank" rel="noopener">Microsoft Store Codex</a></li>
-              <li>Mac 下载地址：<a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">OpenAI Codex 官网</a></li>
+              <li>{{ t.codexHelp.links.windowsDownload }}<a href="https://apps.microsoft.com/detail/9plm9xgg6vks?hl=zh-cn&gl=GP" target="_blank" rel="noopener">Microsoft Store Codex</a></li>
+              <li>{{ t.codexHelp.links.macDownload }}<a href="https://openai.com/zh-Hans-CN/codex/" target="_blank" rel="noopener">OpenAI Codex</a></li>
             </ul>
             <div class="media-list">
-              <figure v-for="shot in codexAppScreenshots" :key="shot.src" class="screenshot">
+              <figure v-for="shot in t.codexHelp.screenshots.codexApp" :key="shot.src" class="screenshot">
                 <img :src="shot.src" :alt="shot.alt" />
                 <figcaption>{{ shot.caption }}</figcaption>
               </figure>
@@ -201,94 +196,69 @@
         <section id="support" class="guide-section">
           <div class="section-head">
             <span class="section-kicker">05</span>
-            <h2>联系客服</h2>
+            <h2>{{ t.codexHelp.support.head }}</h2>
           </div>
           <p>
-            Codex 订阅站点：<a href="https://www.aigokey.cc/" target="_blank" rel="noopener">https://www.aigokey.cc/</a>，也可以 <router-link to="/">返回 AigoKey 首页</router-link>。
+            {{ t.codexHelp.support.siteBefore }}<a href="https://www.aigokey.cc/" target="_blank" rel="noopener">https://www.aigokey.cc/</a>{{ t.codexHelp.support.homeBefore }}<router-link to="/">{{ t.codexHelp.support.homeLink }}</router-link>{{ t.codexHelp.support.homeAfter }}
           </p>
-          <p>有使用问题、充值问题、密钥不可用或导入后没有生效，请联系微信客服。</p>
+          <p>{{ t.codexHelp.support.text }}</p>
           <figure class="qr-figure">
-            <img src="/assets/12_联系客服_微信二维码.png" alt="联系客服微信二维码" />
-            <figcaption>飞书截图 12：联系客服微信二维码</figcaption>
+            <img src="/assets/12_联系客服_微信二维码.png" :alt="t.codexHelp.support.qrAlt" />
+            <figcaption>{{ t.codexHelp.support.qrCaption }}</figcaption>
           </figure>
         </section>
       </div>
     </main>
 
-    <footer class="footer">Codex 安装使用教程 · AigoKey</footer>
+    <footer class="py-8 px-6 text-[#667583] border-t border-line bg-white">
+      <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-4 max-w-[1180px] mx-auto text-[14px] max-[720px]:grid-cols-1 max-[720px]:justify-items-center max-[720px]:text-center">
+        <div class="inline-flex items-center gap-3 text-[21px] font-black text-[#111b24]">
+          <img src="/assets/aigokey-logo.png" alt="AigoKey Logo" class="w-[42px] h-[42px] rounded-[10px] object-cover" />
+          <span>AigoKey</span>
+        </div>
+        <div class="text-[#83909c] text-[13px]">{{ t.footer.copyright }}</div>
+        <div class="justify-self-end max-[720px]:justify-self-center">{{ t.footer.text }}</div>
+      </div>
+    </footer>
+
+    <Teleport to="body">
+      <div v-if="showModal" class="fixed inset-0 z-50 flex items-center justify-center p-6 bg-[rgba(17,27,36,0.56)] backdrop-blur-[10px]" @click.self="showModal = false">
+        <div class="w-full max-w-[420px] border border-line/90 rounded-lg bg-white shadow-[0_28px_80px_rgba(17,27,36,0.28)]">
+          <div class="flex items-center justify-between gap-3.5 py-[18px] px-5 border-b border-line">
+            <h2 class="text-[20px] leading-[1.3]">{{ t.modal.title }}</h2>
+            <button class="grid w-9 h-9 place-items-center border border-line rounded-lg text-muted bg-white cursor-pointer text-[22px] leading-none" type="button" @click="showModal = false">×</button>
+          </div>
+          <div class="grid justify-items-center gap-3.5 px-6 pt-6 pb-7 text-center">
+            <img class="w-full max-w-[280px] aspect-square border border-line rounded-lg object-contain bg-white" src="/assets/customer-service-qr.png" alt="QR" />
+            <p class="text-muted text-[14px] leading-[1.65]">{{ t.modal.text }}</p>
+          </div>
+        </div>
+      </div>
+    </Teleport>
   </div>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useHead } from '@unhead/vue'
+import LanguageMenu from '@/components/LanguageMenu.vue'
+import { useI18n } from '@/composables/useI18n'
+import { useHostUrl } from '@/composables/useHostUrl'
 
-type TutorialShot = {
-  src: string
-  alt: string
-  caption: string
-}
+const { t } = useI18n()
+const { loginUrl, registerUrl } = useHostUrl()
+const showModal = ref(false)
 
-const navItems = [
-  { id: 'prep', label: '客服' },
-  { id: 'non-developer', label: '非程序员' },
-  { id: 'windows-user', label: 'Windows' },
-  { id: 'mac-user', label: 'Mac' },
-  { id: 'config-video', label: '视频' },
-  { id: 'developer', label: '程序员' },
-]
-
-const tocItems = [
-  { id: 'prep', label: '1. 前置客服' },
-  { id: 'config-video', label: '2. 配置视频' },
-  { id: 'non-developer', label: '3. 非程序员安装' },
-  { id: 'windows-user', label: 'Windows 流程' },
-  { id: 'mac-user', label: 'Mac 流程' },
-  { id: 'developer', label: '4. 程序员安装' },
-  { id: 'cli-install', label: 'Codex CLI' },
-  { id: 'cc-switch', label: 'CC-Switch' },
-  { id: 'vscode-plugin', label: 'VS Code 插件' },
-  { id: 'codex-app', label: 'Codex App' },
-  { id: 'support', label: '5. 联系客服' },
-]
-
-const windowsUserScreenshots: TutorialShot[] = [
-  { src: '/assets/windows_install_1.png', alt: 'Windows 下载 CC-Switch 步骤 1', caption: 'Windows 下载 CC-Switch：展开 Release 资源区域' },
-  { src: '/assets/windows_install_2.png', alt: 'Windows 下载 CC-Switch 步骤 2', caption: 'Windows 下载 CC-Switch：选择 Windows 安装包' },
-  { src: '/assets/08_网站_API密钥管理.png', alt: '网站 API 密钥管理页面', caption: '飞书截图 08：在网站进入 API 密钥管理页面' },
-  { src: '/assets/09_创建密钥_选择分组.png', alt: '创建密钥并选择分组', caption: '飞书截图 09：创建密钥时选择对应分组' },
-  { src: '/assets/10_Windows_密钥导入到CCS.png', alt: 'Windows 将密钥导入 CC-Switch', caption: '飞书截图 10：Windows 将密钥导入 CC-Switch' },
-  { src: '/assets/13_CCSwitch_启用导入密钥.png', alt: '启用导入到 CC-Switch 的密钥', caption: '飞书截图 13：在 CC-Switch 里启用导入的 AigoKey 密钥' },
-]
-
-const macUserScreenshots: TutorialShot[] = [
-  { src: '/assets/11_Mac_密钥导入到CCS.png', alt: 'Mac 将密钥导入 CC-Switch', caption: '飞书截图 11：Mac 将密钥导入 CC-Switch' },
-]
-
-const developerCcScreenshots: TutorialShot[] = [
-  { src: '/assets/02_CCSwitch_主界面.png', alt: 'CC-Switch 主界面', caption: '飞书截图 02：CC-Switch 主界面' },
-  { src: '/assets/03_CCSwitch_配置供应商.png', alt: 'CC-Switch 配置供应商', caption: '飞书截图 03：配置供应商信息' },
-  { src: '/assets/04_CCSwitch_密钥导入到CCS.png', alt: 'CC-Switch 导入密钥', caption: '飞书截图 04：将网站生成的密钥导入 CC-Switch' },
-]
-
-const vscodeScreenshots: TutorialShot[] = [
-  { src: '/assets/05_VSCode_Codex插件安装.png', alt: 'VS Code 安装 Codex 插件', caption: '飞书截图 05：在 VS Code 扩展市场安装 Codex 插件' },
-  { src: '/assets/06_VSCode_Codex侧边栏.png', alt: 'VS Code Codex 侧边栏', caption: '飞书截图 06：从 VS Code 侧边栏打开 Codex' },
-]
-
-const codexAppScreenshots: TutorialShot[] = [
-  { src: '/assets/07_Codex_App主界面.png', alt: 'Codex App 主界面', caption: '飞书截图 07：Codex App 主界面' },
-]
-
-useHead({
-  title: 'Codex 安装使用教程 - AigoKey',
+useHead(() => ({
+  title: t.value.codexHelp.meta.title,
   meta: [
-    { name: 'description', content: 'AigoKey Codex 安装使用教程，包含非程序员和程序员用户的 Codex App、Codex CLI、CC-Switch、VS Code 插件安装和密钥导入流程。' },
-    { name: 'keywords', content: 'Codex, 安装教程, CC-Switch, VS Code Codex 插件, 密钥导入, AigoKey' },
-    { property: 'og:title', content: 'Codex 安装使用教程 - AigoKey' },
-    { property: 'og:description', content: '按非程序员、Windows、Mac、程序员流程整理 Codex 安装与密钥导入教程。' },
+    { name: 'description', content: t.value.codexHelp.meta.description },
+    { name: 'keywords', content: t.value.codexHelp.meta.keywords },
+    { property: 'og:title', content: t.value.codexHelp.meta.title },
+    { property: 'og:description', content: t.value.codexHelp.meta.ogDescription },
     { property: 'og:type', content: 'article' },
   ],
-})
+}))
 
 function scrollTo(id: string) {
   const el = document.getElementById(id)
@@ -302,9 +272,9 @@ async function copyText(text: string, event: Event) {
   const original = btn.textContent
   try {
     await navigator.clipboard.writeText(text)
-    btn.textContent = '已复制'
+    btn.textContent = t.value.codexHelp.copy.success
   } catch {
-    btn.textContent = '请手动复制'
+    btn.textContent = t.value.codexHelp.copy.fail
   }
   setTimeout(() => { btn.textContent = original }, 1400)
 }
@@ -642,8 +612,45 @@ figcaption {
   border-top: 1px solid #dce4eb;
   color: #62717d;
   background: #fff;
-  text-align: center;
   font-size: 14px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #111b24;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.footer-brand img {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.footer-copy {
+  color: #83909c;
+  font-size: 13px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.footer-text {
+  justify-self: end;
+  text-align: right;
 }
 
 @media (max-width: 760px) {
@@ -698,6 +705,17 @@ figcaption {
 
   .guide-section {
     padding: 18px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-text {
+    justify-self: center;
+    text-align: center;
   }
 }
 </style>
