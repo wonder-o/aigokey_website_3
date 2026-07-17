@@ -15,6 +15,16 @@ export const routes = [
     component: () => import('@/views/CodexHelpView.vue'),
   },
   {
+    path: '/skills',
+    name: 'skills',
+    component: () => import('@/views/SkillsView.vue'),
+  },
+  {
+    path: '/skills-list',
+    name: 'skills-list',
+    component: () => import('@/views/SkillsListView.vue'),
+  },
+  {
     path: '/image-creation',
     name: 'image-creation',
     component: () => import('@/views/ImageCreationView.vue'),

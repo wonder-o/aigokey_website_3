@@ -1,0 +1,4988 @@
+{
+  "lastSyncedAt": "2026-07-17T14:08:30.594Z",
+  "skills": [
+    {
+      "id": "openai-openai-docs",
+      "name": "OpenAI Docs",
+      "description": {
+        "zh": "检索 OpenAI 官方文档，为 API、模型选择、Codex 和迁移问题提供带引用的最新答案。",
+        "en": "Search official OpenAI documentation for current, cited guidance on APIs, models, Codex, and migrations."
+      },
+      "category": "research",
+      "professions": [
+        "developer",
+        "product",
+        "researcher"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/openai-docs",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.5,
+      "dimensions": {
+        "usefulness": 9.8,
+        "reliability": 9.9,
+        "ease": 9.4,
+        "maintenance": 9.8,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "把容易过期的模型知识交给官方来源核对，尤其适合 API 选型和升级。",
+        "en": "Keeps model and API guidance grounded in official sources, especially useful for upgrades and selection."
+      },
+      "bestFor": {
+        "zh": "API 集成、模型选型、Codex 使用咨询",
+        "en": "API integration, model selection, Codex guidance"
+      },
+      "caution": {
+        "zh": "聚焦 OpenAI 产品，不适合作为通用网页搜索工具。",
+        "en": "Focused on OpenAI products, not general web research."
+      },
+      "tags": [
+        "openai",
+        "docs",
+        "api"
+      ],
+      "official": true,
+      "featured": true,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "browser"
+      ],
+      "taskTypes": [
+        "research",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "需要明确研究范围和可信来源边界。",
+        "en": "Requires a defined scope and trusted-source boundaries."
+      },
+      "outputs": {
+        "zh": "带来源的结论、笔记或研究文档",
+        "en": "Sourced findings, notes, or research documents"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 276,
+      "available": true
+    },
+    {
+      "id": "superpowers-systematic-debugging",
+      "name": "Systematic Debugging",
+      "description": {
+        "zh": "用可复现、证据驱动的流程定位软件故障，避免猜测式修改和反复返工。",
+        "en": "Diagnose software failures through reproducible, evidence-driven steps instead of speculative fixes."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "qa",
+        "devops"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/systematic-debugging",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.4,
+      "dimensions": {
+        "usefulness": 9.8,
+        "reliability": 9.6,
+        "ease": 9.1,
+        "maintenance": 9.6,
+        "documentation": 8.8,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "把“先复现、再定位、后验证”变成强制流程，对复杂故障和遗留系统尤其有效。",
+        "en": "Makes reproduce, isolate, and verify a disciplined workflow, especially effective in complex or legacy systems."
+      },
+      "bestFor": {
+        "zh": "线上故障、测试失败、间歇性问题",
+        "en": "Production incidents, test failures, intermittent bugs"
+      },
+      "caution": {
+        "zh": "简单问题也会走完整流程，换来的是更低误修率。",
+        "en": "Even simple issues follow the full process, trading speed for fewer false fixes."
+      },
+      "tags": [
+        "debugging",
+        "quality",
+        "workflow"
+      ],
+      "official": false,
+      "featured": true,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "debug",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "license": "MIT",
+      "openIssues": 318,
+      "available": true
+    },
+    {
+      "id": "anthropic-docx",
+      "name": "DOCX",
+      "description": {
+        "zh": "创建、编辑并视觉校验 Word 文档，支持专业排版、批注和交付前渲染检查。",
+        "en": "Create, edit, and visually verify Word documents with professional layout, comments, and render checks."
+      },
+      "category": "documents",
+      "professions": [
+        "operations",
+        "hr",
+        "sales",
+        "student"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/docx",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.4,
+      "dimensions": {
+        "usefulness": 9.7,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "不仅生成内容，还要求渲染验收，适合对版式和交付质量有要求的文档。",
+        "en": "Goes beyond text generation by requiring rendered QA, ideal when layout and delivery quality matter."
+      },
+      "bestFor": {
+        "zh": "方案书、合同初稿、报告与简历",
+        "en": "Proposals, contract drafts, reports, resumes"
+      },
+      "caution": {
+        "zh": "正式法律或财务文件仍需人工复核内容。",
+        "en": "Legal and financial documents still require human review."
+      },
+      "tags": [
+        "word",
+        "document",
+        "office"
+      ],
+      "official": true,
+      "featured": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "write",
+        "edit",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要明确交付格式、目标读者和内容材料。",
+        "en": "Requires the delivery format, target audience, and source material."
+      },
+      "outputs": {
+        "zh": "可交付文档与视觉校验结果",
+        "en": "Deliverable documents with visual verification"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1034,
+      "available": true
+    },
+    {
+      "id": "anthropic-xlsx",
+      "name": "XLSX",
+      "description": {
+        "zh": "创建、分析和验证 Excel 工作簿，处理公式、格式、图表与结构化数据。",
+        "en": "Create, analyze, and verify Excel workbooks with formulas, formatting, charts, and structured data."
+      },
+      "category": "data",
+      "professions": [
+        "analyst",
+        "finance",
+        "operations",
+        "sales"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/xlsx",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.4,
+      "dimensions": {
+        "usefulness": 9.8,
+        "reliability": 9.5,
+        "ease": 9.1,
+        "maintenance": 9.6,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "覆盖从数据清洗到成品表格的完整链路，验证步骤能明显减少公式和版式错误。",
+        "en": "Covers the full path from cleanup to finished workbook, with validation that catches formula and layout errors."
+      },
+      "bestFor": {
+        "zh": "经营分析、财务模型、报表自动化",
+        "en": "Business analysis, financial models, report automation"
+      },
+      "caution": {
+        "zh": "复杂宏、外部数据连接和企业模板需单独验证。",
+        "en": "Complex macros, external connections, and enterprise templates need separate validation."
+      },
+      "tags": [
+        "excel",
+        "data",
+        "analysis"
+      ],
+      "official": true,
+      "featured": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "analyze",
+        "write",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可读取的数据和字段说明。",
+        "en": "Requires readable data and field definitions."
+      },
+      "outputs": {
+        "zh": "分析结果、图表、模型或工作簿",
+        "en": "Analyses, charts, models, or workbooks"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1034,
+      "available": true
+    },
+    {
+      "id": "anthropic-pptx",
+      "name": "PPTX",
+      "description": {
+        "zh": "创建和编辑演示文稿，以渲染结果检查布局、层级、可读性和视觉一致性。",
+        "en": "Create and edit presentations, validating layout, hierarchy, readability, and consistency through rendering."
+      },
+      "category": "design",
+      "professions": [
+        "product",
+        "marketing",
+        "sales",
+        "teacher"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/pptx",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.4,
+      "dimensions": {
+        "usefulness": 9.7,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.6,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "强调实际渲染效果，适合快速产出结构完整、能直接讲的演示材料。",
+        "en": "Its render-first workflow is strong for quickly producing coherent, presentation-ready decks."
+      },
+      "bestFor": {
+        "zh": "路演、汇报、培训课件、销售提案",
+        "en": "Pitches, reports, training decks, sales proposals"
+      },
+      "caution": {
+        "zh": "品牌级精修仍需要设计师做最后一轮视觉把关。",
+        "en": "Brand-level polish still benefits from a final designer review."
+      },
+      "tags": [
+        "slides",
+        "presentation",
+        "design"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "write",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1034,
+      "available": true
+    },
+    {
+      "id": "openai-playwright",
+      "name": "Playwright",
+      "description": {
+        "zh": "用真实浏览器完成页面导航、表单填写、截图、数据提取和端到端流程调试。",
+        "en": "Automate real-browser navigation, forms, screenshots, extraction, and end-to-end UI debugging."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "qa",
+        "product"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/playwright",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.4,
+      "dimensions": {
+        "usefulness": 9.8,
+        "reliability": 9.6,
+        "ease": 9.1,
+        "maintenance": 9.8,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "网页验收与重复操作的首选，指令边界清晰，适合直接进入生产工作流。",
+        "en": "A first choice for web QA and repeatable browser work, with clear boundaries and production-ready workflows."
+      },
+      "bestFor": {
+        "zh": "回归测试、后台操作、页面数据采集",
+        "en": "Regression tests, admin workflows, page extraction"
+      },
+      "caution": {
+        "zh": "涉及登录态或付款操作时，应先确认执行范围。",
+        "en": "Confirm scope before using authenticated or payment flows."
+      },
+      "tags": [
+        "browser",
+        "testing",
+        "automation"
+      ],
+      "official": true,
+      "featured": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "browser",
+        "filesystem",
+        "network"
+      ],
+      "taskTypes": [
+        "test",
+        "automation",
+        "extract"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 276,
+      "available": true
+    },
+    {
+      "id": "superpowers-test-driven-development",
+      "name": "Test-Driven Development",
+      "description": {
+        "zh": "用先写失败测试、再实现、最后重构的方式推进功能与缺陷修复。",
+        "en": "Drive features and fixes through failing tests, implementation, and disciplined refactoring."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "qa",
+        "architect"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/test-driven-development",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.6,
+        "reliability": 9.5,
+        "ease": 8.7,
+        "maintenance": 9.5,
+        "documentation": 8.8,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "约束代理先证明问题再写实现，能降低回归并让验收标准更明确。",
+        "en": "Forces the agent to prove the problem before implementation, reducing regressions and clarifying acceptance."
+      },
+      "bestFor": {
+        "zh": "核心逻辑、缺陷修复、可维护功能开发",
+        "en": "Core logic, bug fixes, maintainable feature work"
+      },
+      "caution": {
+        "zh": "探索性原型或视觉实验不一定适合严格 TDD。",
+        "en": "Exploratory prototypes and visual experiments may not benefit from strict TDD."
+      },
+      "tags": [
+        "testing",
+        "tdd",
+        "engineering"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "test",
+        "build",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "license": "MIT",
+      "openIssues": 318,
+      "available": true
+    },
+    {
+      "id": "anthropic-frontend-design",
+      "name": "Frontend Design",
+      "description": {
+        "zh": "为网站和应用生成更有辨识度、可用且接近生产质量的前端界面。",
+        "en": "Build distinctive, usable, production-oriented interfaces for websites and applications."
+      },
+      "category": "design",
+      "professions": [
+        "developer",
+        "designer",
+        "product"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/frontend-design",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.5,
+        "reliability": 9.1,
+        "ease": 9,
+        "maintenance": 9.5,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "能显著改善默认生成界面的质感，兼顾视觉判断和可实现性。",
+        "en": "Meaningfully improves generic generated UIs while balancing visual judgment with implementation reality."
+      },
+      "bestFor": {
+        "zh": "产品原型、官网、后台与交互工具",
+        "en": "Product prototypes, websites, dashboards, interactive tools"
+      },
+      "caution": {
+        "zh": "必须结合现有设计系统和真实用户场景使用。",
+        "en": "Use it with the existing design system and real user context."
+      },
+      "tags": [
+        "frontend",
+        "ui",
+        "ux"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "build",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1034,
+      "available": true
+    },
+    {
+      "id": "anthropic-skill-creator",
+      "name": "Skill Creator",
+      "description": {
+        "zh": "把重复工作沉淀为结构清晰、触发准确、可维护的 Codex Skill。",
+        "en": "Turn repeatable work into well-structured, accurately triggered, maintainable Codex skills."
+      },
+      "category": "productivity",
+      "professions": [
+        "developer",
+        "operations",
+        "creator",
+        "founder"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/skill-creator",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.5,
+        "reliability": 9.2,
+        "ease": 8.7,
+        "maintenance": 9.4,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "适合把团队 SOP 变成可重复调用的能力，是从“使用 Skills”走向“拥有工作流”的关键工具。",
+        "en": "A key bridge from using skills to owning repeatable workflows by turning team SOPs into reusable capabilities."
+      },
+      "bestFor": {
+        "zh": "团队 SOP、专业流程、个人自动化",
+        "en": "Team SOPs, specialist workflows, personal automation"
+      },
+      "caution": {
+        "zh": "需要投入时间验证触发描述、边界和示例。",
+        "en": "Requires time to validate trigger descriptions, boundaries, and examples."
+      },
+      "tags": [
+        "skills",
+        "workflow",
+        "automation"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "plan",
+        "write",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "涉及写入或移动文件时应先确认范围。",
+        "en": "Confirm scope before writing or moving files."
+      },
+      "outputs": {
+        "zh": "整理结果、自动化流程或知识资产",
+        "en": "Organized outputs, automations, or knowledge assets"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1034,
+      "available": true
+    },
+    {
+      "id": "anthropic-algorithmic-art",
+      "name": "Algorithmic Art",
+      "description": {
+        "zh": "使用代码与可控随机性生成具有一致风格的算法艺术。",
+        "en": "Generate stylistically coherent algorithmic art with code and controlled randomness."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "creator",
+        "developer",
+        "teacher"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/algorithmic-art",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "兼顾审美判断与可执行产出，适合快速形成视觉方案。",
+        "en": "Balances visual judgment with executable creative output."
+      },
+      "bestFor": {
+        "zh": "界面、品牌、视觉素材与设计系统",
+        "en": "Interfaces, brands, visual assets, and design systems"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "generative-art",
+        "canvas",
+        "creative-coding"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "generate"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-brand-guidelines",
+      "name": "Brand Guidelines",
+      "description": {
+        "zh": "把品牌颜色、字体、语气和版式规则应用到具体交付物。",
+        "en": "Apply brand colors, typography, voice, and layout rules to deliverables."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "marketing",
+        "creator",
+        "operations"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/brand-guidelines",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "兼顾审美判断与可执行产出，适合快速形成视觉方案。",
+        "en": "Balances visual judgment with executable creative output."
+      },
+      "bestFor": {
+        "zh": "界面、品牌、视觉素材与设计系统",
+        "en": "Interfaces, brands, visual assets, and design systems"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "brand",
+        "identity",
+        "guidelines"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-canvas-design",
+      "name": "Canvas Design",
+      "description": {
+        "zh": "为海报、图形和静态视觉内容建立构图并输出成品。",
+        "en": "Compose and produce posters, graphics, and other static visual work."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "marketing",
+        "creator",
+        "teacher"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/canvas-design",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "兼顾审美判断与可执行产出，适合快速形成视觉方案。",
+        "en": "Balances visual judgment with executable creative output."
+      },
+      "bestFor": {
+        "zh": "界面、品牌、视觉素材与设计系统",
+        "en": "Interfaces, brands, visual assets, and design systems"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "canvas",
+        "poster",
+        "graphic-design"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "generate"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-doc-coauthoring",
+      "name": "Doc Coauthoring",
+      "description": {
+        "zh": "通过采访式流程共同起草、修改和校验结构化文档。",
+        "en": "Coauthor structured documents through an interview, drafting, and validation workflow."
+      },
+      "category": "documents",
+      "professions": [
+        "operations",
+        "product",
+        "researcher",
+        "manager"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/doc-coauthoring",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "关注内容结构与交付格式，适合正式办公材料。",
+        "en": "Focuses on both content structure and delivery format."
+      },
+      "bestFor": {
+        "zh": "报告、方案、合同草稿与办公文档",
+        "en": "Reports, proposals, drafts, and office documents"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "writing",
+        "documents",
+        "collaboration"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "write",
+        "edit"
+      ],
+      "prerequisites": {
+        "zh": "需要明确交付格式、目标读者和内容材料。",
+        "en": "Requires the delivery format, target audience, and source material."
+      },
+      "outputs": {
+        "zh": "可交付文档与视觉校验结果",
+        "en": "Deliverable documents with visual verification"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-internal-comms",
+      "name": "Internal Comms",
+      "description": {
+        "zh": "把项目状态、变更和决策整理为适合内部传播的沟通稿。",
+        "en": "Turn project status, changes, and decisions into clear internal communications."
+      },
+      "category": "communication",
+      "professions": [
+        "operations",
+        "manager",
+        "hr",
+        "executive"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/internal-comms",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "把分散信息整理成清晰沟通材料，减少遗漏和歧义。",
+        "en": "Turns scattered information into clear communication with fewer omissions."
+      },
+      "bestFor": {
+        "zh": "会议纪要、内部沟通与团队同步",
+        "en": "Meeting notes, internal communications, and team updates"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "communications",
+        "status",
+        "team"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "write",
+        "summarize"
+      ],
+      "prerequisites": {
+        "zh": "需要会议材料或清晰的沟通对象。",
+        "en": "Requires meeting material or a defined audience."
+      },
+      "outputs": {
+        "zh": "纪要、公告、摘要或行动项",
+        "en": "Notes, announcements, summaries, or action items"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-pdf",
+      "name": "PDF",
+      "description": {
+        "zh": "读取、创建、编辑并渲染验证 PDF 文件。",
+        "en": "Read, create, edit, and render-verify PDF files."
+      },
+      "category": "documents",
+      "professions": [
+        "operations",
+        "finance",
+        "legal",
+        "researcher"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/pdf",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "关注内容结构与交付格式，适合正式办公材料。",
+        "en": "Focuses on both content structure and delivery format."
+      },
+      "bestFor": {
+        "zh": "报告、方案、合同草稿与办公文档",
+        "en": "Reports, proposals, drafts, and office documents"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "pdf",
+        "document",
+        "render"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "read",
+        "write",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要明确交付格式、目标读者和内容材料。",
+        "en": "Requires the delivery format, target audience, and source material."
+      },
+      "outputs": {
+        "zh": "可交付文档与视觉校验结果",
+        "en": "Deliverable documents with visual verification"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-slack-gif-creator",
+      "name": "Slack GIF Creator",
+      "description": {
+        "zh": "为 Slack 沟通制作体积合适、节奏清晰的动画 GIF。",
+        "en": "Create compact, well-paced animated GIFs for Slack communication."
+      },
+      "category": "media",
+      "professions": [
+        "creator",
+        "marketing",
+        "operations",
+        "designer"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/slack-gif-creator",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "适合音频、图像和视频等非结构化素材的生产与处理。",
+        "en": "Supports production and processing of audio, image, and video assets."
+      },
+      "bestFor": {
+        "zh": "转录、截图、语音与媒体处理",
+        "en": "Transcription, screenshots, speech, and media processing"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "gif",
+        "slack",
+        "animation"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "generate"
+      ],
+      "prerequisites": {
+        "zh": "需要相应媒体文件或生成服务权限。",
+        "en": "Requires media files or access to the relevant generation service."
+      },
+      "outputs": {
+        "zh": "媒体文件、转录文本或处理结果",
+        "en": "Media files, transcripts, or processed outputs"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-theme-factory",
+      "name": "Theme Factory",
+      "description": {
+        "zh": "为文档、网页或演示材料生成一致的主题系统。",
+        "en": "Generate consistent theme systems for documents, web pages, or presentations."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "marketing",
+        "teacher",
+        "creator"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/theme-factory",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "兼顾审美判断与可执行产出，适合快速形成视觉方案。",
+        "en": "Balances visual judgment with executable creative output."
+      },
+      "bestFor": {
+        "zh": "界面、品牌、视觉素材与设计系统",
+        "en": "Interfaces, brands, visual assets, and design systems"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "theme",
+        "color",
+        "typography"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "design",
+        "configure"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "vercel-react-best-practices",
+      "name": "React Best Practices",
+      "description": {
+        "zh": "依据 Vercel 工程经验审查 React 与 Next.js 代码，优化性能、数据流和打包结果。",
+        "en": "Review React and Next.js code using Vercel engineering guidance for performance, data flow, and bundles."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "architect"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/react-best-practices",
+      "source": "Vercel Labs",
+      "stars": 29159,
+      "forks": 2615,
+      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.7,
+        "reliability": 9.5,
+        "ease": 9.2,
+        "maintenance": 9.6,
+        "documentation": 8.8,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "规则具体、来源可信，适合在功能完成后做一轮 React 性能和架构体检。",
+        "en": "Specific, credible rules make this ideal for a React performance and architecture pass after implementation."
+      },
+      "bestFor": {
+        "zh": "Next.js 性能优化、代码审查、架构调整",
+        "en": "Next.js optimization, code review, architecture improvements"
+      },
+      "caution": {
+        "zh": "部分建议针对 React/Next.js，不应机械套用到其他框架。",
+        "en": "Some guidance is React/Next.js-specific and should not be copied mechanically to other frameworks."
+      },
+      "tags": [
+        "react",
+        "nextjs",
+        "performance"
+      ],
+      "official": false,
+      "featured": true,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "review",
+        "optimize",
+        "fix"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 159,
+      "available": true
+    },
+    {
+      "id": "openai-security-best-practices",
+      "name": "Security Best Practices",
+      "description": {
+        "zh": "针对常见语言与框架进行安全审查，识别风险并给出可执行的加固建议。",
+        "en": "Review common languages and frameworks for security risks and provide actionable hardening guidance."
+      },
+      "category": "security",
+      "professions": [
+        "developer",
+        "devops",
+        "security"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/security-best-practices",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.3,
+      "dimensions": {
+        "usefulness": 9.6,
+        "reliability": 9.4,
+        "ease": 8.9,
+        "maintenance": 9.6,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "适合在提交前补一次安全视角审查，能把抽象原则落到具体代码。",
+        "en": "A strong pre-merge security pass that turns general principles into concrete code actions."
+      },
+      "bestFor": {
+        "zh": "代码审查、上线前检查、安全整改",
+        "en": "Code review, release checks, security remediation"
+      },
+      "caution": {
+        "zh": "不能替代渗透测试、依赖扫描或专业审计。",
+        "en": "Does not replace penetration testing, dependency scanning, or professional audits."
+      },
+      "tags": [
+        "security",
+        "review",
+        "hardening"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "audit",
+        "review",
+        "fix"
+      ],
+      "prerequisites": {
+        "zh": "需要代码库、系统边界和关键数据流说明。",
+        "en": "Requires the codebase, system boundaries, and key data flows."
+      },
+      "outputs": {
+        "zh": "风险清单、威胁模型或整改建议",
+        "en": "Risk registers, threat models, or remediation guidance"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 276,
+      "available": true
+    },
+    {
+      "id": "superpowers-brainstorming",
+      "name": "Brainstorming",
+      "description": {
+        "zh": "在实现前通过问题澄清、备选方案和权衡形成可执行设计。",
+        "en": "Develop an executable design through clarification, alternatives, and tradeoffs before implementation."
+      },
+      "category": "project",
+      "professions": [
+        "product",
+        "developer",
+        "designer",
+        "founder"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/brainstorming",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "openIssues": 318,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "帮助把模糊目标拆成可执行步骤，并保留决策上下文。",
+        "en": "Turns ambiguous goals into executable steps while preserving decisions."
+      },
+      "bestFor": {
+        "zh": "需求梳理、计划、任务推进与复盘",
+        "en": "Scoping, planning, execution, and retrospectives"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "brainstorming",
+        "design",
+        "decisions"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 3,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "none"
+      ],
+      "taskTypes": [
+        "ideate",
+        "plan"
+      ],
+      "prerequisites": {
+        "zh": "需要提供目标、约束和当前状态。",
+        "en": "Requires goals, constraints, and current-state context."
+      },
+      "outputs": {
+        "zh": "计划、任务、决策或状态记录",
+        "en": "Plans, tasks, decisions, or status records"
+      },
+      "available": true
+    },
+    {
+      "id": "superpowers-verification-before-completion",
+      "name": "Verification Before Completion",
+      "description": {
+        "zh": "在宣称完成前运行与需求对应的验证，并记录实际结果。",
+        "en": "Run requirement-matched verification and capture evidence before claiming completion."
+      },
+      "category": "testing",
+      "professions": [
+        "developer",
+        "qa",
+        "devops",
+        "manager"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/verification-before-completion",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "openIssues": 318,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "把重复验收变成可复现流程，适合发布前质量检查。",
+        "en": "Turns repetitive QA into reproducible checks before release."
+      },
+      "bestFor": {
+        "zh": "回归测试、验收与故障复现",
+        "en": "Regression testing, acceptance, and reproduction"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "verification",
+        "evidence",
+        "quality"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 2,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "verify",
+        "audit"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的测试环境或样例。",
+        "en": "Requires an accessible test environment or fixture."
+      },
+      "outputs": {
+        "zh": "测试记录、截图或问题清单",
+        "en": "Test evidence, screenshots, or issue lists"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-claude-api",
+      "name": "Claude API",
+      "description": {
+        "zh": "使用 Claude API 和官方 SDK 构建可靠的模型调用与工具流程。",
+        "en": "Build reliable model calls and tool workflows with the Claude API and official SDKs."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "architect",
+        "product"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/claude-api",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "面向 AI 应用与工具连接，适合构建可复用的代理能力。",
+        "en": "Designed for AI applications and reusable agent integrations."
+      },
+      "bestFor": {
+        "zh": "AI 应用、工具接入与代理工作流",
+        "en": "AI apps, tool integrations, and agent workflows"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "claude",
+        "api",
+        "sdk"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "api-key",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "integrate",
+        "build"
+      ],
+      "prerequisites": {
+        "zh": "需要对应 API、SDK 或服务凭据。",
+        "en": "Requires the relevant API, SDK, or service credentials."
+      },
+      "outputs": {
+        "zh": "可运行的集成、工具或代理能力",
+        "en": "A working integration, tool, or agent capability"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-web-artifacts-builder",
+      "name": "Web Artifacts Builder",
+      "description": {
+        "zh": "构建包含交互、状态和组件的复杂 Web 单页成果。",
+        "en": "Build complex single-page web artifacts with interactions, state, and components."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "designer",
+        "product"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/web-artifacts-builder",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "面向 AI 应用与工具连接，适合构建可复用的代理能力。",
+        "en": "Designed for AI applications and reusable agent integrations."
+      },
+      "bestFor": {
+        "zh": "AI 应用、工具接入与代理工作流",
+        "en": "AI apps, tool integrations, and agent workflows"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "web",
+        "artifacts",
+        "components"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "build",
+        "design"
+      ],
+      "prerequisites": {
+        "zh": "需要对应 API、SDK 或服务凭据。",
+        "en": "Requires the relevant API, SDK, or service credentials."
+      },
+      "outputs": {
+        "zh": "可运行的集成、工具或代理能力",
+        "en": "A working integration, tool, or agent capability"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-webapp-testing",
+      "name": "Webapp Testing",
+      "description": {
+        "zh": "用浏览器自动化验证本地 Web 应用的功能和界面。",
+        "en": "Validate local web applications with browser automation and visual checks."
+      },
+      "category": "testing",
+      "professions": [
+        "qa",
+        "developer",
+        "product",
+        "designer"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/webapp-testing",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把重复验收变成可复现流程，适合发布前质量检查。",
+        "en": "Turns repetitive QA into reproducible checks before release."
+      },
+      "bestFor": {
+        "zh": "回归测试、验收与故障复现",
+        "en": "Regression testing, acceptance, and reproduction"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "web",
+        "testing",
+        "playwright"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "browser",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "test",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的测试环境或样例。",
+        "en": "Requires an accessible test environment or fixture."
+      },
+      "outputs": {
+        "zh": "测试记录、截图或问题清单",
+        "en": "Test evidence, screenshots, or issue lists"
+      },
+      "available": true
+    },
+    {
+      "id": "vercel-web-design-guidelines",
+      "name": "Web Design Guidelines",
+      "description": {
+        "zh": "从可用性、可访问性和视觉细节检查网页界面，输出定位明确的改进建议。",
+        "en": "Audit web interfaces for usability, accessibility, and visual detail with precisely located recommendations."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer",
+        "qa"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/web-design-guidelines",
+      "source": "Vercel Labs",
+      "stars": 29159,
+      "forks": 2615,
+      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.3,
+        "ease": 9.2,
+        "maintenance": 9.4,
+        "documentation": 8.8,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "适合发布前逐项检查界面质量，尤其擅长发现容易忽略的交互和可访问性问题。",
+        "en": "A strong pre-launch UI pass, especially for subtle interaction and accessibility issues."
+      },
+      "bestFor": {
+        "zh": "设计走查、可访问性检查、上线验收",
+        "en": "Design QA, accessibility checks, launch review"
+      },
+      "caution": {
+        "zh": "审查结果仍需结合产品目标判断优先级。",
+        "en": "Findings still need product context for prioritization."
+      },
+      "tags": [
+        "design-review",
+        "accessibility",
+        "web"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "browser",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "audit",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 159,
+      "available": true
+    },
+    {
+      "id": "vercel-composition-patterns",
+      "name": "Composition Patterns",
+      "description": {
+        "zh": "用组合模式重构 React 组件 API，减少布尔属性和耦合。",
+        "en": "Refactor React component APIs with composition patterns that reduce flags and coupling."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "architect",
+        "designer"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/composition-patterns",
+      "source": "Vercel Labs",
+      "stars": 29159,
+      "forks": 2615,
+      "openIssues": 159,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "适合进入真实工程流程，边界明确并且便于验证。",
+        "en": "Works well in real engineering workflows with clear, verifiable boundaries."
+      },
+      "bestFor": {
+        "zh": "功能开发、重构与代码质量",
+        "en": "Feature delivery, refactoring, and code quality"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "react",
+        "components",
+        "architecture"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "review",
+        "refactor"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "available": true
+    },
+    {
+      "id": "vercel-writing-guidelines",
+      "name": "Writing Guidelines",
+      "description": {
+        "zh": "按照清晰、简洁和一致的原则审查产品与技术文字。",
+        "en": "Review product and technical writing for clarity, brevity, and consistency."
+      },
+      "category": "content",
+      "professions": [
+        "writer",
+        "developer",
+        "product",
+        "marketing"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/writing-guidelines",
+      "source": "Vercel Labs",
+      "stars": 29159,
+      "forks": 2615,
+      "openIssues": 159,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "提供从结构到成稿的完整内容流程，适合稳定产出。",
+        "en": "Provides an end-to-end path from outline to publishable content."
+      },
+      "bestFor": {
+        "zh": "文章、更新日志、营销内容与编辑",
+        "en": "Articles, changelogs, marketing content, and editing"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "writing",
+        "editing",
+        "docs"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 2,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "write",
+        "edit",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "需要主题、目标读者、素材和品牌语气。",
+        "en": "Requires a topic, target audience, source material, and brand voice."
+      },
+      "outputs": {
+        "zh": "结构化内容、文案或发布稿",
+        "en": "Structured content, copy, or publishable drafts"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-define-goal",
+      "name": "Define Goal",
+      "description": {
+        "zh": "把宽泛需求整理成可执行、可验证的 Codex 长期目标。",
+        "en": "Turn broad requests into executable, verifiable long-running Codex goals."
+      },
+      "category": "project",
+      "professions": [
+        "product",
+        "developer",
+        "founder",
+        "operations"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/define-goal",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "帮助把模糊目标拆成可执行步骤，并保留决策上下文。",
+        "en": "Turns ambiguous goals into executable steps while preserving decisions."
+      },
+      "bestFor": {
+        "zh": "需求梳理、计划、任务推进与复盘",
+        "en": "Scoping, planning, execution, and retrospectives"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "goals",
+        "planning",
+        "scope"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 3,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "none"
+      ],
+      "taskTypes": [
+        "plan",
+        "organize"
+      ],
+      "prerequisites": {
+        "zh": "需要提供目标、约束和当前状态。",
+        "en": "Requires goals, constraints, and current-state context."
+      },
+      "outputs": {
+        "zh": "计划、任务、决策或状态记录",
+        "en": "Plans, tasks, decisions, or status records"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-jupyter-notebook",
+      "name": "Jupyter Notebook",
+      "description": {
+        "zh": "创建和整理可复现的 Jupyter Notebook，用于探索、分析和讲解。",
+        "en": "Create reproducible Jupyter notebooks for exploration, analysis, and explanation."
+      },
+      "category": "data",
+      "professions": [
+        "analyst",
+        "data-scientist",
+        "researcher",
+        "student"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/jupyter-notebook",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "覆盖数据处理到可验证产出的链路，适合分析型任务。",
+        "en": "Covers the path from data processing to verifiable analytical output."
+      },
+      "bestFor": {
+        "zh": "数据探索、分析、建模与报表",
+        "en": "Data exploration, analysis, modeling, and reporting"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "jupyter",
+        "python",
+        "analysis"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "python"
+      ],
+      "taskTypes": [
+        "analyze",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "需要可读取的数据和字段说明。",
+        "en": "Requires readable data and field definitions."
+      },
+      "outputs": {
+        "zh": "分析结果、图表、模型或工作簿",
+        "en": "Analyses, charts, models, or workbooks"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-screenshot",
+      "name": "Screenshot",
+      "description": {
+        "zh": "捕获桌面或网页截图，并按区域检查界面状态。",
+        "en": "Capture desktop or web screenshots and inspect targeted interface regions."
+      },
+      "category": "media",
+      "professions": [
+        "designer",
+        "qa",
+        "developer",
+        "support"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/screenshot",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "适合音频、图像和视频等非结构化素材的生产与处理。",
+        "en": "Supports production and processing of audio, image, and video assets."
+      },
+      "bestFor": {
+        "zh": "转录、截图、语音与媒体处理",
+        "en": "Transcription, screenshots, speech, and media processing"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "screenshot",
+        "visual",
+        "qa"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 2,
+      "risk": "low",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "permissions": [
+        "screen"
+      ],
+      "taskTypes": [
+        "capture",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要相应媒体文件或生成服务权限。",
+        "en": "Requires media files or access to the relevant generation service."
+      },
+      "outputs": {
+        "zh": "媒体文件、转录文本或处理结果",
+        "en": "Media files, transcripts, or processed outputs"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-security-threat-model",
+      "name": "Security Threat Model",
+      "description": {
+        "zh": "基于代码库和业务边界建立威胁模型、攻击面与缓解措施。",
+        "en": "Build threat models, attack surfaces, and mitigations from code and system boundaries."
+      },
+      "category": "security",
+      "professions": [
+        "security",
+        "developer",
+        "architect",
+        "devops"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/security-threat-model",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "提供结构化风险视角，适合在交付前补足安全检查。",
+        "en": "Adds a structured risk perspective before delivery."
+      },
+      "bestFor": {
+        "zh": "威胁建模、安全审查与整改计划",
+        "en": "Threat modeling, security review, and remediation planning"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "security",
+        "threat-model",
+        "risk"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "analyze",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "需要代码库、系统边界和关键数据流说明。",
+        "en": "Requires the codebase, system boundaries, and key data flows."
+      },
+      "outputs": {
+        "zh": "风险清单、威胁模型或整改建议",
+        "en": "Risk registers, threat models, or remediation guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "superpowers-receiving-code-review",
+      "name": "Receiving Code Review",
+      "description": {
+        "zh": "理性核对代码评审意见，验证正确性后再实施修改。",
+        "en": "Evaluate code-review feedback technically and verify it before changing code."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "architect",
+        "qa"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/receiving-code-review",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "openIssues": 318,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "适合进入真实工程流程，边界明确并且便于验证。",
+        "en": "Works well in real engineering workflows with clear, verifiable boundaries."
+      },
+      "bestFor": {
+        "zh": "功能开发、重构与代码质量",
+        "en": "Feature delivery, refactoring, and code quality"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "code-review",
+        "feedback",
+        "quality"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 2,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "review",
+        "fix"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "available": true
+    },
+    {
+      "id": "superpowers-requesting-code-review",
+      "name": "Requesting Code Review",
+      "description": {
+        "zh": "在关键节点组织代码评审，提供范围、证据和关注点。",
+        "en": "Request focused code review at key checkpoints with scope and evidence."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "architect",
+        "qa"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/requesting-code-review",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "openIssues": 318,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "适合进入真实工程流程，边界明确并且便于验证。",
+        "en": "Works well in real engineering workflows with clear, verifiable boundaries."
+      },
+      "bestFor": {
+        "zh": "功能开发、重构与代码质量",
+        "en": "Feature delivery, refactoring, and code quality"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "code-review",
+        "quality",
+        "workflow"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 2,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "review",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "available": true
+    },
+    {
+      "id": "superpowers-writing-plans",
+      "name": "Writing Plans",
+      "description": {
+        "zh": "根据现有代码和约束编写可交接、可执行的实现计划。",
+        "en": "Write executable implementation plans grounded in the current code and constraints."
+      },
+      "category": "project",
+      "professions": [
+        "developer",
+        "architect",
+        "product",
+        "manager"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/writing-plans",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "openIssues": 318,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "帮助把模糊目标拆成可执行步骤，并保留决策上下文。",
+        "en": "Turns ambiguous goals into executable steps while preserving decisions."
+      },
+      "bestFor": {
+        "zh": "需求梳理、计划、任务推进与复盘",
+        "en": "Scoping, planning, execution, and retrospectives"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "planning",
+        "implementation",
+        "handoff"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 3,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "plan",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "需要提供目标、约束和当前状态。",
+        "en": "Requires goals, constraints, and current-state context."
+      },
+      "outputs": {
+        "zh": "计划、任务、决策或状态记录",
+        "en": "Plans, tasks, decisions, or status records"
+      },
+      "available": true
+    },
+    {
+      "id": "anthropic-mcp-builder",
+      "name": "MCP Builder",
+      "description": {
+        "zh": "设计、实现并测试 MCP Server，让代理安全调用外部能力。",
+        "en": "Design, implement, and test MCP servers for safe agent access to external capabilities."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "architect",
+        "devops"
+      ],
+      "repo": "anthropics/skills",
+      "branch": "main",
+      "path": "skills/mcp-builder",
+      "source": "Anthropic",
+      "stars": 162015,
+      "forks": 19181,
+      "openIssues": 1034,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.2
+      },
+      "review": {
+        "zh": "面向 AI 应用与工具连接，适合构建可复用的代理能力。",
+        "en": "Designed for AI applications and reusable agent integrations."
+      },
+      "bestFor": {
+        "zh": "AI 应用、工具接入与代理工作流",
+        "en": "AI apps, tool integrations, and agent workflows"
+      },
+      "caution": {
+        "zh": "涉及下载、执行或广泛权限，使用前必须核对来源和范围。",
+        "en": "Downloads, execution, or broad access require source and scope review."
+      },
+      "tags": [
+        "mcp",
+        "tools",
+        "server"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 30,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "build",
+        "integrate",
+        "test"
+      ],
+      "prerequisites": {
+        "zh": "需要对应 API、SDK 或服务凭据。",
+        "en": "Requires the relevant API, SDK, or service credentials."
+      },
+      "outputs": {
+        "zh": "可运行的集成、工具或代理能力",
+        "en": "A working integration, tool, or agent capability"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-changelog-generator",
+      "name": "Changelog Generator",
+      "description": {
+        "zh": "从提交记录提取用户可理解的更新内容并生成发布日志。",
+        "en": "Turn commit history into user-facing release notes and changelogs."
+      },
+      "category": "content",
+      "professions": [
+        "developer",
+        "product",
+        "marketing",
+        "writer"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "changelog-generator",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "提供从结构到成稿的完整内容流程，适合稳定产出。",
+        "en": "Provides an end-to-end path from outline to publishable content."
+      },
+      "bestFor": {
+        "zh": "文章、更新日志、营销内容与编辑",
+        "en": "Articles, changelogs, marketing content, and editing"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "changelog",
+        "releases",
+        "git"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 3,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "git"
+      ],
+      "taskTypes": [
+        "summarize",
+        "write"
+      ],
+      "prerequisites": {
+        "zh": "需要主题、目标读者、素材和品牌语气。",
+        "en": "Requires a topic, target audience, source material, and brand voice."
+      },
+      "outputs": {
+        "zh": "结构化内容、文案或发布稿",
+        "en": "Structured content, copy, or publishable drafts"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-meeting-insights-analyzer",
+      "name": "Meeting Insights Analyzer",
+      "description": {
+        "zh": "从会议记录中识别议题、情绪、决策和后续行动。",
+        "en": "Extract themes, sentiment, decisions, and follow-up actions from meeting records."
+      },
+      "category": "communication",
+      "professions": [
+        "manager",
+        "product",
+        "sales",
+        "operations"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "meeting-insights-analyzer",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "把分散信息整理成清晰沟通材料，减少遗漏和歧义。",
+        "en": "Turns scattered information into clear communication with fewer omissions."
+      },
+      "bestFor": {
+        "zh": "会议纪要、内部沟通与团队同步",
+        "en": "Meeting notes, internal communications, and team updates"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "meetings",
+        "insights",
+        "actions"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "analyze",
+        "summarize"
+      ],
+      "prerequisites": {
+        "zh": "需要会议材料或清晰的沟通对象。",
+        "en": "Requires meeting material or a defined audience."
+      },
+      "outputs": {
+        "zh": "纪要、公告、摘要或行动项",
+        "en": "Notes, announcements, summaries, or action items"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-tailored-resume-generator",
+      "name": "Tailored Resume Generator",
+      "description": {
+        "zh": "根据岗位说明调整简历重点，同时保持经历真实可核验。",
+        "en": "Tailor resume emphasis to a job description while keeping experience truthful."
+      },
+      "category": "career",
+      "professions": [
+        "job-seeker",
+        "student",
+        "recruiter",
+        "hr"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "tailored-resume-generator",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 9.5
+      },
+      "review": {
+        "zh": "把经历与目标岗位建立清晰映射，提升求职材料针对性。",
+        "en": "Maps experience to target roles for more focused career materials."
+      },
+      "bestFor": {
+        "zh": "简历、求职材料与面试准备",
+        "en": "Resumes, job materials, and interview preparation"
+      },
+      "caution": {
+        "zh": "风险较低，但正式交付前仍应检查结果。",
+        "en": "Low risk, but review results before formal delivery."
+      },
+      "tags": [
+        "resume",
+        "jobs",
+        "career"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "write",
+        "edit"
+      ],
+      "prerequisites": {
+        "zh": "需要真实简历信息和目标岗位说明。",
+        "en": "Requires accurate resume information and a target job description."
+      },
+      "outputs": {
+        "zh": "针对岗位的简历或求职材料",
+        "en": "Role-targeted resumes or job materials"
+      },
+      "available": true
+    },
+    {
+      "id": "vercel-react-native-skills",
+      "name": "React Native Skills",
+      "description": {
+        "zh": "依据移动端实践构建和审查 React Native 应用。",
+        "en": "Build and review React Native applications using mobile engineering practices."
+      },
+      "category": "development",
+      "professions": [
+        "mobile-developer",
+        "developer",
+        "designer",
+        "qa"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/react-native-skills",
+      "source": "Vercel Labs",
+      "stars": 29159,
+      "forks": 2615,
+      "openIssues": 159,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "适合进入真实工程流程，边界明确并且便于验证。",
+        "en": "Works well in real engineering workflows with clear, verifiable boundaries."
+      },
+      "bestFor": {
+        "zh": "功能开发、重构与代码质量",
+        "en": "Feature delivery, refactoring, and code quality"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "react-native",
+        "mobile",
+        "performance"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "ios",
+        "android"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "build",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "available": true
+    },
+    {
+      "id": "vercel-optimize",
+      "name": "Vercel Optimize",
+      "description": {
+        "zh": "分析 Vercel 项目的性能与配置，并给出针对性优化。",
+        "en": "Analyze Vercel project performance and configuration for targeted optimization."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops",
+        "architect"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/vercel-optimize",
+      "source": "Vercel Labs",
+      "stars": 29159,
+      "forks": 2615,
+      "openIssues": 159,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把部署步骤标准化，适合从代码到可访问环境的交付。",
+        "en": "Standardizes delivery from source code to a reachable environment."
+      },
+      "bestFor": {
+        "zh": "预览环境、上线与部署排障",
+        "en": "Preview environments, releases, and deployment debugging"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "vercel",
+        "performance",
+        "optimization"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "vercel"
+      ],
+      "taskTypes": [
+        "analyze",
+        "optimize"
+      ],
+      "prerequisites": {
+        "zh": "需要目标平台账号及项目权限。",
+        "en": "Requires an account and project access on the target platform."
+      },
+      "outputs": {
+        "zh": "部署结果、配置与验证记录",
+        "en": "Deployment output, configuration, and verification evidence"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-notion-research-documentation",
+      "name": "Notion Research Documentation",
+      "description": {
+        "zh": "跨 Notion 页面检索信息，并将来源、结论和行动项整理成结构化研究文档。",
+        "en": "Research across Notion pages and turn sources, findings, and actions into structured documentation."
+      },
+      "category": "productivity",
+      "professions": [
+        "product",
+        "operations",
+        "researcher"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/notion-research-documentation",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.1,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.4,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "适合把散落的团队知识快速变成可追溯材料，输出结构稳定。",
+        "en": "Turns scattered team knowledge into traceable briefs with consistently useful structure."
+      },
+      "bestFor": {
+        "zh": "竞品调研、项目复盘、知识库整理",
+        "en": "Competitive research, retrospectives, knowledge bases"
+      },
+      "caution": {
+        "zh": "需要可用的 Notion 连接和对应页面权限。",
+        "en": "Requires a working Notion connection and page permissions."
+      },
+      "tags": [
+        "notion",
+        "research",
+        "knowledge"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "notion"
+      ],
+      "taskTypes": [
+        "research",
+        "summarize",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "涉及写入或移动文件时应先确认范围。",
+        "en": "Confirm scope before writing or moving files."
+      },
+      "outputs": {
+        "zh": "整理结果、自动化流程或知识资产",
+        "en": "Organized outputs, automations, or knowledge assets"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 276,
+      "available": true
+    },
+    {
+      "id": "openai-chatgpt-apps",
+      "name": "ChatGPT Apps",
+      "description": {
+        "zh": "构建连接外部工具与数据的 ChatGPT 应用，并遵循 Apps SDK 工作流。",
+        "en": "Build ChatGPT apps that connect tools and data using Apps SDK workflows."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "product",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/chatgpt-apps",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "面向 AI 应用与工具连接，适合构建可复用的代理能力。",
+        "en": "Designed for AI applications and reusable agent integrations."
+      },
+      "bestFor": {
+        "zh": "AI 应用、工具接入与代理工作流",
+        "en": "AI apps, tool integrations, and agent workflows"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "chatgpt",
+        "apps",
+        "sdk"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 25,
+      "risk": "medium",
+      "platforms": [
+        "web",
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "integration",
+        "build"
+      ],
+      "prerequisites": {
+        "zh": "需要对应 API、SDK 或服务凭据。",
+        "en": "Requires the relevant API, SDK, or service credentials."
+      },
+      "outputs": {
+        "zh": "可运行的集成、工具或代理能力",
+        "en": "A working integration, tool, or agent capability"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-cli-creator",
+      "name": "CLI Creator",
+      "description": {
+        "zh": "设计并实现易用、可测试、文档完整的命令行工具。",
+        "en": "Design and implement usable, testable, well-documented command-line tools."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "devops",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/cli-creator",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "适合进入真实工程流程，边界明确并且便于验证。",
+        "en": "Works well in real engineering workflows with clear, verifiable boundaries."
+      },
+      "bestFor": {
+        "zh": "功能开发、重构与代码质量",
+        "en": "Feature delivery, refactoring, and code quality"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "cli",
+        "developer-tools",
+        "automation"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "build",
+        "automation"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-cloudflare-deploy",
+      "name": "Cloudflare Deploy",
+      "description": {
+        "zh": "将网站和服务部署到 Cloudflare，并验证配置与可访问性。",
+        "en": "Deploy websites and services to Cloudflare and verify configuration and reachability."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops",
+        "founder"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/cloudflare-deploy",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把部署步骤标准化，适合从代码到可访问环境的交付。",
+        "en": "Standardizes delivery from source code to a reachable environment."
+      },
+      "bestFor": {
+        "zh": "预览环境、上线与部署排障",
+        "en": "Preview environments, releases, and deployment debugging"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "cloudflare",
+        "deploy",
+        "hosting"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "cloud-account"
+      ],
+      "taskTypes": [
+        "deploy",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要目标平台账号及项目权限。",
+        "en": "Requires an account and project access on the target platform."
+      },
+      "outputs": {
+        "zh": "部署结果、配置与验证记录",
+        "en": "Deployment output, configuration, and verification evidence"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-figma-implement-design",
+      "name": "Figma Implement Design",
+      "description": {
+        "zh": "读取 Figma 设计上下文并实现接近像素级还原的前端界面。",
+        "en": "Read Figma design context and implement high-fidelity frontend interfaces."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer",
+        "product"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-implement-design",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "兼顾审美判断与可执行产出，适合快速形成视觉方案。",
+        "en": "Balances visual judgment with executable creative output."
+      },
+      "bestFor": {
+        "zh": "界面、品牌、视觉素材与设计系统",
+        "en": "Interfaces, brands, visual assets, and design systems"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "figma",
+        "frontend",
+        "design"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "figma"
+      ],
+      "taskTypes": [
+        "design",
+        "build"
+      ],
+      "prerequisites": {
+        "zh": "最好提供品牌规范、参考素材或目标受众。",
+        "en": "Works best with brand rules, references, or audience context."
+      },
+      "outputs": {
+        "zh": "设计稿、视觉资产或实现建议",
+        "en": "Designs, visual assets, or implementation guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-gh-address-comments",
+      "name": "GitHub Address Comments",
+      "description": {
+        "zh": "逐条处理 Pull Request 评论，完成修改并保留验证证据。",
+        "en": "Address pull-request comments one by one with changes and verification evidence."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "qa",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/gh-address-comments",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "适合进入真实工程流程，边界明确并且便于验证。",
+        "en": "Works well in real engineering workflows with clear, verifiable boundaries."
+      },
+      "bestFor": {
+        "zh": "功能开发、重构与代码质量",
+        "en": "Feature delivery, refactoring, and code quality"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "github",
+        "review",
+        "pull-request"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "github",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "review",
+        "fix"
+      ],
+      "prerequisites": {
+        "zh": "需要现有代码仓库和可运行的开发环境。",
+        "en": "Requires an existing repository and working development environment."
+      },
+      "outputs": {
+        "zh": "代码、测试或可审查的变更",
+        "en": "Code, tests, or reviewable changes"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-gh-fix-ci",
+      "name": "GitHub Fix CI",
+      "description": {
+        "zh": "检查 GitHub Actions 失败日志，定位原因并修复 CI 问题。",
+        "en": "Inspect failed GitHub Actions logs, diagnose causes, and fix CI issues."
+      },
+      "category": "testing",
+      "professions": [
+        "developer",
+        "devops",
+        "qa"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/gh-fix-ci",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把重复验收变成可复现流程，适合发布前质量检查。",
+        "en": "Turns repetitive QA into reproducible checks before release."
+      },
+      "bestFor": {
+        "zh": "回归测试、验收与故障复现",
+        "en": "Regression testing, acceptance, and reproduction"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "github",
+        "ci",
+        "debugging"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "github",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "debug",
+        "fix",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的测试环境或样例。",
+        "en": "Requires an accessible test environment or fixture."
+      },
+      "outputs": {
+        "zh": "测试记录、截图或问题清单",
+        "en": "Test evidence, screenshots, or issue lists"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-linear",
+      "name": "Linear",
+      "description": {
+        "zh": "读取和管理 Linear 项目、Issue 与团队工作流。",
+        "en": "Read and manage Linear projects, issues, and team workflows."
+      },
+      "category": "project",
+      "professions": [
+        "product",
+        "developer",
+        "operations",
+        "manager"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/linear",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "帮助把模糊目标拆成可执行步骤，并保留决策上下文。",
+        "en": "Turns ambiguous goals into executable steps while preserving decisions."
+      },
+      "bestFor": {
+        "zh": "需求梳理、计划、任务推进与复盘",
+        "en": "Scoping, planning, execution, and retrospectives"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "linear",
+        "issues",
+        "project"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "linear"
+      ],
+      "taskTypes": [
+        "organize",
+        "update"
+      ],
+      "prerequisites": {
+        "zh": "需要提供目标、约束和当前状态。",
+        "en": "Requires goals, constraints, and current-state context."
+      },
+      "outputs": {
+        "zh": "计划、任务、决策或状态记录",
+        "en": "Plans, tasks, decisions, or status records"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-migrate-to-codex",
+      "name": "Migrate to Codex",
+      "description": {
+        "zh": "评估现有代理工作流，并迁移为适合 Codex 的项目配置和能力。",
+        "en": "Assess existing agent workflows and migrate them into Codex-ready project configuration."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "architect",
+        "operations"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/migrate-to-codex",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "面向 AI 应用与工具连接，适合构建可复用的代理能力。",
+        "en": "Designed for AI applications and reusable agent integrations."
+      },
+      "bestFor": {
+        "zh": "AI 应用、工具接入与代理工作流",
+        "en": "AI apps, tool integrations, and agent workflows"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "codex",
+        "migration",
+        "agents"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "migrate",
+        "configure"
+      ],
+      "prerequisites": {
+        "zh": "需要对应 API、SDK 或服务凭据。",
+        "en": "Requires the relevant API, SDK, or service credentials."
+      },
+      "outputs": {
+        "zh": "可运行的集成、工具或代理能力",
+        "en": "A working integration, tool, or agent capability"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-netlify-deploy",
+      "name": "Netlify Deploy",
+      "description": {
+        "zh": "将前端项目发布到 Netlify，并处理构建与部署配置。",
+        "en": "Publish frontend projects to Netlify and handle build and deployment configuration."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops",
+        "designer"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/netlify-deploy",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把部署步骤标准化，适合从代码到可访问环境的交付。",
+        "en": "Standardizes delivery from source code to a reachable environment."
+      },
+      "bestFor": {
+        "zh": "预览环境、上线与部署排障",
+        "en": "Preview environments, releases, and deployment debugging"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "netlify",
+        "deploy",
+        "frontend"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "cloud-account"
+      ],
+      "taskTypes": [
+        "deploy",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要目标平台账号及项目权限。",
+        "en": "Requires an account and project access on the target platform."
+      },
+      "outputs": {
+        "zh": "部署结果、配置与验证记录",
+        "en": "Deployment output, configuration, and verification evidence"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-notion-meeting-intelligence",
+      "name": "Notion Meeting Intelligence",
+      "description": {
+        "zh": "把会议资料和记录整理为决策、行动项与可追踪的 Notion 页面。",
+        "en": "Turn meeting material into decisions, actions, and traceable Notion pages."
+      },
+      "category": "communication",
+      "professions": [
+        "product",
+        "operations",
+        "manager",
+        "executive"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/notion-meeting-intelligence",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把分散信息整理成清晰沟通材料，减少遗漏和歧义。",
+        "en": "Turns scattered information into clear communication with fewer omissions."
+      },
+      "bestFor": {
+        "zh": "会议纪要、内部沟通与团队同步",
+        "en": "Meeting notes, internal communications, and team updates"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "notion",
+        "meetings",
+        "actions"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "notion"
+      ],
+      "taskTypes": [
+        "summarize",
+        "organize"
+      ],
+      "prerequisites": {
+        "zh": "需要会议材料或清晰的沟通对象。",
+        "en": "Requires meeting material or a defined audience."
+      },
+      "outputs": {
+        "zh": "纪要、公告、摘要或行动项",
+        "en": "Notes, announcements, summaries, or action items"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-notion-spec-to-implementation",
+      "name": "Notion Spec to Implementation",
+      "description": {
+        "zh": "从 Notion 规格说明提取任务，并推动到代码实现和状态回写。",
+        "en": "Turn Notion specifications into implementation tasks, code, and status updates."
+      },
+      "category": "project",
+      "professions": [
+        "product",
+        "developer",
+        "qa"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/notion-spec-to-implementation",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.5,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "帮助把模糊目标拆成可执行步骤，并保留决策上下文。",
+        "en": "Turns ambiguous goals into executable steps while preserving decisions."
+      },
+      "bestFor": {
+        "zh": "需求梳理、计划、任务推进与复盘",
+        "en": "Scoping, planning, execution, and retrospectives"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "notion",
+        "specs",
+        "implementation"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "notion",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "plan",
+        "build",
+        "update"
+      ],
+      "prerequisites": {
+        "zh": "需要提供目标、约束和当前状态。",
+        "en": "Requires goals, constraints, and current-state context."
+      },
+      "outputs": {
+        "zh": "计划、任务、决策或状态记录",
+        "en": "Plans, tasks, decisions, or status records"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-render-deploy",
+      "name": "Render Deploy",
+      "description": {
+        "zh": "把应用部署到 Render，配置服务并验证运行状态。",
+        "en": "Deploy applications to Render, configure services, and verify runtime health."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops",
+        "founder"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/render-deploy",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把部署步骤标准化，适合从代码到可访问环境的交付。",
+        "en": "Standardizes delivery from source code to a reachable environment."
+      },
+      "bestFor": {
+        "zh": "预览环境、上线与部署排障",
+        "en": "Preview environments, releases, and deployment debugging"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "render",
+        "deploy",
+        "cloud"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "cloud-account"
+      ],
+      "taskTypes": [
+        "deploy",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要目标平台账号及项目权限。",
+        "en": "Requires an account and project access on the target platform."
+      },
+      "outputs": {
+        "zh": "部署结果、配置与验证记录",
+        "en": "Deployment output, configuration, and verification evidence"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-sentry",
+      "name": "Sentry",
+      "description": {
+        "zh": "查询 Sentry 错误和事件上下文，辅助线上故障定位。",
+        "en": "Query Sentry errors and event context to support production diagnosis."
+      },
+      "category": "monitoring",
+      "professions": [
+        "developer",
+        "devops",
+        "qa",
+        "support"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/sentry",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "聚焦运行状态和故障线索，帮助快速定位线上问题。",
+        "en": "Focuses on runtime signals and evidence for production diagnosis."
+      },
+      "bestFor": {
+        "zh": "错误监控、事件分析与线上排障",
+        "en": "Error monitoring, incident analysis, and production debugging"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "sentry",
+        "monitoring",
+        "errors"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "sentry"
+      ],
+      "taskTypes": [
+        "monitor",
+        "debug"
+      ],
+      "prerequisites": {
+        "zh": "需要监控平台连接和项目访问权限。",
+        "en": "Requires monitoring-platform connectivity and project access."
+      },
+      "outputs": {
+        "zh": "事件摘要、根因线索或修复建议",
+        "en": "Incident summaries, root-cause clues, or fix recommendations"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-speech",
+      "name": "Speech",
+      "description": {
+        "zh": "将文本转换为语音，并控制声音、格式和输出文件。",
+        "en": "Convert text to speech with control over voice, format, and output files."
+      },
+      "category": "media",
+      "professions": [
+        "creator",
+        "marketing",
+        "teacher",
+        "accessibility"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/speech",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "适合音频、图像和视频等非结构化素材的生产与处理。",
+        "en": "Supports production and processing of audio, image, and video assets."
+      },
+      "bestFor": {
+        "zh": "转录、截图、语音与媒体处理",
+        "en": "Transcription, screenshots, speech, and media processing"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "speech",
+        "audio",
+        "tts"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "generate",
+        "convert"
+      ],
+      "prerequisites": {
+        "zh": "需要相应媒体文件或生成服务权限。",
+        "en": "Requires media files or access to the relevant generation service."
+      },
+      "outputs": {
+        "zh": "媒体文件、转录文本或处理结果",
+        "en": "Media files, transcripts, or processed outputs"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-transcribe",
+      "name": "Transcribe",
+      "description": {
+        "zh": "把音频或视频转成带说话人和时间信息的可编辑文本。",
+        "en": "Turn audio or video into editable text with speaker and timing context."
+      },
+      "category": "media",
+      "professions": [
+        "researcher",
+        "creator",
+        "operations",
+        "student"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/transcribe",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 9,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "适合音频、图像和视频等非结构化素材的生产与处理。",
+        "en": "Supports production and processing of audio, image, and video assets."
+      },
+      "bestFor": {
+        "zh": "转录、截图、语音与媒体处理",
+        "en": "Transcription, screenshots, speech, and media processing"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "transcription",
+        "audio",
+        "video"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "transcribe",
+        "summarize"
+      ],
+      "prerequisites": {
+        "zh": "需要相应媒体文件或生成服务权限。",
+        "en": "Requires media files or access to the relevant generation service."
+      },
+      "outputs": {
+        "zh": "媒体文件、转录文本或处理结果",
+        "en": "Media files, transcripts, or processed outputs"
+      },
+      "available": true
+    },
+    {
+      "id": "openai-vercel-deploy",
+      "name": "Vercel Deploy",
+      "description": {
+        "zh": "将 Web 项目部署到 Vercel，并验证构建和访问地址。",
+        "en": "Deploy web projects to Vercel and verify builds and public URLs."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops",
+        "designer",
+        "founder"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/vercel-deploy",
+      "source": "OpenAI",
+      "stars": 23872,
+      "forks": 1615,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.7,
+        "maintenance": 9.3,
+        "documentation": 9.3,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把部署步骤标准化，适合从代码到可访问环境的交付。",
+        "en": "Standardizes delivery from source code to a reachable environment."
+      },
+      "bestFor": {
+        "zh": "预览环境、上线与部署排障",
+        "en": "Preview environments, releases, and deployment debugging"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "vercel",
+        "deploy",
+        "web"
+      ],
+      "official": true,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "cloud-account"
+      ],
+      "taskTypes": [
+        "deploy",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要目标平台账号及项目权限。",
+        "en": "Requires an account and project access on the target platform."
+      },
+      "outputs": {
+        "zh": "部署结果、配置与验证记录",
+        "en": "Deployment output, configuration, and verification evidence"
+      },
+      "available": true
+    },
+    {
+      "id": "superpowers-executing-plans",
+      "name": "Executing Plans",
+      "description": {
+        "zh": "按检查点执行既定计划，持续验证进度并处理偏差。",
+        "en": "Execute established plans through checkpoints, validation, and deviation handling."
+      },
+      "category": "project",
+      "professions": [
+        "developer",
+        "operations",
+        "product",
+        "manager"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/executing-plans",
+      "source": "Superpowers",
+      "stars": 256438,
+      "forks": 22830,
+      "openIssues": 318,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "帮助把模糊目标拆成可执行步骤，并保留决策上下文。",
+        "en": "Turns ambiguous goals into executable steps while preserving decisions."
+      },
+      "bestFor": {
+        "zh": "需求梳理、计划、任务推进与复盘",
+        "en": "Scoping, planning, execution, and retrospectives"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "plans",
+        "execution",
+        "checkpoints"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 3,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "execute",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要提供目标、约束和当前状态。",
+        "en": "Requires goals, constraints, and current-state context."
+      },
+      "outputs": {
+        "zh": "计划、任务、决策或状态记录",
+        "en": "Plans, tasks, decisions, or status records"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-content-research-writer",
+      "name": "Content Research Writer",
+      "description": {
+        "zh": "从资料调研、结构设计到引用整理，协助完成有依据的长篇内容。",
+        "en": "Support evidence-based long-form writing from research and structure through citation management."
+      },
+      "category": "content",
+      "professions": [
+        "marketing",
+        "creator",
+        "researcher"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "content-research-writer",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.2,
+        "reliability": 8.7,
+        "ease": 9,
+        "maintenance": 8.8,
+        "documentation": 8.8,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "流程覆盖较完整，适合需要兼顾速度与资料依据的内容团队。",
+        "en": "A broad workflow suited to content teams balancing speed with evidence and citations."
+      },
+      "bestFor": {
+        "zh": "行业文章、白皮书、内容营销",
+        "en": "Industry articles, white papers, content marketing"
+      },
+      "caution": {
+        "zh": "引用与事实仍应在发布前逐条核验。",
+        "en": "Facts and citations still need item-by-item verification before publishing."
+      },
+      "tags": [
+        "writing",
+        "research",
+        "content"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "browser",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "research",
+        "write",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要主题、目标读者、素材和品牌语气。",
+        "en": "Requires a topic, target audience, source material, and brand voice."
+      },
+      "outputs": {
+        "zh": "结构化内容、文案或发布稿",
+        "en": "Structured content, copy, or publishable drafts"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1038,
+      "available": true
+    },
+    {
+      "id": "composio-lead-research-assistant",
+      "name": "Lead Research Assistant",
+      "description": {
+        "zh": "按目标客户画像研究潜在线索，整理公司背景、匹配理由与可行动的外联信息。",
+        "en": "Research prospects against an ICP and organize company context, fit rationale, and actionable outreach data."
+      },
+      "category": "sales",
+      "professions": [
+        "sales",
+        "marketing",
+        "founder"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "lead-research-assistant",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.6,
+        "ease": 9,
+        "maintenance": 8.7,
+        "documentation": 8.8,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "把重复的销售背景调查结构化，适合小团队快速建立高质量线索表。",
+        "en": "Structures repetitive sales research so small teams can build higher-quality prospect lists quickly."
+      },
+      "bestFor": {
+        "zh": "B2B 销售、客户开发、市场拓展",
+        "en": "B2B sales, prospecting, market development"
+      },
+      "caution": {
+        "zh": "外联前需核实联系方式，并遵守隐私和反骚扰规则。",
+        "en": "Verify contact details and follow privacy and anti-spam rules before outreach."
+      },
+      "tags": [
+        "sales",
+        "leads",
+        "research"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "browser"
+      ],
+      "taskTypes": [
+        "research",
+        "analyze"
+      ],
+      "prerequisites": {
+        "zh": "需要目标客户画像、行业和地域范围。",
+        "en": "Requires an ideal customer profile, industry, and region scope."
+      },
+      "outputs": {
+        "zh": "线索表、客户摘要或外联建议",
+        "en": "Lead lists, account briefs, or outreach guidance"
+      },
+      "license": "NOASSERTION",
+      "openIssues": 1038,
+      "available": true
+    },
+    {
+      "id": "composio-competitive-ads-extractor",
+      "name": "Competitive Ads Extractor",
+      "description": {
+        "zh": "收集并分析竞品广告素材、主张和创意模式。",
+        "en": "Collect and analyze competitor ads, claims, and creative patterns."
+      },
+      "category": "marketing",
+      "professions": [
+        "marketing",
+        "designer",
+        "founder",
+        "analyst"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "competitive-ads-extractor",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把市场信息转成可比较的洞察和行动建议。",
+        "en": "Turns market signals into comparable insights and actions."
+      },
+      "bestFor": {
+        "zh": "竞品分析、广告研究与增长优化",
+        "en": "Competitive analysis, ad research, and growth optimization"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "ads",
+        "competitors",
+        "creative"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "browser"
+      ],
+      "taskTypes": [
+        "research",
+        "analyze"
+      ],
+      "prerequisites": {
+        "zh": "需要目标市场、平台范围和可用素材。",
+        "en": "Requires a target market, platform scope, and available creative material."
+      },
+      "outputs": {
+        "zh": "洞察报告、素材分析或优化建议",
+        "en": "Insight reports, creative analyses, or optimization guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-developer-growth-analysis",
+      "name": "Developer Growth Analysis",
+      "description": {
+        "zh": "分析开发活动与代码贡献趋势，整理成长和协作信号。",
+        "en": "Analyze development activity and contribution trends for growth and collaboration signals."
+      },
+      "category": "data",
+      "professions": [
+        "manager",
+        "developer",
+        "hr",
+        "analyst"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "developer-growth-analysis",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "覆盖数据处理到可验证产出的链路，适合分析型任务。",
+        "en": "Covers the path from data processing to verifiable analytical output."
+      },
+      "bestFor": {
+        "zh": "数据探索、分析、建模与报表",
+        "en": "Data exploration, analysis, modeling, and reporting"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "github",
+        "analytics",
+        "growth"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "git"
+      ],
+      "taskTypes": [
+        "analyze",
+        "report"
+      ],
+      "prerequisites": {
+        "zh": "需要可读取的数据和字段说明。",
+        "en": "Requires readable data and field definitions."
+      },
+      "outputs": {
+        "zh": "分析结果、图表、模型或工作簿",
+        "en": "Analyses, charts, models, or workbooks"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-file-organizer",
+      "name": "File Organizer",
+      "description": {
+        "zh": "按内容、用途和规则整理本地文件并生成清晰目录。",
+        "en": "Organize local files by content, purpose, and rules into a clear structure."
+      },
+      "category": "productivity",
+      "professions": [
+        "operations",
+        "student",
+        "creator",
+        "developer"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "file-organizer",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把重复操作沉淀为一致流程，适合个人和团队提效。",
+        "en": "Turns repeated work into consistent personal and team workflows."
+      },
+      "bestFor": {
+        "zh": "知识管理、文件整理与流程自动化",
+        "en": "Knowledge management, file organization, and automation"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "files",
+        "organization",
+        "automation"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 3,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "organize",
+        "move"
+      ],
+      "prerequisites": {
+        "zh": "涉及写入或移动文件时应先确认范围。",
+        "en": "Confirm scope before writing or moving files."
+      },
+      "outputs": {
+        "zh": "整理结果、自动化流程或知识资产",
+        "en": "Organized outputs, automations, or knowledge assets"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-invoice-organizer",
+      "name": "Invoice Organizer",
+      "description": {
+        "zh": "提取发票关键信息，分类归档并生成待复核台账。",
+        "en": "Extract key invoice fields, organize files, and produce a review ledger."
+      },
+      "category": "finance",
+      "professions": [
+        "finance",
+        "operations",
+        "founder",
+        "accountant"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "invoice-organizer",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "面向票据和财务材料整理，强调可追溯和人工复核。",
+        "en": "Organizes financial materials with traceability and human review."
+      },
+      "bestFor": {
+        "zh": "发票整理、费用归档与财务准备",
+        "en": "Invoice organization, expense filing, and finance preparation"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "invoice",
+        "finance",
+        "ocr"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "extract",
+        "organize"
+      ],
+      "prerequisites": {
+        "zh": "需要可读取的票据文件和分类规则。",
+        "en": "Requires readable invoice files and categorization rules."
+      },
+      "outputs": {
+        "zh": "分类台账、归档结构或待核清单",
+        "en": "Categorized ledgers, filing structures, or review queues"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-twitter-algorithm-optimizer",
+      "name": "Twitter Algorithm Optimizer",
+      "description": {
+        "zh": "分析内容结构与发布策略，优化社交平台内容表现。",
+        "en": "Analyze content structure and publishing strategy to improve social performance."
+      },
+      "category": "marketing",
+      "professions": [
+        "creator",
+        "marketing",
+        "founder",
+        "writer"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "twitter-algorithm-optimizer",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 8.7,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.9
+      },
+      "review": {
+        "zh": "把市场信息转成可比较的洞察和行动建议。",
+        "en": "Turns market signals into comparable insights and actions."
+      },
+      "bestFor": {
+        "zh": "竞品分析、广告研究与增长优化",
+        "en": "Competitive analysis, ad research, and growth optimization"
+      },
+      "caution": {
+        "zh": "会访问外部服务或修改文件，执行前应确认权限和范围。",
+        "en": "External access or file changes require permission and scope review."
+      },
+      "tags": [
+        "social",
+        "content",
+        "growth"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network"
+      ],
+      "taskTypes": [
+        "analyze",
+        "optimize"
+      ],
+      "prerequisites": {
+        "zh": "需要目标市场、平台范围和可用素材。",
+        "en": "Requires a target market, platform scope, and available creative material."
+      },
+      "outputs": {
+        "zh": "洞察报告、素材分析或优化建议",
+        "en": "Insight reports, creative analyses, or optimization guidance"
+      },
+      "available": true
+    },
+    {
+      "id": "composio-video-downloader",
+      "name": "Video Downloader",
+      "description": {
+        "zh": "从支持的平台获取视频并整理文件与元数据。",
+        "en": "Download video from supported platforms and organize files and metadata."
+      },
+      "category": "media",
+      "professions": [
+        "creator",
+        "researcher",
+        "marketing",
+        "student"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "video-downloader",
+      "source": "Composio",
+      "stars": 67951,
+      "forks": 7693,
+      "openIssues": 1038,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "rating": 8.9,
+      "dimensions": {
+        "usefulness": 9.1,
+        "reliability": 8.9,
+        "ease": 9,
+        "maintenance": 9,
+        "documentation": 8.8,
+        "safety": 8.2
+      },
+      "review": {
+        "zh": "适合音频、图像和视频等非结构化素材的生产与处理。",
+        "en": "Supports production and processing of audio, image, and video assets."
+      },
+      "bestFor": {
+        "zh": "转录、截图、语音与媒体处理",
+        "en": "Transcription, screenshots, speech, and media processing"
+      },
+      "caution": {
+        "zh": "涉及下载、执行或广泛权限，使用前必须核对来源和范围。",
+        "en": "Downloads, execution, or broad access require source and scope review."
+      },
+      "tags": [
+        "video",
+        "download",
+        "media"
+      ],
+      "official": false,
+      "featured": false,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "download",
+        "organize"
+      ],
+      "prerequisites": {
+        "zh": "需要相应媒体文件或生成服务权限。",
+        "en": "Requires media files or access to the relevant generation service."
+      },
+      "outputs": {
+        "zh": "媒体文件、转录文本或处理结果",
+        "en": "Media files, transcripts, or processed outputs"
+      },
+      "available": true
+    }
+  ]
+}

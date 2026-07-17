@@ -11,6 +11,7 @@
           <a class="btn btn-ghost max-[760px]:min-h-[40px] max-[760px]:px-2.5 max-[760px]:text-[13px]" :href="registerUrl" target="_top">{{ t.navButtons.register }}</a>
           <a class="btn btn-ghost max-[760px]:min-h-[40px] max-[760px]:px-2.5 max-[760px]:text-[13px]" :href="loginUrl" target="_top">{{ t.navButtons.login }}</a>
           <router-link class="btn border-blue bg-blue text-white shadow-[0_12px_28px_rgba(36,104,242,0.22)] max-[760px]:min-h-[40px] max-[760px]:px-2.5 max-[760px]:text-[13px]" to="/image-creation">{{ t.navButtons.imageCreation }}</router-link>
+          <router-link class="btn btn-ghost max-[760px]:min-h-[40px] max-[760px]:px-2.5 max-[760px]:text-[13px]" to="/skills">{{ t.navButtons.skills }}</router-link>
           <router-link class="btn btn-ghost max-[760px]:min-h-[40px] max-[760px]:px-2.5 max-[760px]:text-[13px]" to="/codex-help">{{ t.navButtons.help }}</router-link>
           <router-link class="btn btn-ghost max-[760px]:min-h-[40px] max-[760px]:px-2.5 max-[760px]:text-[13px]" to="/enterprise-service">{{ t.navButtons.enterprise }}</router-link>
         </nav>

@@ -3,6 +3,7 @@
     <button
       class="language-trigger btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]"
       type="button"
+      :aria-label="currentLanguageLabel"
       :aria-expanded="open"
       aria-haspopup="menu"
       @click="open = !open"

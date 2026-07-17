@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/optimize-images.mjs && vue-tsc -b && vite-ssg build && node scripts/postbuild.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "update:skills": "node scripts/update-skills.mjs"
   },
   "dependencies": {
+    "@lucide/vue": "^1.24.0",
     "@unhead/vue": "^1.11.14",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"

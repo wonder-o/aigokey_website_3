@@ -3,4 +3,7 @@ dist/
 tsconfig.tsbuildinfo
 .vite/
 .vite-ssg-temp/
+output/
+.playwright-cli/
+vite.*.log
 public/assets/*.webp
