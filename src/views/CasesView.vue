@@ -18,7 +18,7 @@
               <small>{{ catalog.generatedAt }}</small>
             </div>
             <div class="board-stats">
-              <div><strong>50</strong><span>{{ copy.cases }}</span></div>
+              <div><strong>{{ catalog.cases.length }}</strong><span>{{ copy.cases }}</span></div>
               <div><strong>{{ catalog.categories.length }}</strong><span>{{ copy.categories }}</span></div>
               <div><strong>{{ catalog.professions.length }}</strong><span>{{ copy.professions }}</span></div>
               <div><strong>4</strong><span>{{ copy.evidenceLevels }}</span></div>
@@ -265,8 +265,8 @@ const searchInput = ref<HTMLInputElement | null>(null)
 const drawerRef = ref<HTMLElement | null>(null)
 
 const zhCopy = {
-  kicker: 'Codex 实际工作档案', title: '50 个案例，找到你的 Codex 工作流', subtitle: '按行业场景和职业角色浏览真实案例。每条案例都保留问题、执行链路、验收方式、结果边界与原始出处，帮助你从“能做什么”走到“该怎么做”。',
-  sourceNote: '基于一手组织资料与中文可复现实操整理，不把宣传表述改写成未经证实的结论。', indexTitle: '案例索引 / CASE INDEX', cases: '个案例', categories: '个类别', professions: '类职业', evidenceLevels: '级证据',
+  kicker: 'Codex 实际工作档案', title: '100 个案例，找到你的 Codex 工作流', subtitle: '按行业场景和职业角色浏览真实案例。每条案例都保留问题、执行链路、验收方式、结果边界与原始出处，帮助你从“能做什么”走到“该怎么做”。',
+  sourceNote: '基于一手组织资料、官方可复现实操与明确标注的流程模板整理，不把宣传表述改写成未经证实的结论。', indexTitle: '案例索引 / CASE INDEX', cases: '个案例', categories: '个类别', professions: '类职业', evidenceLevels: '级证据',
   libraryEyebrow: '浏览案例库', libraryTitle: '从相似工作出发，而不是从功能清单出发', libraryCopy: '先选你的工作领域或职业，再看相近团队如何准备上下文、连接工具、执行任务和验证结果。', browseBy: '浏览方式', byCategory: '按类别', byProfession: '按职业', methodNote: '案例结果只在原始环境中成立，复刻时请重新验证', filters: '案例筛选',
   evidenceGuide: '如何理解证据等级', evidenceGuideCopy: '等级描述信息来源和可复现程度，不是对案例价值的打分。', showGuide: '查看分级说明', hideGuide: '收起分级说明',
   search: '搜索场景、岗位、问题、工作流或组织', evidenceFilter: '证据等级', allEvidence: '全部证据等级', languageFilter: '来源语种', allSources: '全部来源语种', chineseSources: '中文实操与模板', englishSources: '英文一手资料译述', results: '个匹配案例', clear: '清除筛选',
@@ -275,7 +275,7 @@ const zhCopy = {
 }
 
 const enCopy = {
-  kicker: 'Codex work files', title: '50 cases. Find your Codex workflow.', subtitle: 'Browse real cases by work domain or role. Every file keeps the problem, execution chain, validation, boundaries, and original source intact.', sourceNote: 'Compiled from first-party reports and reproducible Chinese walkthroughs without inflating reported outcomes.', indexTitle: 'CASE INDEX', cases: 'cases', categories: 'categories', professions: 'role groups', evidenceLevels: 'evidence levels',
+  kicker: 'Codex work files', title: '100 cases. Find your Codex workflow.', subtitle: 'Browse real cases by work domain or role. Every file keeps the problem, execution chain, validation, boundaries, and original source intact.', sourceNote: 'Compiled from first-party reports and reproducible walkthroughs without inflating reported outcomes.', indexTitle: 'CASE INDEX', cases: 'cases', categories: 'categories', professions: 'role groups', evidenceLevels: 'evidence levels',
   libraryEyebrow: 'Case library', libraryTitle: 'Start from comparable work, not a feature list', libraryCopy: 'Choose a domain or role, then inspect how similar teams prepared context, connected tools, executed tasks, and verified results.', browseBy: 'Browse by', byCategory: 'Category', byProfession: 'Profession', methodNote: 'Reported outcomes apply to their original environments and require fresh validation', filters: 'Filters',
   evidenceGuide: 'Understanding evidence', evidenceGuideCopy: 'Levels describe provenance and reproducibility, not the value of a case.', showGuide: 'Show definitions', hideGuide: 'Hide definitions',
   search: 'Search scenarios, roles, problems, workflows, or organizations', evidenceFilter: 'Evidence level', allEvidence: 'All evidence', languageFilter: 'Source language', allSources: 'All source languages', chineseSources: 'Chinese walkthroughs', englishSources: 'Translated first-party reports', results: 'matching cases', clear: 'Clear filters',
@@ -285,7 +285,7 @@ const enCopy = {
 const copy = computed(() => lang.value === 'en' ? enCopy : zhCopy)
 
 const categoryItems = computed<FilterItem[]>(() => [
-  { id: 'all', label: lang.value === 'en' ? 'All categories' : '全部类别', description: lang.value === 'en' ? 'Browse all 50 documented workflows' : '浏览全部 50 条工作流', count: catalog.cases.length },
+  { id: 'all', label: lang.value === 'en' ? 'All categories' : '全部类别', description: lang.value === 'en' ? `Browse all ${catalog.cases.length} documented workflows` : `浏览全部 ${catalog.cases.length} 条工作流`, count: catalog.cases.length },
   ...catalog.categories.map((item) => ({ ...item, count: catalog.cases.filter((entry) => entry.category === item.id).length })),
 ])
 
@@ -369,10 +369,10 @@ onBeforeUnmount(() => {
 })
 
 useHead({
-  title: 'Codex 案例库｜50 个跨行业实战案例 - AigoKey',
+  title: 'Codex 案例库｜100 个跨行业实战案例 - AigoKey',
   meta: [
-    { name: 'description', content: '浏览 50 个 Codex 跨行业、跨岗位使用案例，按类别和职业筛选，查看问题、工作流、结果边界、证据等级与原始来源。' },
-    { property: 'og:title', content: 'Codex 案例库｜50 个跨行业实战案例' },
+    { name: 'description', content: '浏览 100 个 Codex 跨行业、跨岗位使用案例，按类别和职业筛选，查看问题、工作流、结果边界、证据等级与原始来源。' },
+    { property: 'og:title', content: 'Codex 案例库｜100 个跨行业实战案例' },
     { property: 'og:description', content: '从真实工作出发，找到可以参考和迁移的 Codex 工作流。' },
   ],
 })

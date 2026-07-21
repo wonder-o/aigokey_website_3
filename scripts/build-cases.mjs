@@ -4,6 +4,7 @@ import { resolve } from 'node:path'
 const sourcePath = resolve(process.argv[2] || '../Codex案例收集/Codex_50个跨行业使用案例_中文.md')
 const outputPath = resolve(process.argv[3] || 'src/data/codex-cases.json')
 const markdown = await readFile(sourcePath, 'utf8')
+const extraCases = JSON.parse(await readFile(resolve('src/data/codex-cases-extra.json'), 'utf8'))
 
 const indexRows = new Map(markdown.split(/\r?\n/).flatMap((line) => {
   const match = line.match(/^\|\s*(\d{2})\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|\s*([^|]+?)\s*\|$/)
@@ -20,6 +21,10 @@ const categoryDefinitions = [
   { id: 'content-collaboration', label: '内容创作与协作', description: '演示、视频、配图与团队资料处理', ids: range(37, 42) },
   { id: 'knowledge-design', label: '知识管理与产品设计', description: 'Wiki、Notion、Figma 与网页发布', ids: range(43, 46) },
   { id: 'automation-research', label: '自动化运维与科研', description: '远程修复、内容检索、CI 与临床综述', ids: range(47, 50) },
+  { id: 'business-operations', label: '业务运营与管理', description: '经营复盘、决策材料与流程治理', ids: [] },
+  { id: 'sales-marketing', label: '销售与市场', description: '客户拓展、营销策略与创意生产', ids: [] },
+  { id: 'finance-investing', label: '财务与投资', description: '月结复盘、公司比较与交易材料', ids: [] },
+  { id: 'everyday-productivity', label: '日常办公与协作', description: '工作简报、文件清理与团队同步', ids: [] },
 ]
 
 const professionDefinitions = [
@@ -31,12 +36,15 @@ const professionDefinitions = [
   { id: 'operations', label: '运营与项目管理', ids: [2, 10, 28, 37, 39, 41, 42, 45, 46, 48] },
   { id: 'creator', label: '内容创作者与培训师', ids: [3, 37, 38, 40, 41, 42, 46, 48] },
   { id: 'professional', label: '专业服务与研究人员', ids: [1, 3, 5, 6, 7, 18, 19, 39, 43, 45, 50] },
+  { id: 'business-ops', label: '业务运营与管理者', ids: [] },
+  { id: 'sales-marketing', label: '销售与市场团队', ids: [] },
+  { id: 'finance-investing', label: '财务与投资岗位', ids: [] },
 ]
 
 const evidenceDefinitions = {
   A1: { label: '一手量化案例', description: '组织或当事人的一手资料，并披露数字、时间或明确结果。' },
   A2: { label: '一手工作流', description: '组织或当事人的一手资料，工作流具体，但未披露量化指标。' },
-  B: { label: '可复现实操', description: '中文社区完成过的实操，包含步骤、截图、日志或成品。' },
+  B: { label: '可复现实操', description: '公开可跟做的实操，包含提示词、样例文件、步骤、日志或成品。' },
   C: { label: '可执行模板', description: '可迁移的流程模板，不代表已经证明业务成效。' },
 }
 
@@ -94,13 +102,19 @@ for (let index = 0; index < lines.length; index += 1) {
   })
 }
 
-if (cases.length !== 50) {
-  throw new Error(`Expected 50 cases, parsed ${cases.length}. Check the source document format.`)
+cases.push(...extraCases)
+
+const expectedIds = Array.from({ length: 100 }, (_, index) => String(index + 1).padStart(2, '0'))
+const actualIds = cases.map((item) => item.id).sort((a, b) => Number(a) - Number(b))
+const incomplete = cases.filter((item) => !item.title || !item.category || !item.professions?.length || !item.industry || !item.roles || !item.problem || !item.workflow || !item.outcome || !item.source?.title || !item.source?.url)
+
+if (cases.length !== 100 || JSON.stringify(actualIds) !== JSON.stringify(expectedIds) || incomplete.length) {
+  throw new Error(`Case validation failed: count=${cases.length}, incomplete=${incomplete.map((item) => item.id).join(',') || 'none'}`)
 }
 
 const payload = {
   generatedAt: '2026-07-21',
-  sourceTitle: 'Codex 50 个跨行业、跨岗位具体使用案例',
+  sourceTitle: 'Codex 100 个跨行业、跨岗位具体使用案例',
   categories: categoryDefinitions.map(({ ids, ...item }) => item),
   professions: professionDefinitions.map(({ ids, ...item }) => item),
   evidence: evidenceDefinitions,

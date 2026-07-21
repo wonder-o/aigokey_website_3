@@ -1,0 +1,952 @@
+[
+  {
+    "id": "51",
+    "title": "OpenAI 工程团队：快速看懂陌生代码与故障传播路径",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer", "platform"],
+    "industry": "AI 产品与基础设施",
+    "roles": "软件工程师、值班工程师、性能工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "工程师在入职、跨团队调试或事故响应时，需要迅速找到功能核心逻辑、服务依赖和失败传播路径；依靠口头询问与手工追踪会延长进入状态的时间。",
+    "workflow": "在 Ask 模式中让 Codex 定位认证或功能入口，梳理请求从入口到响应的数据流，列出与目标模块交互的服务并追踪失败状态；修复一个缺陷后，再让它搜索代码库中可能存在同类问题的位置。",
+    "outcome": "OpenAI 工程团队将该流程用于检索系统、API 平台和基础设施服务。官方未披露统一节省时长；输出是调查起点，仍要由工程师结合日志、运行状态和代码确认。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，2026 年发布，Use case 1。"
+    }
+  },
+  {
+    "id": "52",
+    "title": "ChatGPT Web：数分钟完成跨文件旧服务模式迁移",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer"],
+    "industry": "AI 产品工程",
+    "roles": "后端工程师、平台工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A1",
+    "problem": "旧的 getUserById 调用散落在多个文件或包中，迁移到新服务模式既不能靠简单替换，也容易遗漏依赖和测试。",
+    "workflow": "向 Codex 指定旧调用、新服务范式和参考模块，让它理解依赖关系，在所有相关文件中一致替换，运行测试并准备 PR；工程师重点审查行为差异和未覆盖调用。",
+    "outcome": "ChatGPT Web 后端工程师称 Codex 在数分钟内完成迁移并打开 PR，而人工预计需要数小时。该结果来自单次团队轶事，不代表所有跨库迁移都能达到同样速度。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，Use case 2。"
+    }
+  },
+  {
+    "id": "53",
+    "title": "OpenAI API Reliability：扫描高成本数据库调用并起草批处理查询",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer", "platform"],
+    "industry": "API 可靠性与模型服务",
+    "roles": "基础设施工程师、性能工程师、数据库工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "请求处理路径中重复数据库访问、昂贵查询或冗余循环会形成性能热点，但在大型服务中逐段人工排查成本高。",
+    "workflow": "让 Codex 扫描慢或高内存代码路径，标记重复昂贵操作、缓存机会和退化模式，并起草批处理查询；工程师用基准测试、查询计划和生产指标继续调优。",
+    "outcome": "OpenAI API Reliability 工程师明确把它用于发现重复昂贵 DB 调用和起草批查询，但未披露统一性能数字。生成的优化不能替代压测、容量评估与生产观测。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，Use case 3。"
+    }
+  },
+  {
+    "id": "54",
+    "title": "ChatGPT Desktop：夜间为低覆盖模块生成可运行测试 PR",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer"],
+    "industry": "桌面应用与支付计费",
+    "roles": "前端工程师、测试工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "低覆盖模块往往缺少边界条件、无效状态和失败路径测试，补齐测试很重要却容易被功能排期挤压。",
+    "workflow": "将低覆盖模块和现有测试规范交给 Codex 后台运行，要求覆盖空输入、最大长度、异常但合法状态和失败路径，执行测试并提交独立 PR；次日由工程师检查断言是否验证真实行为。",
+    "outcome": "ChatGPT Desktop 前端工程师报告会在夜间派发任务，第二天获得可运行的单元测试 PR。官方未披露覆盖率提升；测试数量不能替代断言质量和变异测试等验证。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，Use case 4。"
+    }
+  },
+  {
+    "id": "55",
+    "title": "ChatGPT Enterprise：会议密集的一天仍合并 4 个后台 PR",
+    "section": "一手组织工作流与量化案例",
+    "category": "product-ai",
+    "professions": ["developer", "product"],
+    "industry": "企业 AI 产品",
+    "roles": "产品工程师、全栈工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A1",
+    "problem": "功能起步需要脚手架，临近发布又有缺陷分诊、遥测、配置和上线脚本等零散任务；会议密集时这些小任务会阻断交付。",
+    "workflow": "把规格或用户反馈写成类似 GitHub Issue 的任务，分别让 Codex 生成 API 桩、验证逻辑、遥测钩子、配置或部署脚本，在后台执行并形成多个可独立审查的 PR。",
+    "outcome": "一名 ChatGPT Enterprise 产品工程师称自己全天开会仍合并了 4 个由 Codex 后台完成的 PR。该数字是个人单日案例，合并前仍经过团队测试和代码审查。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，Use case 5。"
+    }
+  },
+  {
+    "id": "56",
+    "title": "ChatGPT API：把随手发现的小修复放进异步任务队列",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer", "platform"],
+    "industry": "API 与可观测性",
+    "roles": "后端工程师、值班工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "工程师在值班或处理主任务时会顺手发现小缺陷，如果立即切分支修复就丢失当前上下文，记在待办里又可能长期积压。",
+    "workflow": "把位置、现象和期望行为立即派成 Codex 任务，让它在独立工作树调查、修改、测试并准备 PR；工程师在有空时集中审查，而不离开当前分支。",
+    "outcome": "ChatGPT API 后端工程师将 Codex 任务队列当作轻量积压区。来源未披露完成率或节省时间；任务仍需有清楚边界，不能把模糊生产风险直接交给后台自动修改。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，Use case 6。"
+    }
+  },
+  {
+    "id": "57",
+    "title": "ChatGPT Desktop：用规格冷启动并对比替代架构",
+    "section": "一手组织工作流与量化案例",
+    "category": "product-ai",
+    "professions": ["developer", "product"],
+    "industry": "桌面产品与检索系统",
+    "roles": "产品工程师、架构师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "新功能在编码前常缺少脚手架、边界条件和架构权衡，团队容易从一个未经验证的方案直接开始实现。",
+    "workflow": "把规格和相关文档交给 Codex，让它搭建第一版代码并列出遗漏；再要求比较事件驱动与请求响应等替代方案，搜索类似缺陷或弃用模式，输出权衡供设计评审。",
+    "outcome": "ChatGPT Desktop 产品工程师称 Codex 可解决新任务的冷启动问题。来源没有量化指标；开放式探索的结论必须回到容量、复杂度、团队经验和真实约束中评估。",
+    "source": {
+      "title": "How OpenAI uses Codex",
+      "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/",
+      "note": "OpenAI 官方指南，Use case 7。"
+    }
+  },
+  {
+    "id": "58",
+    "title": "Wonderful：用 Codex CLI 承担核心技术与架构推理",
+    "section": "一手组织工作流与量化案例",
+    "category": "product-ai",
+    "professions": ["founder", "developer"],
+    "industry": "软件架构与核心技术",
+    "roles": "首席架构师、资深工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "核心技术和架构任务需要跨模块理解、长链路推理与可靠工具调用，通用代码补全或浅层代理难以持续推进。",
+    "workflow": "Wonderful 在需要深入推理和系统理解的核心技术与架构工作中使用 Codex CLI，把代码库、规范和验证命令放进同一执行环境，再由架构师审查方案与改动。",
+    "outcome": "Wonderful 首席架构师称 Codex CLI 已完全替代团队此前用于这类工作的其他智能体框架。官方未披露项目规模或成功率，结论仅代表该团队的选择。",
+    "source": {
+      "title": "Codex",
+      "url": "https://openai.com/codex/",
+      "note": "OpenAI Codex 产品页中的 Wonderful 一手引述。"
+    }
+  },
+  {
+    "id": "59",
+    "title": "Harvey：把移动产品早期迭代时间缩短 30%–50%",
+    "section": "一手组织工作流与量化案例",
+    "category": "product-ai",
+    "professions": ["developer", "product"],
+    "industry": "法律科技与移动产品",
+    "roles": "移动工程师、系统设计负责人",
+    "sourceLanguage": "英文译述",
+    "evidence": "A1",
+    "problem": "产品早期迭代要反复搭建、改动和验证实现，工程师很容易把时间消耗在低层编码而不是系统设计与关键决策。",
+    "workflow": "Harvey 移动团队把早期实现与迭代交给 Codex，工程师提供目标和约束，审查生成代码与验证结果，把人类时间集中到系统设计和高杠杆决策。",
+    "outcome": "Harvey 移动负责人披露早期迭代时间缩短 30%–50%。来源未说明样本期、任务分布或质量基线，不能直接作为其他团队的排期系数。",
+    "source": {
+      "title": "Codex",
+      "url": "https://openai.com/codex/",
+      "note": "OpenAI Codex 产品页中的 Harvey 一手引述。"
+    }
+  },
+  {
+    "id": "60",
+    "title": "Sierra：把季度级项目压缩到一个周末交付",
+    "section": "一手组织工作流与量化案例",
+    "category": "product-ai",
+    "professions": ["developer", "product"],
+    "industry": "企业 AI 软件",
+    "roles": "软件工程师、产品工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A1",
+    "problem": "部分有价值但非核心路线的项目因预计需要一个季度而长期不被启动，机会成本高。",
+    "workflow": "Sierra 将这类原本不会排期的项目交给 Codex，从规格出发完成实现与验证，工程师集中审查最终产出并决定是否上线。",
+    "outcome": "Sierra 软件工程师称团队能在一个周末交付过去需要一个季度的项目。来源未披露具体项目和质量指标，这一速度不能外推到所有复杂项目。",
+    "source": {
+      "title": "Codex",
+      "url": "https://openai.com/codex/",
+      "note": "OpenAI Codex 产品页中的 Sierra 一手引述。"
+    }
+  },
+  {
+    "id": "61",
+    "title": "Duolingo：用后端 Python 基准检验代码审查能力",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer"],
+    "industry": "教育科技与后端平台",
+    "roles": "后端工程师、代码审查负责人",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "普通审查工具容易发现风格问题，却会漏掉后端 Python 中隐蔽的向后兼容性变化和高难度逻辑缺陷。",
+    "workflow": "Duolingo 用内部后端 Python 代码审查基准比较工具，重点观察是否能识别向后兼容风险和其他审查机器人遗漏的困难缺陷，再由工程师核验发现。",
+    "outcome": "Duolingo 高级软件工程师称 Codex 在该基准中表现最佳，并且是唯一发现棘手向后兼容问题的工具。来源未公开基准数据集和分数。",
+    "source": {
+      "title": "Codex",
+      "url": "https://openai.com/codex/",
+      "note": "OpenAI Codex 产品页中的 Duolingo 一手引述。"
+    }
+  },
+  {
+    "id": "62",
+    "title": "Cisco Meraki：跨团队代码库完成重构与测试生成",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["developer"],
+    "industry": "企业网络与云管理",
+    "roles": "技术负责人、软件工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "发布前需要修改另一个团队维护的代码库，负责人不熟悉全部上下文，又不能因交接拖延功能时间表。",
+    "workflow": "向 Codex 提供发布目标、陌生代码库和测试要求，让它完成重构、补生成测试并运行验证；技术负责人审查后把已测试改动交回原团队。",
+    "outcome": "Cisco Meraki 技术负责人称该流程让功能按计划推进且没有增加额外风险。来源未披露修改规模或节省时长，跨团队所有权和最终审批仍由人负责。",
+    "source": {
+      "title": "Codex",
+      "url": "https://openai.com/codex/",
+      "note": "OpenAI Codex 产品页中的 Cisco Meraki 一手引述。"
+    }
+  },
+  {
+    "id": "63",
+    "title": "Virgin Atlantic：在 IDE 中联通日志、代码、数据与部署历史",
+    "section": "一手组织工作流与量化案例",
+    "category": "engineering-ops",
+    "professions": ["platform", "developer"],
+    "industry": "航空与数字运营",
+    "roles": "SRE、DevOps、软件工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "生产问题调查需要在日志、代码、数据平台和部署记录之间切换，手工拼接上下文拖慢根因定位。",
+    "workflow": "通过 Codex VS Code 扩展连接 Azure DevOps MCP 与 Databricks Managed MCP，在 IDE 中调查日志、沿代码和数据追踪问题并审查变更；工程师确认诊断与修复后再进入部署流程。",
+    "outcome": "OpenAI 官方工程指南称该流程加快根因发现、减少手工分诊并让团队把精力放在验证修复和提升可靠性上，但没有披露量化指标。",
+    "source": {
+      "title": "Building an AI-native engineering team",
+      "url": "https://cdn.openai.com/business-guides-and-resources/building-an-ai-native-engineering-team.pdf",
+      "note": "OpenAI 官方指南，第 18 页。"
+    }
+  },
+  {
+    "id": "64",
+    "title": "Zapier：从 Slack、Google Docs 和 Coda 生成事故复盘",
+    "section": "一手组织工作流与量化案例",
+    "category": "business-operations",
+    "professions": ["business-ops", "platform"],
+    "industry": "自动化 SaaS 与工程运营",
+    "roles": "工程运营、SRE、项目经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "事故事实分散在即时讨论、设计文档和协作表格里，复盘作者需要手工重建时间线、影响与行动项。",
+    "workflow": "Zapier 团队让 Codex 连接 Slack、Google Docs 和 Coda，汇集事故上下文，整理事件时间线、影响、处置、根因和待办，再由相关负责人核对事实与责任边界。",
+    "outcome": "OpenAI 官方文章确认 Zapier 正在用该流程生成 postmortem，但未披露完成时长或质量指标。聊天记录中的推测不能直接写成已确认根因。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "65",
+    "title": "Zapier：把历史事故上下文转成事件响应计划",
+    "section": "一手组织工作流与量化案例",
+    "category": "business-operations",
+    "professions": ["business-ops", "platform"],
+    "industry": "自动化 SaaS 与可靠性运营",
+    "roles": "SRE、值班负责人、工程运营",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "事故响应计划如果只存在于零散文档和历史讨论中，下一次告警时难以迅速找到责任人、诊断步骤和升级路径。",
+    "workflow": "Codex 从 Slack、Google Docs 与 Coda 拉取相关历史，提炼触发条件、检查项、所有者、沟通和升级路径，形成可审查的事件响应计划。",
+    "outcome": "OpenAI 官方文章确认 Zapier 将工具上下文用于 incident response plans。来源未披露实际演练结果；计划上线前应通过桌面演练并校验联系人和权限。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "66",
+    "title": "Zapier：把跨工具客户与产品上下文整理成 Feature Ticket",
+    "section": "一手组织工作流与量化案例",
+    "category": "product-ai",
+    "professions": ["product", "business-ops"],
+    "industry": "自动化 SaaS 与产品运营",
+    "roles": "产品经理、产品运营、工程经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "功能需求的证据往往分散在 Slack 讨论、Google Docs 研究和 Coda 追踪表中，转成工程可执行工单时容易丢失原始语境和验收条件。",
+    "workflow": "让 Codex 连接三类工具，汇总用户问题、已有决定、限制和未决问题，起草包含背景、范围、非目标、验收标准与来源链接的 feature ticket，再交给产品和工程共同确认。",
+    "outcome": "OpenAI 官方文章确认 Zapier 使用 Codex 从这些工具生成 feature tickets，未披露量化成效。自动整理不能代替产品优先级判断，也不能把讨论中的假设写成已验证需求。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "67",
+    "title": "OpenAI 非技术团队：从业务需求构建内部应用",
+    "section": "一手组织工作流与量化案例",
+    "category": "business-operations",
+    "professions": ["business-ops", "product", "developer"],
+    "industry": "企业内部工具",
+    "roles": "业务运营、产品经理、知识工作者",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "业务团队知道需要怎样的轻量工具，却常受限于工程排期，表格和手工流程也难以继续扩展。",
+    "workflow": "非技术团队把真实业务流程、输入文件、权限边界和验收场景交给 Codex，生成可运行的内部应用或站点；业务人员检查流程，技术或安全负责人审查数据访问与部署。",
+    "outcome": "OpenAI 官方文章确认内部非技术团队用 Codex 构建内部应用，但没有公开具体应用数量或节省时间。涉及敏感数据和正式系统时仍需工程治理。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "68",
+    "title": "OpenAI 非技术团队：准备可追溯的高管材料",
+    "section": "一手组织工作流与量化案例",
+    "category": "business-operations",
+    "professions": ["business-ops", "founder", "creator"],
+    "industry": "企业管理与决策支持",
+    "roles": "业务运营、幕僚、管理者",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "高管材料需要把多份文档、数据和讨论压缩成清楚的决策叙事，同时保留数字来源与未决事项。",
+    "workflow": "让 Codex 读取相关文档、表格和决策背景，起草摘要、关键变化、选项、风险和建议，并把每个关键数字或主张链接回来源；负责人再调整判断与表达。",
+    "outcome": "OpenAI 确认非技术团队用 Codex 准备 executive materials，未披露量化指标。高管材料中的建议属于组织判断，来源不充分的结论必须显式标记。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "69",
+    "title": "OpenAI 非技术团队：把业务数据做成可检查仪表盘",
+    "section": "一手组织工作流与量化案例",
+    "category": "data-research",
+    "professions": ["data", "business-ops"],
+    "industry": "企业数据分析",
+    "roles": "业务分析师、运营、管理者",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "业务团队需要持续查看指标，却常依赖分析师手工更新，指标定义、筛选和异常说明也容易散落。",
+    "workflow": "将数据文件、指标定义、比较维度和业务问题交给 Codex，生成带 KPI、筛选、趋势、方法说明和异常注释的仪表盘；业务和数据负责人共同核对口径与源数据。",
+    "outcome": "OpenAI 官方文章确认内部非技术团队使用 Codex 创建 dashboards，未披露数量或采用率。仪表盘展示正确不等于指标口径正确，必须保留方法说明和数据 QA。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "70",
+    "title": "OpenAI 创意团队：把创意 Brief 转成符合品牌约束的工件",
+    "section": "一手组织工作流与量化案例",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "creator", "product"],
+    "industry": "品牌与创意生产",
+    "roles": "市场营销、设计师、创意运营",
+    "sourceLanguage": "英文译述",
+    "evidence": "A2",
+    "problem": "从创意简报到可审查素材之间有大量结构化工作，且每轮修改都必须遵守品牌、声明和渠道限制。",
+    "workflow": "把创意 brief、品牌规范、声明限制、参考素材和渠道需求交给 Codex，生成第一版内容或视觉工件；使用批注针对具体段落、图表或页面局部迭代，不重做已经确认的部分。",
+    "outcome": "OpenAI 确认内部团队用 Codex 把创意 brief 转成符合品牌与设计约束的工作成果，未披露量化指标。最终发布仍需品牌、法务和渠道负责人审核。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方产品文章，2026-06-02。"
+    }
+  },
+  {
+    "id": "71",
+    "title": "管理者：从日历、邮件和消息生成每日工作简报",
+    "section": "官方可执行工作模板",
+    "category": "everyday-productivity",
+    "professions": ["business-ops", "founder"],
+    "industry": "个人与团队办公",
+    "roles": "管理者、项目负责人、行政支持",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "每天的优先级、会议准备、待回复消息和未完成跟进分散在日历、Slack、邮箱和笔记中，人工汇总容易漏项。",
+    "workflow": "授权 Google Calendar、Gmail、Slack 和文档后，让 Codex 每天早上读取当天日程、过去 24 小时未读消息、开放跟进和近期背景，生成包含优先级、会议准备、待回复、待决策与 FYI 的简报；可每小时检查变化。",
+    "outcome": "验收简报是否覆盖所有指定来源、只在有变化或需行动时通知、对缺失权限和不确定信息显式标记。该条是 OpenAI Academy 模板，不代表已经验证节省工时。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，2026-04-23，Use case 1。"
+    }
+  },
+  {
+    "id": "72",
+    "title": "项目负责人：自动生成带来源链接的周报",
+    "section": "官方可执行工作模板",
+    "category": "everyday-productivity",
+    "professions": ["business-ops", "operations"],
+    "industry": "团队协作与项目管理",
+    "roles": "项目经理、团队负责人、知识工作者",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "周报需要从一周的会议、文档编辑、消息、追踪器和项目笔记中重建已完成工作与阻塞，靠记忆容易遗漏。",
+    "workflow": "让 Codex 读取本周日历、编辑过的文档、指定工作频道消息和主追踪器，提取已完成工作、决定、重要变化、阻塞、跟进和下周优先级，附来源链接并区分事实与推断。",
+    "outcome": "人工逐项检查来源链接、完成状态和推断标记，再发送给经理。该模板的价值在于形成可审查初稿，不应自动把未确认讨论写成团队承诺。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 2。"
+    }
+  },
+  {
+    "id": "73",
+    "title": "客户成功团队：从项目资料生成可编辑的入职复盘演示稿",
+    "section": "官方可执行工作模板",
+    "category": "content-collaboration",
+    "professions": ["operations", "creator"],
+    "industry": "客户成功与培训",
+    "roles": "客户成功、培训师、演示设计",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "客户入职复盘的材料和指标已经存在，但整理成结构清楚、可编辑且无排版问题的演示稿仍耗时。",
+    "workflow": "提供项目 brief、客户痛点摘要、最新入职指标、PPT 模板和受众背景，让 Codex 生成 7 页演示稿，包含执行摘要、问题、工作流、采用信号、改进计划和开放决定，添加演讲者备注并渲染检查。",
+    "outcome": "验收所有文本可编辑、数字来自输入、图表可读、页面无溢出且缺失数据被标记。该条是官方模板，不应让 Codex虚构客户指标。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 3。"
+    }
+  },
+  {
+    "id": "74",
+    "title": "市场运营：把内部资料与外部研究合成活动赞助决策备忘录",
+    "section": "官方可执行工作模板",
+    "category": "business-operations",
+    "professions": ["business-ops", "professional", "founder"],
+    "industry": "市场运营与战略决策",
+    "roles": "市场运营、战略分析师、管理者",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "是否赞助行业活动需要同时考虑历史复盘、ROI 模型、目标客户、预算和当前市场信息，证据来源不同且可能冲突。",
+    "workflow": "让 Codex 阅读内部复盘、ROI 模型、目标账户和预算约束，再研究活动日期、受众、赞助选项、公开价格与竞品出席情况，生成一页备忘录，分别标记内部证据、外部研究、成本、风险和缺口。",
+    "outcome": "人工检查网页信息时效、预算口径和推荐逻辑，确保来源可点击且事实与解释分开。该工作流提供决策材料，不替代负责人批准预算。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 4。"
+    }
+  },
+  {
+    "id": "75",
+    "title": "活动运营：清洗多份参会者文件并输出上传就绪 CSV",
+    "section": "官方可执行工作模板",
+    "category": "everyday-productivity",
+    "professions": ["operations", "data"],
+    "industry": "活动运营与数据管理",
+    "roles": "活动运营、数据运营、CRM 管理员",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "报名导出、人工修改和合作伙伴名单字段不一致、重复且缺值，直接上传 CRM 会污染记录。",
+    "workflow": "提供 CSV、Excel、字段映射说明和去重规则，让 Codex 统一姓名、公司、职位、国家、细分、来源和出席状态，以邮箱为主键去重，输出清洁工作簿、上传 CSV、Needs Review 页和变更日志。",
+    "outcome": "检查去重数量、字段顺序、冲突行和变更日志；不得猜测缺失邮箱或关键标识。模板未披露实际业务成效。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 5。"
+    }
+  },
+  {
+    "id": "76",
+    "title": "销售运营：合并季度 Pipeline 导出并生成可刷新仪表盘",
+    "section": "官方可执行工作模板",
+    "category": "data-research",
+    "professions": ["data", "operations", "sales-marketing"],
+    "industry": "销售运营与商业分析",
+    "roles": "销售运营、业务分析师、数据分析师",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "季度 Pipeline、账户细分和年度目标分散在多份表格，连接键不干净，手工合并难以复用。",
+    "workflow": "让 Codex 按账户 ID 合并多个季度导出、细分表和目标表，清理重复账户，计算地区与细分 Pipeline、对比目标，生成带图表、自然语言洞察、假设、刷新说明和不匹配记录的工作簿。",
+    "outcome": "验收公式、连接行数、重复处理、目标口径和无法连接的账户；工作簿必须能用新导出重复刷新。该条是官方模板。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 6。"
+    }
+  },
+  {
+    "id": "77",
+    "title": "客户经理：综合 CRM、通话与使用信号排列续约账户优先级",
+    "section": "官方可执行工作模板",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "operations"],
+    "industry": "客户成功与续约管理",
+    "roles": "客户经理、客户成功、销售经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "续约风险和增长机会分散在 CRM、通话转录、邮件、使用仪表盘和账户计划中，客户经理难以判断本周先处理谁。",
+    "workflow": "让 Codex 汇总最新 CRM 导出、近 30 天通话、开放邮件、使用信号和续约计划，按风险、机会、紧迫度和信息缺口排列前 10 个账户，给出原因、下一步、来源与可审查跟进草稿。",
+    "outcome": "客户经理核对排序与真实关系背景，陈旧数据和不明确下一步必须标记，所有外发内容人工批准。该工作流不自动决定折扣或承诺。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 7。"
+    }
+  },
+  {
+    "id": "78",
+    "title": "财务团队：刷新月末经营复盘并给每个数字附出处",
+    "section": "官方可执行工作模板",
+    "category": "finance-investing",
+    "professions": ["finance-investing", "business-ops"],
+    "industry": "企业财务与经营分析",
+    "roles": "财务分析师、FP&A、财务负责人",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "月结工作簿、收入仪表盘、支持文件、上月演示和关账讨论需要汇总成新一期管理层复盘，数字追溯和口径一致性要求高。",
+    "workflow": "让 Codex 读取全部关账材料，更新实际值、关键变化、演讲备注和高管准备问题，为每个数字引用工作簿页签或仪表盘，并列出假设、缺失支持和过时标签。",
+    "outcome": "财务负责人逐项复核数字、引用和变化解释后才能用于会议。模板强调标记不支持的数字，不代表 Codex 可替代关账控制或审计。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 8。"
+    }
+  },
+  {
+    "id": "79",
+    "title": "产品营销：一次生成跨渠道发布 Campaign Kit",
+    "section": "官方可执行工作模板",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "creator", "product"],
+    "industry": "产品营销与发布",
+    "roles": "产品营销、内容运营、产品经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "产品发布需要对齐发布计划、产品说明、追踪器、创意 brief、网页和团队讨论，并同时准备多种渠道工件。",
+    "workflow": "让 Codex 检查现有产品页和全部发布上下文，生成发布评审 brief、客户邮件、内部公告、社交帖、两周内容计划、代理商 brief、预发布页面修复清单和团队状态更新。",
+    "outcome": "验收每项内容与最新产品事实一致，对需要产品或法务审查的主张以及未验证信息显式标记。该条是官方模板，所有外发内容需审批。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 9。"
+    }
+  },
+  {
+    "id": "80",
+    "title": "招聘运营：审计承包商入职流程并起草自动化规格",
+    "section": "官方可执行工作模板",
+    "category": "business-operations",
+    "professions": ["business-ops", "product"],
+    "industry": "招聘运营与流程治理",
+    "roles": "招聘运营、流程负责人、项目经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "入职流程跨追踪器、流程文档、交接笔记、KPI、支持工单和团队讨论，步骤与所有者可能已经不一致。",
+    "workflow": "让 Codex 读取完整上下文，列出现状步骤、卡点、所有者、重复问题、缺失数据和自动化候选，再生成更新后的流程文档以及两个最重复手工步骤的短自动化规格。",
+    "outcome": "流程负责人核对过时或冲突来源、所有者和合规要求；自动化规格需单独评审和测试。该模板不是已经上线的自动化成效案例。",
+    "source": {
+      "title": "How to use Codex for everyday work",
+      "url": "https://openai.com/academy/how-to-use-codex-for-everyday-work/",
+      "note": "OpenAI Academy，Use case 10。"
+    }
+  },
+  {
+    "id": "81",
+    "title": "BizOps：对齐 Initiative Tracker 与 KPI 导出并找出状态冲突",
+    "section": "官方可复现实操",
+    "category": "business-operations",
+    "professions": ["business-ops", "data"],
+    "industry": "业务运营与经营管理",
+    "roles": "业务运营、项目经理、数据运营",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "项目追踪 CSV 与 KPI 导出中的项目名、负责人、状态和日期写法不一致，领导复盘前无法可靠比较。",
+    "workflow": "使用 Academy 提供的两份练习 CSV，让 Codex 标准化名称、负责人、状态与日期，识别 Tracker 状态和 KPI 状态不一致的位置，输出清洁 CSV 和 weekly_initiative_status_summary.docx。",
+    "outcome": "打开两份清洁文件和 Word 摘要，逐项检查项目是否正确对齐、冲突是否合理、跟进是否可执行。资料为虚构练习数据，生产使用前需复核指标定义与所有者。",
+    "source": {
+      "title": "How business operations teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/public/clubs/work-users-ynjqu/resources/how-business-operations-teams-use-codex-webinar-resource-guide-2026-06-17",
+      "note": "OpenAI Academy 官方实操，2026-06-18，Mini-demo。"
+    }
+  },
+  {
+    "id": "82",
+    "title": "BizOps：用 Databricks 数据构建每周 Bookings Review Dashboard",
+    "section": "官方可复现实操",
+    "category": "business-operations",
+    "professions": ["business-ops", "data"],
+    "industry": "市场平台经营分析",
+    "roles": "业务运营、数据分析师、经营负责人",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "每周经营复盘需要同时解释预订、完成支付价值、渠道变化和待处理事项，原始数据与利益相关者背景分散。",
+    "workflow": "用 Data Analytics 插件连接 Databricks bookings 数据、项目文件和 Slack 频道背景，生成每周仪表盘；随后要求 Codex 检查支持收入指标的表与字段，把 completed payment value 设为主要结果并列出排除项和 caveat。",
+    "outcome": "验收每周读数、支持指标、来源说明、数据 caveat 和收入口径，确认仪表盘只突出变化、失败或需要决定的事项。演示数据是练习环境。",
+    "source": {
+      "title": "How business operations teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/public/clubs/work-users-ynjqu/resources/how-business-operations-teams-use-codex-webinar-resource-guide-2026-06-17",
+      "note": "OpenAI Academy 官方实操，Main demo 1。"
+    }
+  },
+  {
+    "id": "83",
+    "title": "BizOps：把仪表盘信号变成每周 Slack 经营更新",
+    "section": "官方可复现实操",
+    "category": "business-operations",
+    "professions": ["business-ops", "operations"],
+    "industry": "经营沟通与团队协作",
+    "roles": "业务运营、团队负责人、项目经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "仪表盘是事实来源，但团队仍要人工把本周关键变化、决策和负责人跟进改写成易读更新。",
+    "workflow": "让 Codex 基于已验证仪表盘起草包含主要经营信号、待决策、负责人跟进和数据 caveat 的周更；再创建每周一仪表盘刷新后运行的自动化，生成 3–5 条要点并发送 Slack 私信供审阅。",
+    "outcome": "检查自动化不是只发提醒，而是生成实际更新；发送范围限定为本人审核，确认后再分享团队。数据源变更或刷新失败必须显式提示。",
+    "source": {
+      "title": "How business operations teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/public/clubs/work-users-ynjqu/resources/how-business-operations-teams-use-codex-webinar-resource-guide-2026-06-17",
+      "note": "OpenAI Academy 官方实操，Weekly update automation。"
+    }
+  },
+  {
+    "id": "84",
+    "title": "BizOps：从经营看板生成 Leadership Decision Deck 与复用 Skill",
+    "section": "官方可复现实操",
+    "category": "business-operations",
+    "professions": ["business-ops", "founder", "creator"],
+    "industry": "领导决策与经营管理",
+    "roles": "业务运营、管理层幕僚、演示设计",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "经营看板解释发生了什么，但管理层还需要明确该决定什么、为什么以及下一步行动。",
+    "workflow": "提供仪表盘 readout、项目文件和示例领导层 deck，让 Codex 生成匹配样式的决策演示；要求它为每个关键主张引用看板或源表并说明 caveat，再压缩叙事、把 caveat 放入 speaker notes，最后封装为复用 Skill。",
+    "outcome": "验收建议是否明确、关键指标可追溯、视觉与模板一致、caveat 没有因精简而消失；Skill 应保存结构和证据标准，不保存本次敏感数据。",
+    "source": {
+      "title": "How business operations teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/public/clubs/work-users-ynjqu/resources/how-business-operations-teams-use-codex-webinar-resource-guide-2026-06-17",
+      "note": "OpenAI Academy 官方实操，Main demo 2。"
+    }
+  },
+  {
+    "id": "85",
+    "title": "数据团队：从一份背景文档生成 Dashboard Launch Checklist",
+    "section": "官方可复现实操",
+    "category": "data-research",
+    "professions": ["data"],
+    "industry": "数据科学与商业智能",
+    "roles": "数据科学家、BI 分析师、数据产品经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "高管仪表盘上线前需要检查指标定义、数据质量和利益相关者审核，但这些标准常没有形成易执行清单。",
+    "workflow": "下载 Academy 的 Enterprise_Onboarding_Dashboard_Context.docx，让 Codex 生成 Dashboard Launch Checklist Word 文档；第二轮把清单改成含检查项、负责人、状态三列的表格，并增加 Before sharing 部分。",
+    "outcome": "打开并检查文档是否可编辑、每项有所有者与状态、发布前检查完整。示例证明文件创建和原位修订流程，不代表清单已覆盖任何公司的全部治理要求。",
+    "source": {
+      "title": "How data science teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-data-science-teams-use-codex-webinar-resource-guide-2026-05-28",
+      "note": "OpenAI Academy 官方实操，Mini-demo。"
+    }
+  },
+  {
+    "id": "86",
+    "title": "数据科学家：解释订阅收入变化并生成高管单页分析",
+    "section": "官方可复现实操",
+    "category": "data-research",
+    "professions": ["data", "creator"],
+    "industry": "订阅业务分析",
+    "roles": "数据科学家、分析师、数据叙事负责人",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "多份工作簿标签不完美，分析还要结合发布和活动背景，管理层却只需要看清收入为何变化、证据强度和下一步。",
+    "workflow": "用练习文件让 Codex 清洗数据，按细分、群组、渠道、地区和产品界面量化 April 2026 Self-Serve Net Revenue 变化，结合发布笔记解释可能原因，生成包含图表、影响、caveat、行动和文件引用的 PowerPoint 单页。",
+    "outcome": "检查核心变化、驱动因素、已确认结论与假设是否分开，不能把不完整月份写成整月下降；数字、caveat 和文件引用都要保留。",
+    "source": {
+      "title": "How data science teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-data-science-teams-use-codex-webinar-resource-guide-2026-05-28",
+      "note": "OpenAI Academy 官方实操，Main demo 1。"
+    }
+  },
+  {
+    "id": "87",
+    "title": "数据团队：构建可本地检查的履约运营分析仪表盘",
+    "section": "官方可复现实操",
+    "category": "data-research",
+    "professions": ["data", "developer"],
+    "industry": "履约与运营分析",
+    "roles": "数据科学家、分析工程师、运营分析师",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "履约表现需要跨站点、渠道和时间比较，还要让业务人员能看到退货驱动、运营说明与方法，而不只是静态图表。",
+    "workflow": "让 Codex 从样例文件生成可本地打开的轻量仪表盘，包含 KPI 卡片、筛选、趋势、站点比较、退货驱动、运营注释和方法章节；第二轮优化高管摘要、视觉层级、可扫描比较与易误读处的 QA 提示。",
+    "outcome": "实际打开仪表盘检查指标、筛选、图表、比较视图、注释和方法，确认底层分析在视觉改版后没有改变。练习使用虚构数据。",
+    "source": {
+      "title": "How data science teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-data-science-teams-use-codex-webinar-resource-guide-2026-05-28",
+      "note": "OpenAI Academy 官方实操，Main demo 2。"
+    }
+  },
+  {
+    "id": "88",
+    "title": "数据团队：每周把运营仪表盘摘要推送到 Slack",
+    "section": "官方可复现实操",
+    "category": "data-research",
+    "professions": ["data", "business-ops"],
+    "industry": "分析运营与利益相关者沟通",
+    "roles": "数据分析师、运营负责人、BI 团队",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "仪表盘已经更新，但利益相关者不一定主动打开，分析师每周还要重复摘录关键变化。",
+    "workflow": "在已验证的本地运营仪表盘基础上，先让 Codex 发送一次 Slack 私信摘要；确认内容后创建每周一自动化，每次读取当前仪表盘并生成新的摘要，而不是发送固定提醒。",
+    "outcome": "验收 Slack 内容与当前仪表盘一致、链接和 caveat 可用、刷新失败会提示。自动化发送范围需受控，仪表盘仍是事实来源。",
+    "source": {
+      "title": "How data science teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-data-science-teams-use-codex-webinar-resource-guide-2026-05-28",
+      "note": "OpenAI Academy 官方实操，Slack automation。"
+    }
+  },
+  {
+    "id": "89",
+    "title": "营销运营：清理发布笔记与渠道需求并暴露冲突",
+    "section": "官方可复现实操",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "business-ops"],
+    "industry": "产品营销与 Campaign Ops",
+    "roles": "营销运营、产品营销、项目经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "松散发布笔记和渠道需求追踪表中的渠道名、负责人、状态和缺失输入不一致，直接进入策略阶段会放大返工。",
+    "workflow": "使用 Academy 的虚构发布资料，让 Codex 清理 launch notes 与 channel requirements tracker，输出两份规范文件和一份冲突、缺失输入、待跟进摘要。",
+    "outcome": "逐项确认渠道、负责人和状态对齐，冲突解释合理，跟进可在策略会前执行。真实项目使用前仍需核对 claims、品牌规则与审批人。",
+    "source": {
+      "title": "How marketing teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-marketing-teams-use-codex-webinar-resource-guide-2026-06-22",
+      "note": "OpenAI Academy 官方实操，2026-06-23，Mini-demo。"
+    }
+  },
+  {
+    "id": "90",
+    "title": "产品营销：从项目文件、Drive 和 Slack 生成可追溯策略 Brief",
+    "section": "官方可复现实操",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "business-ops"],
+    "industry": "整合营销策略",
+    "roles": "产品营销、品牌策略、营销负责人",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "Campaign 方向要综合本地文件、Drive 发布目录和 Slack 决策，但关键 claims 的出处和未决选择容易被漂亮文案掩盖。",
+    "workflow": "让 Codex 汇总三个来源，先给出推荐方向、支持证据和未决决定；追问关键产品情境主张来自哪里，人工回答 creative territories 后，再生成 Word 策略 brief，保留 claims 与品牌审核注释。",
+    "outcome": "检查推荐是否靠前、来源可回溯、利益相关者决定单独列出、创意方向按风险排序且品牌说明易找。演示使用虚构 Auralis Beam 材料。",
+    "source": {
+      "title": "How marketing teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-marketing-teams-use-codex-webinar-resource-guide-2026-06-22",
+      "note": "OpenAI Academy 官方实操，Main demo 1。"
+    }
+  },
+  {
+    "id": "91",
+    "title": "创意团队：从已批准策略生成可比较 Mood Board",
+    "section": "官方可复现实操",
+    "category": "content-collaboration",
+    "professions": ["creator", "sales-marketing"],
+    "industry": "创意生产与品牌设计",
+    "roles": "创意总监、设计师、品牌营销",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "策略 brief 已明确说什么，但团队还需要把多个 creative territories 变成可比较的视觉方向，且不能越过品牌和 claims 边界。",
+    "workflow": "调用 Creative Production 插件，输入批准的 Campaign 策略 brief 和产品参考图，要求按 creative territories 与品牌/claims guardrails 生成 mood board；把结果作为方向探索而不是最终广告。",
+    "outcome": "检查每条视觉方向是否对应策略、适合目标受众和 Campaign 目标、遵守品牌限制，并由团队选择下一步路线。视觉好看不能替代策略一致性。",
+    "source": {
+      "title": "How marketing teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-marketing-teams-use-codex-webinar-resource-guide-2026-06-22",
+      "note": "OpenAI Academy 官方实操，Main demo 2。"
+    }
+  },
+  {
+    "id": "92",
+    "title": "创意运营：把选定 Mood Board 转成生产交接文档",
+    "section": "官方可复现实操",
+    "category": "content-collaboration",
+    "professions": ["creator", "sales-marketing", "operations"],
+    "industry": "创意运营与制作交接",
+    "roles": "创意运营、制片、渠道营销",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "选定视觉方向后，制作团队仍需要明确保留什么、避免什么以及各渠道要产出哪些变体，否则 mood board 不能直接指导生产。",
+    "workflow": "让 Codex 基于已批准 brief、产品参考和选定 mood board，创建 Google Doc 交接文档，嵌入 PNG，说明选择理由、必须保留的视觉线索、禁区和下一步渠道变体。",
+    "outcome": "验收文档明确命名路线、解释与策略的关系、列出 what to preserve/avoid 和具体渠道产物；分享前由创意负责人批准。",
+    "source": {
+      "title": "How marketing teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-marketing-teams-use-codex-webinar-resource-guide-2026-06-22",
+      "note": "OpenAI Academy 官方实操，Production handoff。"
+    }
+  },
+  {
+    "id": "93",
+    "title": "销售团队：用 Sales Plugin 排出 Pipeline Generation 重点账户",
+    "section": "官方可复现实操",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing"],
+    "industry": "B2B 销售与管道生成",
+    "roles": "销售代表、BD、销售经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "宽泛账户列表缺少统一优先级，销售需要综合账户信号、合适联系人和机会理由决定先拓展谁。",
+    "workflow": "连接 Sales plugin 和 CRM 等授权工具，让 Codex 对账户排序，返回推荐账户、目标联系人、机会理由与下一步；销售根据辖区、已有关系和真实业务背景复核。",
+    "outcome": "验收排序是否符合 territory 知识，信号是否新鲜、联系人是否合理、假设是否标记。示例使用虚构销售数据，不能自动外联。",
+    "source": {
+      "title": "How sales teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-sales-teams-use-codex-webinar-resource-guide-2026-06-10",
+      "note": "OpenAI Academy 官方实操，2026-06-11，Main demo 1。"
+    }
+  },
+  {
+    "id": "94",
+    "title": "销售代表：把重点账户转成 Prospecting Workbook 与邮件节奏",
+    "section": "官方可复现实操",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "operations"],
+    "industry": "销售拓展与外联运营",
+    "roles": "销售代表、销售运营、SDR",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "账户排好优先级后，还需要为不同 Persona 设计切入角度、触达节奏和个性化邮件，手工制作容易不一致。",
+    "workflow": "基于已审核账户列表让 Codex 创建 prospecting workbook，列出目标 Persona、外联角度、邮件 cadence、账户理由和假设；再为最高优先级联系人生成待审邮件草稿。",
+    "outcome": "检查消息角度、节奏时机、客户事实和假设，邮件只能保存为草稿，未经销售本人确认不得发送。Academy 示例使用练习资料。",
+    "source": {
+      "title": "How sales teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-sales-teams-use-codex-webinar-resource-guide-2026-06-10",
+      "note": "OpenAI Academy 官方实操，Prospecting workflow。"
+    }
+  },
+  {
+    "id": "95",
+    "title": "客户经理：为一周客户会议生成准备包",
+    "section": "官方可复现实操",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "operations"],
+    "industry": "客户会议与账户管理",
+    "roles": "客户经理、销售代表、售前顾问",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "会前准备要综合 CRM、日历、历史互动和未完成事项，多场会议并行时容易遗漏风险和目标。",
+    "workflow": "让 Sales plugin 为即将到来的客户会议生成 brief，包含会议目标、账户背景、可能议题、风险或异议和建议下一步；可设每周一自动化先生成初稿。",
+    "outcome": "客户经理逐场复核事实、关系背景与建议，不可把未知信息当成客户立场；自动化只准备材料，不代表自动做出关系策略。",
+    "source": {
+      "title": "How sales teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-sales-teams-use-codex-webinar-resource-guide-2026-06-10",
+      "note": "OpenAI Academy 官方实操，Main demo 2。"
+    }
+  },
+  {
+    "id": "96",
+    "title": "售前团队：从会议建议生成客户现场 AI Workshop 提案",
+    "section": "官方可复现实操",
+    "category": "sales-marketing",
+    "professions": ["sales-marketing", "operations"],
+    "industry": "解决方案销售与售前",
+    "roles": "售前顾问、客户经理、解决方案工程师",
+    "sourceLanguage": "英文译述",
+    "evidence": "B",
+    "problem": "会议准备发现客户适合现场工作坊后，需要快速把建议转成符合模板、可对外发送的具体提案与跟进邮件。",
+    "workflow": "使用 Academy 的 proposal template 和 Harborline 虚构客户背景，让 Codex 生成现场 AI workshop 提案，写明客户信息、目标、议程、工作组、预期产出和下一步，再起草给关键利益相关者的邮件。",
+    "outcome": "打开提案核查所有客户细节、范围和承诺，确认语气适合客户后才发送；外发邮件保持草稿状态。示例证明流程可跟做，不代表真实成交结果。",
+    "source": {
+      "title": "How sales teams use Codex: Webinar resource guide",
+      "url": "https://academy.openai.com/en/public/clubs/work-users-ynjqu/resources/how-sales-teams-use-codex-webinar-resource-guide-2026-06-10",
+      "note": "OpenAI Academy 官方实操，Customer-ready proposal。"
+    }
+  },
+  {
+    "id": "97",
+    "title": "股票研究员：比较财报并持续检查投资 Thesis 是否强化",
+    "section": "官方角色插件模板",
+    "category": "finance-investing",
+    "professions": ["finance-investing", "data"],
+    "industry": "公开市场投资研究",
+    "roles": "股票研究员、基金经理、投资分析师",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "投资判断需要同时跟踪公司财报、同业比较、市场信号和原有 thesis，信息量大且事实、估算与观点容易混在一起。",
+    "workflow": "通过 Public Equity Investing 插件连接 Moody's、FactSet、LSEG、S&P、PitchBook 或 Hebbia 等授权数据，提取财报变化、公司对比与关键信号，按支持、反证和待验证信息更新 thesis。",
+    "outcome": "检查每个数字和主张能回到授权来源，明确区分公司披露、第三方估算和分析推断。该条是官方可执行模板，不构成投资建议或已证明收益。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方文章，Public equity investing plugin。"
+    }
+  },
+  {
+    "id": "98",
+    "title": "投资银行：从尽调与可比交易生成客户 Pitch 材料",
+    "section": "官方角色插件模板",
+    "category": "finance-investing",
+    "professions": ["finance-investing", "professional"],
+    "industry": "投资银行与并购顾问",
+    "roles": "投行分析师、Associate、交易顾问",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "客户材料要把公司研究、可比公司、历史交易和尽调发现组织成建议，数据来源多且格式要求严格。",
+    "workflow": "通过 Investment Banking 插件读取可信数据与尽调材料，计算和比较 comps 与 transactions，整理交易逻辑、风险、估值区间和建议，再按机构模板生成可编辑 pitch 初稿。",
+    "outcome": "逐项复核模型、可比集、日期、币种和来源，保留审查痕迹并由持牌或授权人员批准。该流程是官方模板，不代表可绕过合规、信息墙或客户审批。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方文章，Investment banking plugin。"
+    }
+  },
+  {
+    "id": "99",
+    "title": "产品设计师：从线上页面审计到可交互原型",
+    "section": "官方角色插件模板",
+    "category": "knowledge-design",
+    "professions": ["product", "creator"],
+    "industry": "产品设计与用户体验",
+    "roles": "产品设计师、UX 研究员、产品经理",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "早期产品方向需要从现有线上体验、用户流程和静态截图快速形成可讨论原型，但手工重建交互耗时。",
+    "workflow": "用 Product Design 插件读取 live URL 或静态截图，审计关键用户流程和可用性问题，提出多个方向，把选定截图变成可交互原型，并将设计继续带入 Figma 或 Canva。",
+    "outcome": "验收原型覆盖关键状态、错误路径和移动端，不把视觉相似当成交互正确；研究结论和无障碍要求需由设计团队确认。该条是官方模板。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方文章，Product design plugin。"
+    }
+  },
+  {
+    "id": "100",
+    "title": "电商创意团队：从产品 Brief 批量生成上架图像集",
+    "section": "官方角色插件模板",
+    "category": "sales-marketing",
+    "professions": ["creator", "sales-marketing"],
+    "industry": "电商营销与创意制作",
+    "roles": "电商运营、创意设计、品牌营销",
+    "sourceLanguage": "英文译述",
+    "evidence": "C",
+    "problem": "一个产品上线需要 lifestyle shot、展示广告变体和电商规格图，既要批量生产又要保持产品、品牌和渠道约束一致。",
+    "workflow": "通过 Creative Production 插件把产品 brief、参考图、品牌规范、声明限制和渠道尺寸连接到 Figma、Canva、Shutterstock、Picsart 或 Fal，先建 Campaign board，再生成与细化多组广告和电商图像。",
+    "outcome": "逐张检查产品结构、文字、品牌元素、声明和尺寸，筛除失真或不合规图片；该条是官方模板，不代表生成素材可未经设计与法务审核直接投放。",
+    "source": {
+      "title": "Codex for every role, tool, and workflow",
+      "url": "https://openai.com/index/codex-for-every-role-tool-workflow/",
+      "note": "OpenAI 官方文章，Creative production plugin。"
+    }
+  }
+]

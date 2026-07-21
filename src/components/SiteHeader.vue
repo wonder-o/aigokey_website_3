@@ -9,7 +9,7 @@
       </router-link>
 
       <nav class="primary-nav" aria-label="Primary navigation">
-        <router-link to="/image-creation">{{ t.navButtons.imageCreation }}</router-link>
+        <a href="https://www.aigokey.com/image-creation/cc-switch">{{ t.navButtons.imageCreation }}</a>
         <router-link to="/skills">{{ t.navButtons.skills }}</router-link>
         <router-link to="/codex-cases">{{ t.navButtons.cases }}</router-link>
         <router-link to="/blog">{{ t.navButtons.blog }}</router-link>
