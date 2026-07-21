@@ -1,7 +1,7 @@
 <template>
   <div ref="menuRef" class="language-menu">
     <button
-      class="language-trigger btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]"
+      class="language-trigger"
       type="button"
       :aria-label="currentLanguageLabel"
       :aria-expanded="open"
@@ -72,9 +72,17 @@ onBeforeUnmount(() => {
 }
 
 .language-trigger {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
   gap: 6px;
-  min-width: 132px;
-  padding-inline: 12px;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .language-trigger svg {
@@ -142,11 +150,6 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 720px) {
-  .language-trigger {
-    width: 100%;
-    min-width: 0;
-  }
-
   .language-popover {
     left: 0;
     right: auto;

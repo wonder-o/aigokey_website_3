@@ -47,7 +47,7 @@ AigoKey 覆盖开发、产品、运营、设计、电商、自媒体、外贸、
 
 ## Skills 索引
 
-`/skills` 提供按能力类别和职业角色浏览的 Codex Skills 索引。目录数据位于 `src/data/skills.json`，每个条目包含：
+`/skills` 提供 100 个来自 GitHub 的精选 Codex Skills，可按能力类别和职业角色浏览。目录数据位于 `src/data/skills.json`，每个条目包含：
 
 - GitHub 来源、安装路径、Stars、Forks、许可证、开放问题和路径可用状态
 - 实用性、可靠性、易用性、维护活跃度、文档完整度和安全边界评分

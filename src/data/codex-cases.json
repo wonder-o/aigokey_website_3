@@ -1,0 +1,1189 @@
+{
+  "generatedAt": "2026-07-21",
+  "sourceTitle": "Codex 50 个跨行业、跨岗位具体使用案例",
+  "categories": [
+    {
+      "id": "public-education",
+      "label": "公共服务与教育",
+      "description": "政务信息、课程运营与无障碍工具"
+    },
+    {
+      "id": "finance-services",
+      "label": "财税与专业服务",
+      "description": "税务准备、专业审查与客户服务"
+    },
+    {
+      "id": "data-research",
+      "label": "数据与产品研究",
+      "description": "数据分析、语义治理与产品探索"
+    },
+    {
+      "id": "product-ai",
+      "label": "产品研发与 AI 研究",
+      "description": "全栈产品、机器学习与科研工程"
+    },
+    {
+      "id": "engineering-ops",
+      "label": "工程效率与运维",
+      "description": "代码审查、迁移、平台与故障处理"
+    },
+    {
+      "id": "content-collaboration",
+      "label": "内容创作与协作",
+      "description": "演示、视频、配图与团队资料处理"
+    },
+    {
+      "id": "knowledge-design",
+      "label": "知识管理与产品设计",
+      "description": "Wiki、Notion、Figma 与网页发布"
+    },
+    {
+      "id": "automation-research",
+      "label": "自动化运维与科研",
+      "description": "远程修复、内容检索、CI 与临床综述"
+    }
+  ],
+  "professions": [
+    {
+      "id": "founder",
+      "label": "创始人与管理者"
+    },
+    {
+      "id": "product",
+      "label": "产品经理与设计师"
+    },
+    {
+      "id": "developer",
+      "label": "软件工程师"
+    },
+    {
+      "id": "platform",
+      "label": "平台、SRE 与 DevOps"
+    },
+    {
+      "id": "data",
+      "label": "数据与 AI 研究者"
+    },
+    {
+      "id": "operations",
+      "label": "运营与项目管理"
+    },
+    {
+      "id": "creator",
+      "label": "内容创作者与培训师"
+    },
+    {
+      "id": "professional",
+      "label": "专业服务与研究人员"
+    }
+  ],
+  "evidence": {
+    "A1": {
+      "label": "一手量化案例",
+      "description": "组织或当事人的一手资料，并披露数字、时间或明确结果。"
+    },
+    "A2": {
+      "label": "一手工作流",
+      "description": "组织或当事人的一手资料，工作流具体，但未披露量化指标。"
+    },
+    "B": {
+      "label": "可复现实操",
+      "description": "中文社区完成过的实操，包含步骤、截图、日志或成品。"
+    },
+    "C": {
+      "label": "可执行模板",
+      "description": "可迁移的流程模板，不代表已经证明业务成效。"
+    }
+  },
+  "cases": [
+    {
+      "id": "01",
+      "title": "GroundVue：把分散的政府会议变成可检索知识库",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "public-education",
+      "professions": [
+        "founder",
+        "data",
+        "professional"
+      ],
+      "industry": "政务科技",
+      "roles": "创始人、公共政策研究员",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "约 9 万个政府机构的会议资料散落在视频、地方网站和不同平台中。传统研究需要技术人员和研究员手工寻找、下载、整理，单个任务可能耗时数天或数周。",
+      "workflow": "让 Codex 寻找难以触达的公开来源，再构建持续采集、标准化和组织资料的系统；最终目标不是写一段摘要，而是把异构公开信息沉淀成可搜索、可比较的数据资产。",
+      "outcome": "官方报告称相关任务由“数天或数周”缩短到“数分钟”，小团队得以完成过去需要较大技术与研究团队承担的工作。资料仍来自公开来源，结果质量取决于源站可用性和采集覆盖率。",
+      "source": {
+        "title": "The Next Era of Knowledge Work",
+        "url": "https://cdn.openai.com/pdf/the-next-era-of-knowledge-work.pdf",
+        "note": "2026-06-02，第 4 页。"
+      }
+    },
+    {
+      "id": "02",
+      "title": "Proaction：把客户访谈直接推进到可运行演示",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "public-education",
+      "professions": [
+        "founder",
+        "product",
+        "operations"
+      ],
+      "industry": "车队管理 SaaS",
+      "roles": "联合创始人、解决方案工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "潜在客户的车辆与设备数据分散在车联网系统、维修平台、电子表格和员工经验中。通用销售材料无法证明方案能适配每个客户的实际运营。",
+      "workflow": "联合创始人 Colin Knudsen 把客户对话交给 Codex，生成定制提案、工作流原型和能运行的演示；在签约前就用客户场景验证方案，把客户发现、售前和产品开发接成一条链。",
+      "outcome": "五人团队能更快地做定制验证并与更大公司竞争。来源未披露具体节省时长，不能把“更快”进一步量化。",
+      "source": {
+        "title": "The Next Era of Knowledge Work",
+        "url": "https://cdn.openai.com/pdf/the-next-era-of-knowledge-work.pdf",
+        "note": "2026-06-02，第 7 页。"
+      }
+    },
+    {
+      "id": "03",
+      "title": "数学教授：自动维护 Canvas 课程信息",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "public-education",
+      "professions": [
+        "creator",
+        "professional"
+      ],
+      "industry": "高等教育",
+      "roles": "教师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "每周都要在 Canvas 学习管理系统中手工维护作业、日历、材料和公告，行政操作挤占了备课与面对面教学时间。",
+      "workflow": "由 Codex 协助生成脚本，批量更新课程的四类信息；教师保留课程内容和发布时间的控制权，把重复录入交给自动化脚本。",
+      "outcome": "Inoue 估计每周节省 4-5 小时，并把时间用于重新设计协作式解题课堂。案例证明的是课程信息维护，不是让 Codex替代教学判断或评分。",
+      "source": {
+        "title": "The Next Era of Knowledge Work",
+        "url": "https://cdn.openai.com/pdf/the-next-era-of-knowledge-work.pdf",
+        "note": "2026-06-02，第 9 页。"
+      }
+    },
+    {
+      "id": "04",
+      "title": "Luke Xing：为单侧听力损失构建个人音频补偿应用",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "public-education",
+      "professions": [
+        "developer"
+      ],
+      "industry": "无障碍与个人音频",
+      "roles": "非专业开发者",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "Luke 左耳存在显著且随频率变化的听力损失，现成商业软件不能满足他在音乐、通话和日常听音中的平衡需求。",
+      "workflow": "他用自然语言描述问题，让 Codex 构建桌面应用；应用测试不同频率的听力响应，并针对不同输出设备调整音频，尝试恢复左右平衡。",
+      "outcome": "形成了可实际使用的个人工具，但报告明确说明它不是医疗器械。该案例不能外推为听力诊断或治疗方案。",
+      "source": {
+        "title": "The Next Era of Knowledge Work",
+        "url": "https://cdn.openai.com/pdf/the-next-era-of-knowledge-work.pdf",
+        "note": "2026-06-02，第 11 页。"
+      }
+    },
+    {
+      "id": "05",
+      "title": "Crete：从数百万份底层文档起草 1040/1041 报税表",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "finance-services",
+      "professions": [
+        "professional"
+      ],
+      "industry": "税务会计",
+      "roles": "报税从业者",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "事务所每个报税季要处理数万份申报和数百万份文档。中高复杂度报税仅数据录入就可能耗时 8 小时，还要核对客户备注、往年文件和杂乱来源。",
+      "workflow": "从业者上传源文件和客户备注，Tax AI 提取、计算并生成可审查的税务引擎提交结果；先覆盖 W-2、1099，再扩展到 K-1、附表和跨文档核对。",
+      "outcome": "试点处理 7,000 份报税表，起草准确率最高 97%，平均节省约三分之一准备时间，吞吐量提升约 50%。最终申报仍由税务从业者审查批准。",
+      "source": {
+        "title": "Building self-improving tax agents with Codex",
+        "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "06",
+      "title": "Crete 产品团队：把“公平出租天数”漏填变成自动改进任务",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "finance-services",
+      "professions": [
+        "product",
+        "developer",
+        "professional"
+      ],
+      "industry": "税务软件",
+      "roles": "税务产品工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "Schedule E 租赁房产数据来自手写备注、邮件、表格等混乱材料。系统漏填字段时，从业者能修正，但早期产品没有保留从源文件到最终申报的完整证据链。",
+      "workflow": "记录 Tax AI 预测、从业者修改和最终申报；把重复差异聚类成产品失败；为“公平出租天数”等问题构建定向评测集。Codex 联合检查生产追踪、提取 schema、mapper、代码和 skills，实施修复，跑定向与回归评测，再提交候选 PR。",
+      "outcome": "75% 字段正确完成率的报税表占比从上线时约 25% 在 6 周内升到 86%；租赁房产场景约 6 周达到 90% 精确率和召回率。证据含糊或涉及税务判断的案例会回到产品团队，而不是自动上线。",
+      "source": {
+        "title": "Building self-improving tax agents with Codex",
+        "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "07",
+      "title": "资深会计师：把报税准备时间转成客户解释与新增服务",
+      "section": "公共服务、教育、无障碍与专业服务",
+      "category": "finance-services",
+      "professions": [
+        "founder",
+        "professional"
+      ],
+      "industry": "税务会计",
+      "roles": "资深会计师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "报税季大量时间消耗在资料录入和准备，几乎没有余力逐项向客户解释申报，也难以承接新增业务。",
+      "workflow": "沿用 Tax AI 的文档提取、税务引擎映射和人工复核流程，让系统承担可自动化的准备工作；会计师将人类时间放在解释、判断和关系维护上。",
+      "outcome": "该会计师上一年花 180 小时做报税准备，本年度只花 15 小时；她给每位客户打电话逐项讲解报税表，并用剩余时间接新客户、拓展服务。指标是单个从业者实例，不能视为所有事务所的平均值。",
+      "source": {
+        "title": "Building self-improving tax agents with Codex",
+        "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "08",
+      "title": "OpenAI 内部数据智能体：自然语言完成端到端分析",
+      "section": "数据、研究与产品探索",
+      "category": "data-research",
+      "professions": [
+        "data"
+      ],
+      "industry": "企业数据平台",
+      "roles": "数据分析师、业务人员",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "3,500 多名内部用户面对 70,000 个数据集和 600 PB 以上数据，找对表、写对连接和筛选往往比分析本身更耗时，单条 SQL 可超过 180 行。",
+      "workflow": "用户用自然语言提出开放问题，例如找出纽约出租车上下车 ZIP 组合中“典型耗时与最差耗时差距最大”的路线及波动时段；智能体自行发现数据、运行 SQL、发现零行或异常连接后改路、生成图表、笔记和报告。",
+      "outcome": "从提出问题到获得洞察由“数天”缩短到“数分钟”。系统继承用户原有表权限，并提供假设、执行步骤和底层结果链接供复核。",
+      "source": {
+        "title": "Inside OpenAI's in-house data agent",
+        "url": "https://openai.com/index/inside-our-in-house-data-agent/",
+        "note": "2026-01-29。"
+      }
+    },
+    {
+      "id": "09",
+      "title": "数据平台工程师：让 Codex 从生产代码推导表语义",
+      "section": "数据、研究与产品探索",
+      "category": "data-research",
+      "professions": [
+        "platform",
+        "data"
+      ],
+      "industry": "企业数据治理",
+      "roles": "数据平台工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "schema 和历史 SQL 只能说明表的形状与使用方式，无法可靠说明数据为何这样生成、更新频率、粒度、排除范围和业务意图。",
+      "workflow": "Codex 爬取数据生产代码，推导表的代码级定义；补充唯一性、刷新频率、范围以及 Spark/Python 中的使用上下文。每日离线流水线把使用情况、人工注释和 Codex 增强信息归一化、嵌入并供检索。",
+      "outcome": "智能体能区分名字相似但口径不同的表，例如是否只含第一方 ChatGPT 流量；上下文自动刷新，减少人工维护。最终定义仍要接受领域专家注释和实时数据验证。",
+      "source": {
+        "title": "Inside OpenAI's in-house data agent",
+        "url": "https://openai.com/index/inside-our-in-house-data-agent/",
+        "note": "2026-01-29。"
+      }
+    },
+    {
+      "id": "10",
+      "title": "财务与业务运营：把周报和表校验封装成可复用工作流",
+      "section": "数据、研究与产品探索",
+      "category": "data-research",
+      "professions": [
+        "data",
+        "operations"
+      ],
+      "industry": "财务与经营分析",
+      "roles": "财务、业务运营",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "用户会周期性重复同样的分析，容易反复找表、重写查询、遗漏固定口径，也让不同人员生成的周报难以保持一致。",
+      "workflow": "把 recurring analysis 封装成 workflows，即带上下文和最佳实践的可复用指令集；官方列出的实际示例包括每周业务报告和表验证。",
+      "outcome": "重复分析的准备步骤被压缩，且不同用户可共享一致流程。来源未披露周报耗时或错误率的量化变化。",
+      "source": {
+        "title": "Inside OpenAI's in-house data agent",
+        "url": "https://openai.com/index/inside-our-in-house-data-agent/",
+        "note": "2026-01-29。"
+      }
+    },
+    {
+      "id": "11",
+      "title": "数据科学家：用“记忆”保存特殊实验筛选规则",
+      "section": "数据、研究与产品探索",
+      "category": "data-research",
+      "professions": [
+        "data"
+      ],
+      "industry": "实验分析",
+      "roles": "数据科学家",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "某些实验需要匹配实验门中定义的特殊字符串；通用 schema 无法推断这类组织特有规则，智能体容易反复尝试错误的字符串筛选。",
+      "workflow": "用户纠正后，智能体提示保存记忆；记忆可分全局和个人范围，保存不明显但决定正确性的过滤条件与约束，后续查询从正确基线开始。",
+      "outcome": "避免每次重新解释同一实验规则。用户可以创建和编辑记忆；错误记忆也会污染后续结果，因此仍需可见、可改和有权限范围。",
+      "source": {
+        "title": "Inside OpenAI's in-house data agent",
+        "url": "https://openai.com/index/inside-our-in-house-data-agent/",
+        "note": "2026-01-29。"
+      }
+    },
+    {
+      "id": "12",
+      "title": "Braintrust：客户功能请求几分钟变成预览分支",
+      "section": "数据、研究与产品探索",
+      "category": "data-research",
+      "professions": [
+        "product",
+        "developer"
+      ],
+      "industry": "AI 开发工具",
+      "roles": "产品工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "过去客户功能请求先进入 backlog，再排优先级，客户要等到后续周期才看到方案，产品反馈循环很慢。",
+      "workflow": "团队把客户请求复制给 Codex，让它修改产品并创建 preview branch；在客户仍参与讨论时就展示可运行版本，继续围绕实际界面迭代。",
+      "outcome": "官方称从请求到可展示预览只需几分钟；一个月内 50% 的 Braintrust 团队转向使用 Codex。预览分支用于验证，不等于未经审查直接发布生产。",
+      "source": {
+        "title": "How Braintrust turns customer requests into code with Codex",
+        "url": "https://openai.com/index/braintrust/",
+        "note": "2026-05-29。"
+      }
+    },
+    {
+      "id": "13",
+      "title": "Braintrust：用测试定义问题，让 Codex 在沙箱自主求解",
+      "section": "数据、研究与产品探索",
+      "category": "data-research",
+      "professions": [
+        "founder",
+        "product",
+        "developer"
+      ],
+      "industry": "AI 开发工具",
+      "roles": "CEO、工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "一步步提示模型需要大量人工指导，探索新想法的准备成本高，也容易把工程师锁在执行细节中。",
+      "workflow": "Ankur Goyal 先写一个能稳定展示问题的测试，再创建受控沙箱，让 Codex 自主运行、观察反馈并寻找通过测试的方案；工程师定义问题和验收信号，不规定每一步实现。",
+      "outcome": "团队扩大了可实验的问题范围，并更快从想法走到可运行方案。来源强调速度和交互方式变化，但未披露测试通过率。",
+      "source": {
+        "title": "How Braintrust turns customer requests into code with Codex",
+        "url": "https://openai.com/index/braintrust/",
+        "note": "2026-05-29。"
+      }
+    },
+    {
+      "id": "14",
+      "title": "Nextdoor：一名工程师端到端交付服务商地图",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "product",
+        "developer"
+      ],
+      "industry": "社区平台",
+      "roles": "全栈产品工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "Opportunity Alerts 已能帮助用户寻找附近服务商，但把服务商显示到地图上，传统上需要移动、前端和后端三个团队排期，可能长期留在 backlog。",
+      "workflow": "负责提醒功能的一名工程师以产品结果为目标，让 Codex跨栈实现地图体验，并用截图、视频、性能或测试结果作为验收信号。",
+      "outcome": "一名工程师完成了过去需要三个团队协作的端到端功能，并能直接理解实际用户体验。来源未披露具体交付天数。",
+      "source": {
+        "title": "How engineers at Nextdoor use Codex to build without limits",
+        "url": "https://openai.com/index/nextdoor/",
+        "note": "2026-06-09。"
+      }
+    },
+    {
+      "id": "15",
+      "title": "Nextdoor 平台团队：调查 Rust 竞态与 Kubernetes Pod 启动失败",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "platform"
+      ],
+      "industry": "社区平台基础设施",
+      "roles": "平台工程师、SRE",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "嵌入式 Rust 数据库的竞态条件难以复现，Kubernetes Pod 无法启动也常涉及多层环境与配置，人工需要长时间拼接上下文。",
+      "workflow": "团队给智能体干净环境和调查测试工具，让 Codex 持续运行、深入技术细节并寻找根因；工作范围从 Rust 竞态延伸到 Pod 启动问题和数据分析中的趋势线识别。",
+      "outcome": "团队报告 Codex 能坚持调查晦涩细节直至根因，使工程瓶颈转向“该构建什么”。页面未披露单次事故 MTTR，诊断仍由工程师验证。",
+      "source": {
+        "title": "How engineers at Nextdoor use Codex to build without limits",
+        "url": "https://openai.com/index/nextdoor/",
+        "note": "2026-06-09。"
+      }
+    },
+    {
+      "id": "16",
+      "title": "NVIDIA：把内部平台从 MVP 演进为生产系统",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "developer"
+      ],
+      "industry": "半导体与 AI",
+      "roles": "高级软件工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "内部平台已有 MVP，但扩展性和可靠性不足；早期模型需要较多手把手指导，难以长期保持上下文。",
+      "workflow": "工程师让 Codex 在多次上下文压缩的长会话中持续工作，自主选择工具和 skills，逐步改造平台的可扩展性与可靠性。",
+      "outcome": "平台由 MVP 推进到 production-ready。来源未披露具体吞吐量或故障率变化。",
+      "source": {
+        "title": "How NVIDIA engineers and researchers build with Codex",
+        "url": "https://openai.com/index/nvidia/",
+        "note": "2026-05-12；本例由英文原文译述。"
+      }
+    },
+    {
+      "id": "17",
+      "title": "NVIDIA：数小时构建并自动测试内部播客录制应用",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "developer"
+      ],
+      "industry": "企业内部工具",
+      "roles": "软件工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "团队需要类似 Riverside 的播客录制工具，但隐私约束使采购外部软件可能耗时数周。",
+      "workflow": "Codex 构建内部录制应用，并通过桌面端的计算机交互能力实际测试视频与音频录制功能；构建和功能验证在同一任务链路中完成。",
+      "outcome": "应用在数小时内启动完成，来源称若走采购可能需要数周；工程师表示构建与测试过程无需他介入。它是内部工具案例，不代表所有音视频应用都能同样无人值守完成。",
+      "source": {
+        "title": "How NVIDIA engineers and researchers build with Codex",
+        "url": "https://openai.com/index/nvidia/",
+        "note": "2026-05-12；本例由英文原文译述。"
+      }
+    },
+    {
+      "id": "18",
+      "title": "NVIDIA 研究员：从论文语料追踪证据并生成知识图谱",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "professional"
+      ],
+      "industry": "AI 研究",
+      "roles": "AI 研究员",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "强化学习等领域论文量大，研究假设常依赖跨多篇资料的证据链，人工很难同时维护概念关系和出处。",
+      "workflow": "研究员把大量相关论文指向 Codex，让它在整个语料中追踪证据片段，并提出概念知识图谱，帮助可视化想法之间的关联。",
+      "outcome": "研究员将其作为创意伙伴和研究智能体，用于发现研究方向与形成假设。页面没有给出准确率，证据仍应回到论文原文核查。",
+      "source": {
+        "title": "How NVIDIA engineers and researchers build with Codex",
+        "url": "https://openai.com/index/nvidia/",
+        "note": "2026-05-12；本例由英文原文译述。"
+      }
+    },
+    {
+      "id": "19",
+      "title": "NVIDIA 研究员：从假设到远程训练的完整 ML 实验",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "data",
+        "professional"
+      ],
+      "industry": "机器学习研究",
+      "roles": "AI 研究员",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "传统研究循环包含找方向、写实验脚本、登录远程主机、配置环境、训练和查看结果，多次切换会拖慢迭代。",
+      "workflow": "Codex 在识别假设后编写训练脚本，通过桌面应用的 SSH 支持连接远程机器并运行大型 ML 工作负载；研究员从笔记本发起并检查整条链路。",
+      "outcome": "NVIDIA 研究员 Shaunak Joshi 报告端到端实验速度提升约 10 倍。该数字是团队经验陈述，并非受控基准。",
+      "source": {
+        "title": "How NVIDIA engineers and researchers build with Codex",
+        "url": "https://openai.com/index/nvidia/",
+        "note": "2026-05-12；本例由英文原文译述。"
+      }
+    },
+    {
+      "id": "20",
+      "title": "NVIDIA：把旧 Python 代码库迁移到 Rust",
+      "section": "数据、研究与产品探索",
+      "category": "product-ai",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "高性能计算",
+      "roles": "ML 系统工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "旧 Python 仓库性能不足，但手工跨语言重写成本高，还要保持行为一致。",
+      "workflow": "把 Python 仓库交给 Codex，让其进行代码级“机器翻译”到 Rust，并在新实现中优化性能。",
+      "outcome": "受访研究员称有团队得到约 20 倍效率提升。页面未给出具体仓库、基准方法或迁移缺陷率，因此应把 20 倍视为案例陈述而非普遍预期。",
+      "source": {
+        "title": "How NVIDIA engineers and researchers build with Codex",
+        "url": "https://openai.com/index/nvidia/",
+        "note": "2026-05-12；本例由英文原文译述。"
+      }
+    },
+    {
+      "id": "21",
+      "title": "Cisco AI Defense：把季度级安全功能压缩到数周",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer"
+      ],
+      "industry": "网络安全",
+      "roles": "AI 安全工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "AI Defense 要保护企业免受 AI 引入的安全风险，代码跨多个仓库且以 C/C++ 为主，还要满足安全、合规和治理要求。",
+      "workflow": "Cisco 把 Codex 集成进生产工程流程，让其参与 AI Defense 大部分代码和几乎所有新功能，同时继续经过既有评审、安全和治理框架。",
+      "outcome": "95% 以上新 AI 功能由 Codex 编写；原需数个季度交付的功能缩短到数周。数字来自 Cisco/OpenAI 客户案例。",
+      "source": {
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "url": "https://openai.com/index/cisco/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "22",
+      "title": "Cisco Defense Squad：构想到开源社区不到一周",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer"
+      ],
+      "industry": "开源安全工具",
+      "roles": "安全产品工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "团队希望快速把安全工具从想法变成开发者可使用的开源项目，传统跨职能交付周期较长。",
+      "workflow": "使用 Codex 辅助构建 Defense Squad，在明确安全目标后完成代码与可发布工件，并交付开源社区。",
+      "outcome": "从构想到进入开发者社区用时不到一周。页面没有展开代码规模和后续采用量。",
+      "source": {
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "url": "https://openai.com/index/cisco/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "23",
+      "title": "Cisco 构建平台：跨 15+ 仓库分析日志和依赖图",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "platform"
+      ],
+      "industry": "企业构建系统",
+      "roles": "构建/平台工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "全球环境中的构建低效分布在多个互联仓库，仅看单个仓库难以发现跨仓依赖瓶颈。",
+      "workflow": "分析 15 个以上互联代码仓库的构建日志和依赖关系图，定位低效环节，并形成可实施的构建优化。",
+      "outcome": "构建时间约降低 20%，全球环境每月节省超过 1,500 个工程小时。具体优化项和测量窗口未公开。",
+      "source": {
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "url": "https://openai.com/index/cisco/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "24",
+      "title": "Cisco CodeWatch：在大型 C/C++ 代码库自动修复缺陷",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer"
+      ],
+      "industry": "企业软件维护",
+      "roles": "C/C++ 工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "大规模缺陷处理要在成熟、复杂的代码库中逐一定位、编译、测试和修复，人工通常耗时数周。",
+      "workflow": "Codex CLI 通过迭代式智能体执行程序，反复进行编译-测试-修复循环；工程师把主要精力放在设计和验证。",
+      "outcome": "原本数周的工作缩短到数小时，缺陷解决吞吐量提升 10-15 倍。自动修复仍在 Cisco 现有审查与治理框架内运行。",
+      "source": {
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "url": "https://openai.com/index/cisco/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "25",
+      "title": "Cisco Splunk：React 18 到 19 的多 UI 迁移",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer"
+      ],
+      "industry": "前端平台",
+      "roles": "前端工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "多个 UI 的框架升级包含大量机械修改，也夹杂需要架构判断的兼容性决策。",
+      "workflow": "让 Codex 自主完成多数重复迁移变更，并生成、遵循计划文档；审查团队通过计划理解迁移过程和生成代码，人类聚焦高判断力部分。",
+      "outcome": "工作从数周压缩到数天。案例没有说明具体 UI 数量或回归缺陷数。",
+      "source": {
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "url": "https://openai.com/index/cisco/",
+        "note": "2026-05-27。"
+      }
+    },
+    {
+      "id": "26",
+      "title": "Datadog：用历史事故重放验证系统级代码审查",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "data"
+      ],
+      "industry": "可观测性",
+      "roles": "AI DevX、资深审查者",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "传统 linter 和早期 AI 审查只看差异表面，难以发现跨模块交互、跨服务测试缺口或 API 合同变化带来的下游风险。",
+      "workflow": "在最大、最常用仓库的每个 PR 上自动运行 Codex；另构建事故重现工具，重建曾导致真实事故的历史 PR，让 Codex 参与原始审查，再由当时的事故工程师判断评论是否有实际价值。",
+      "outcome": "Codex 在审查事件中发现 10 多个有实际影响的案例，约占样本事故的 22%，表现优于同期评估工具；现有 1,000 多名工程师经常使用。它补充而非替代人工架构审查。",
+      "source": {
+        "title": "Datadog uses Codex for system-level code review",
+        "url": "https://openai.com/index/datadog/",
+        "note": "2026-01-09。"
+      }
+    },
+    {
+      "id": "27",
+      "title": "Ramp：把 PR 首次实质性反馈从数小时缩短到几分钟",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer"
+      ],
+      "industry": "金融科技",
+      "roles": "软件工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "工程师过去等待首次代码审查需数小时；人工审查者没有时间在每个 PR 上深入整个代码库，容易漏掉跨上下文问题。",
+      "workflow": "把 Codex 设为许多 PR 流程的固定审查环节；模型针对完整代码库推理并输出可操作评论，工程师在 CLI 或桌面应用中复核。",
+      "outcome": "首次实质性反馈由数小时降到几分钟。受访工程师称 Codex 能发现人类和其他审查工具会漏掉的问题，但页面没有公布统一命中率。",
+      "source": {
+        "title": "How Ramp engineers accelerate code review with Codex",
+        "url": "https://openai.com/index/ramp/",
+        "note": "2026-05-20。"
+      }
+    },
+    {
+      "id": "28",
+      "title": "Ramp：构建承担值班上下文负担的 On-Call Assistant",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "platform",
+        "operations"
+      ],
+      "industry": "金融科技运维",
+      "roles": "AI DevEx、值班工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "事故调查同时涉及大量业务逻辑、领域知识、并发 Bug、外部/内部事件和不断变化的细节，值班人员认知负担很重。",
+      "workflow": "Austin Ray 使用 Codex 支持 On-Call Assistant 的开发，让这个内部智能体在轮值期间承接大量上下文整合和调查辅助；Codex 同时帮助开发者处理产品覆盖面的复杂性。",
+      "outcome": "构建速度显著加快，开发者对每次上线改进更有信心；页面未披露事故响应时间或值班工时变化。",
+      "source": {
+        "title": "How Ramp engineers accelerate code review with Codex",
+        "url": "https://openai.com/index/ramp/",
+        "note": "2026-05-20。"
+      }
+    },
+    {
+      "id": "29",
+      "title": "Rakuten SRE：用 KQL、日志和遥测缩短故障恢复",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "platform"
+      ],
+      "industry": "电商/金融/移动",
+      "roles": "SRE",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "故障发生后，工程师要手工拼接 KQL 查询、API 日志、遥测和补丁，根因分析到修复的链路长。",
+      "workflow": "Codex 接入基于 KQL 的监控与诊断工作流，协助识别根因和建议修复；人类重点验证并部署修复。",
+      "outcome": "Rakuten 估计平均恢复时间 MTTR 最多缩短约 50%，即部分故障修复速度约翻倍。该指标是公司案例汇总值。",
+      "source": {
+        "title": "Rakuten fixes issues twice as fast with Codex",
+        "url": "https://openai.com/index/rakuten/",
+        "note": "2026-03-11。"
+      }
+    },
+    {
+      "id": "30",
+      "title": "Rakuten DevSecOps：在 CI/CD 中持续执行公司标准",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "platform"
+      ],
+      "industry": "电商/金融/移动",
+      "roles": "DevSecOps",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "交付加速后，安全审查和部署成为瓶颈；人工很难对每次变化一致应用内部编码原则。",
+      "workflow": "在变更进入生产前，由 CI/CD 调用 Codex 做代码审查和漏洞检查；把公司内部编码原则提供给 Codex，让审查评论按相同标准生成。",
+      "outcome": "安全检查持续自动执行，团队在不主动降低标准的前提下更快推进。来源没有披露漏洞检出率或误报率。",
+      "source": {
+        "title": "Rakuten fixes issues twice as fast with Codex",
+        "url": "https://openai.com/index/rakuten/",
+        "note": "2026-03-11。"
+      }
+    },
+    {
+      "id": "31",
+      "title": "Rakuten：从单一规格生成 FastAPI 后端和 Swift iOS 应用",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "product",
+        "developer"
+      ],
+      "industry": "移动产品",
+      "roles": "全栈、iOS 工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "现有 Web AI 智能体服务需要移动版本，需求并非逐项完备，传统模式要分别协调后端 API 和 iOS 开发。",
+      "workflow": "从一份规格出发理解隐含需求，自主实现 Python/FastAPI 后端、全部后端 API，以及 Swift/SwiftUI iOS 应用；工程师转向定义验收和验证输出。",
+      "outcome": "开发周期从一个季度缩短到数周，整体项目速度提升约 3-4 倍。页面未披露上线用户规模和缺陷率。",
+      "source": {
+        "title": "Rakuten fixes issues twice as fast with Codex",
+        "url": "https://openai.com/index/rakuten/",
+        "note": "2026-03-11。"
+      }
+    },
+    {
+      "id": "32",
+      "title": "Instacart Olive：一键启动远程环境清理技术债务",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "platform"
+      ],
+      "industry": "生鲜电商",
+      "roles": "开发平台工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "废弃代码、过期实验和大量已知重复变更不断积压，人工优先级通常低，却会拖慢代码库。",
+      "workflow": "把 Codex SDK 集成进后台编码智能体平台 Olive；工程师一键启动远程开发环境，Codex 编辑代码、运行测试，并端到端完成废弃代码和过期实验清理。",
+      "outcome": "提高代码质量并减少积压；官方页面未披露删除代码量或节省工时。自动清理仍需要测试和变更审查。",
+      "source": {
+        "title": "Codex is now generally available",
+        "url": "https://openai.com/index/codex-now-generally-available/",
+        "note": "2025-10-06。"
+      }
+    },
+    {
+      "id": "33",
+      "title": "Temporal：把功能、调试、测试和大型重构放到后台",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "开发者基础设施",
+      "roles": "软件工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "复杂任务持续时间长，工程师在等待与切换上下文中损失专注度。",
+      "workflow": "Temporal 把功能开发、问题调试、测试编写与执行、大型代码库重构交给 Codex 后台运行；工程师并行处理其他工作，完成后审查结果。",
+      "outcome": "团队报告迭代更快且更能保持专注，但没有披露统一量化指标。四类活动在这里作为一个“异步工程”工作流，而不是拆成四条凑数。",
+      "source": {
+        "title": "Introducing Codex",
+        "url": "https://openai.com/index/introducing-codex/",
+        "note": "2025-05-16。"
+      }
+    },
+    {
+      "id": "34",
+      "title": "Superhuman：工程重复任务与产品经理轻量改码共用一条链",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "product",
+        "developer"
+      ],
+      "industry": "邮件效率工具",
+      "roles": "工程师、产品经理",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "提高测试覆盖率、修集成失败等小任务重复却打断工程师；产品经理的小改动也要等待工程排期。",
+      "workflow": "工程师让 Codex 处理测试覆盖和集成修复，并参与代码审查；产品经理在无需工程师全程介入的情况下完成轻量级代码修改，再进入正常审查流程。",
+      "outcome": "帮助团队更快交付，未披露节省时长。产品经理适用的是低风险轻量修改，不代表绕过工程治理。",
+      "source": {
+        "title": "Introducing Codex",
+        "url": "https://openai.com/index/introducing-codex/",
+        "note": "2025-05-16。"
+      }
+    },
+    {
+      "id": "35",
+      "title": "Kodiak：为自动驾驶栈补调试工具、测试和陌生代码上下文",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer"
+      ],
+      "industry": "自动驾驶货运",
+      "roles": "自动驾驶软件工程师",
+      "sourceLanguage": "英文译述",
+      "evidence": "A2",
+      "problem": "Kodiak Driver 栈复杂，调试工具和测试覆盖持续不足；工程师进入不熟悉模块时要追溯历史修改和上下文。",
+      "workflow": "让 Codex 编写调试工具、提高测试覆盖率、重构代码；同时把它作为代码参考工具，展示相关上下文和过去变更，帮助理解陌生栈区域。",
+      "outcome": "官方称这些工作加快了 Kodiak Driver 开发，但未披露自动驾驶性能或安全指标。生成代码必须经过该行业严格验证。",
+      "source": {
+        "title": "Introducing Codex",
+        "url": "https://openai.com/index/introducing-codex/",
+        "note": "2025-05-16。"
+      }
+    },
+    {
+      "id": "36",
+      "title": "OpenAI 智能体优先团队：3 人推动百万行代码和 1,500 个 PR",
+      "section": "企业软件、安全、运维与交付",
+      "category": "engineering-ops",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "AI 产品研发",
+      "roles": "智能体优先工程团队",
+      "sourceLanguage": "英文译述",
+      "evidence": "A1",
+      "problem": "团队实验“所有代码都由 Codex 写”，瓶颈从打字变成如何给智能体提供架构、可观察性、反馈和可验证环境。",
+      "workflow": "Codex 从空仓库生成结构、CI、格式化、包管理、框架和 AGENTS.md；工程师把目标拆成设计、实现、评审、测试。每个 worktree 可启动独立应用，Codex 通过 DOM、截图、日志、PromQL/LogQL 复现并验证；短 AGENTS.md 指向结构化 docs，linter 强制架构不变量，后台任务持续清理技术债务。",
+      "outcome": "五个月约 100 万行代码、1,500 个合并 PR，最初 3 人平均每人每天约 3.5 个 PR；估计只用人工编码约 1/10 的时间，产品已有数百名测试用户。此结果依赖大量专用 harness，不能直接外推到普通仓库。",
+      "source": {
+        "title": "Harness engineering: leveraging Codex in an agent-first world",
+        "url": "https://openai.com/index/harness-engineering/",
+        "note": "2026-02-11。"
+      }
+    },
+    {
+      "id": "37",
+      "title": "培训师：安装 PPT Skill 后生成“AI 编程工具入门”演示稿",
+      "section": "中文网络的可复现实操案例",
+      "category": "content-collaboration",
+      "professions": [
+        "operations",
+        "creator"
+      ],
+      "industry": "演示与培训",
+      "roles": "培训师、内容策划",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "用户找到社区 PPT Skill，但不熟悉目录、依赖和调用方法，也需要马上验证它是否真的能产出演示稿。",
+      "workflow": "把 Skill 仓库链接交给 Codex，要求完成安装并说明用途、依赖和调用方式；随后指定“AI 编程工具入门”、受众和风格，让 Codex 读取 Skill 的 README、模板和流程，生成演示文件。",
+      "outcome": "案例生成本地文件，并在内置浏览器预览 HTML 演示稿；验收结构、视觉一致性、导出效果和是否使用了指定 Skill。社区 Skill 需先审查维护状态和脚本。",
+      "source": {
+        "title": "Codex × PPT Skill：一句话生成演示文稿",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/01-ppt-skill-walkthrough.md",
+        "note": "页面核对日期 2026-05-27。"
+      }
+    },
+    {
+      "id": "38",
+      "title": "架构师/产品经理：从一本书生成可编辑 Draw.io 中文信息图",
+      "section": "中文网络的可复现实操案例",
+      "category": "content-collaboration",
+      "professions": [
+        "product",
+        "creator"
+      ],
+      "industry": "架构与产品设计",
+      "roles": "架构师、产品经理",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "复杂系统、业务流程或书籍观点仅用文字不易理解，而手工整理节点和关系耗时。",
+      "workflow": "让 Codex 安装 Draw.io MCP，明确要求使用该 MCP；提供书籍内容，指定中文信息图、主题和风格，Codex 组织节点关系并生成图形。",
+      "outcome": "任务完成后自动打开浏览器展示结果；检查层级、节点关系、可编辑性和来源表达。案例截图由作者实际操作获得。",
+      "source": {
+        "title": "Codex × Draw.io MCP：AI 自动绘制架构图",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/02-drawio-mcp.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "39",
+      "title": "研究助理：浏览百度、阅读两篇资料并沉淀 Markdown",
+      "section": "中文网络的可复现实操案例",
+      "category": "content-collaboration",
+      "professions": [
+        "data",
+        "operations",
+        "professional"
+      ],
+      "industry": "互联网研究",
+      "roles": "研究员、运营",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "一个小型调研要重复打开搜索页、筛选文章、阅读、归纳，再手工保存到本地。",
+      "workflow": "安装 Playwright MCP，给出提示“到百度搜索‘什么是 MCP’，选择两篇优质内容阅读，并整理成 Markdown 保存在当前目录”；Codex 经人工授权后填写搜索框、打开文章、读取并总结。",
+      "outcome": "生成本地 Markdown 文件；人工检查实际访问了两篇页面、来源链接、摘要是否忠于原文，以及浏览器点击路径。写入和网页交互权限需逐项控制。",
+      "source": {
+        "title": "Codex × Playwright MCP：让 AI 像人一样操控浏览器",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/03-playwright-mcp.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "40",
+      "title": "视频创作者：把一本书转成代码化动画视频",
+      "section": "中文网络的可复现实操案例",
+      "category": "content-collaboration",
+      "professions": [
+        "creator"
+      ],
+      "industry": "内容制作",
+      "roles": "视频创作者",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "把书籍内容改编成视频需要拆文案、设计每页画面、配色、背景、生成帧并渲染，个人创作者执行成本高。",
+      "workflow": "安装 HyperFrames 插件或 Skill，把书籍内容和目标风格交给 Codex；系统生成 JPEG 帧并组装为视频，再根据画面、文案、配色和背景反馈多轮迭代；也可提供目标视频作为视觉参考。",
+      "outcome": "Codex 返回本地视频路径及帧文件；作者明确指出首版通常不完美，需人工审片和迭代，不能把“生成成功”当作内容质量达标。",
+      "source": {
+        "title": "Codex × HyperFrames：用代码生成动画视频",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/04-hyperframes-animation.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "41",
+      "title": "内容作者：在 Obsidian 中自动生成配图并上传图床",
+      "section": "中文网络的可复现实操案例",
+      "category": "content-collaboration",
+      "professions": [
+        "operations",
+        "creator"
+      ],
+      "industry": "内容运营",
+      "roles": "作者、知识博主",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "文章配图、文件保存、图床上传和 Markdown 引用是连续但割裂的重复操作。",
+      "workflow": "在 Obsidian Terminal 中启动 Codex，让它读取本地库与正文，生成配图并插入正确位置；如果使用 PicGo 或对象存储，再让 Codex定位上传工具、监听图片文件并上传。",
+      "outcome": "案例得到图片和对应图床链接；验收图片与文章语义、文件路径、链接可访问性和 Markdown 引用。Codex 对整个 vault 有读写能力，需限制范围并保护私人笔记。",
+      "source": {
+        "title": "Codex × Obsidian：在知识库中自动生成配图",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/05-obsidian-codex.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "42",
+      "title": "飞书知识管理员：汇总 14 篇文档并生成中文信息图",
+      "section": "中文网络的可复现实操案例",
+      "category": "content-collaboration",
+      "professions": [
+        "operations",
+        "creator"
+      ],
+      "industry": "企业协作",
+      "roles": "运营、知识管理员",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "团队资料在飞书云盘和多维表格中，人工逐篇读取再做可视化总结费时，还涉及应用权限和字段映射。",
+      "workflow": "让 Codex 按飞书 CLI README 安装工具，引导创建开放平台应用并完成 OAuth；随后读取云盘“知识管理”文件夹内 14 篇文档，再调用图像能力生成中文信息图。",
+      "outcome": "案例确认可完整读取云盘内容并生成信息图。App ID/Secret 不应直接发在普通对话中；应采用安全凭据配置，并对读取、写回权限最小化授权。",
+      "source": {
+        "title": "Codex × 飞书 CLI：一句话处理飞书数据",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/06-feishu-cli-codex.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "43",
+      "title": "研究员：在 Obsidian 建立可持续更新的 LLM Wiki",
+      "section": "中文网络的可复现实操案例",
+      "category": "knowledge-design",
+      "professions": [
+        "data",
+        "professional"
+      ],
+      "industry": "知识管理",
+      "roles": "研究员、知识工作者",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "传统 RAG 每次提问都重新检索，无法持续积累摘要、实体和跨文档关联。",
+      "workflow": "参考 Karpathy 的 LLM Wiki 设计，让 Codex 建立 `raw/`、`wiki/`、`concept/`、`logs/` 和 AGENTS.md；通过 Web Clipper 把文章只读保存到 raw，Codex 拆解内容、创建摘要和实体页面、维护交叉引用。",
+      "outcome": "案例生成完整目录和新增页面清单；后续每加入一篇资料都重复入库并更新引用。验收重点是原始资料不被改写、每条 Wiki 结论可追溯、规则文件持续维护。",
+      "source": {
+        "title": "Codex × LLM Wiki：在 Obsidian 中搭建 AI 知识库",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/07-llm-wiki-codex.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "44",
+      "title": "产品经理/设计师：生成登录流程图和高保真 UI",
+      "section": "中文网络的可复现实操案例",
+      "category": "knowledge-design",
+      "professions": [
+        "product",
+        "developer"
+      ],
+      "industry": "UX/UI 设计",
+      "roles": "产品经理、设计师",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "非专业设计人员能描述产品逻辑，但难以快速转成可讨论的流程图或高保真界面。",
+      "workflow": "安装并授权 Figma MCP，在对话中点名调用；第一轮生成包含基本操作步骤的登录/注册流程图，第二轮给出产品功能和视觉要求，生成海报式高保真 UI。",
+      "outcome": "Codex 返回 Figma 链接，案例展示了实际流程图和 UI；人工检查布局、组件边界、设计 token、交互逻辑和审美，而不是只看截图“像不像成品”。",
+      "source": {
+        "title": "Codex × Figma MCP：让 AI 读懂你的设计稿",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/08-figma-mcp-codex.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "45",
+      "title": "项目经理/顾问：读取昨天更新的 Notion 内容并写回总结",
+      "section": "中文网络的可复现实操案例",
+      "category": "knowledge-design",
+      "professions": [
+        "operations",
+        "professional"
+      ],
+      "industry": "团队知识库",
+      "roles": "项目经理、顾问",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "跨工作空间追踪更新、归纳内容并创建汇总页，需要在浏览器中反复切换、复制和粘贴。",
+      "workflow": "安装 Notion MCP，浏览器授权工作空间；先验证读取权限，再查询加入的其他工作空间“昨天更新的内容”，总结后直接创建新 Notion 页面。",
+      "outcome": "返回写入成功链接，作者在 Notion 中检查内容正常。必须限定授权范围、目标数据库和写回位置，避免把测试总结写入正式知识库错误区域。",
+      "source": {
+        "title": "Codex × Notion MCP：打通你的知识工作空间",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/09-notion-mcp-codex.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "46",
+      "title": "独立创作者：生成教程网页并通过 DKFile API 发布公网",
+      "section": "中文网络的可复现实操案例",
+      "category": "knowledge-design",
+      "professions": [
+        "developer",
+        "operations",
+        "creator"
+      ],
+      "industry": "网页发布",
+      "roles": "独立创作者、运营",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "非开发者能让 AI 生成 HTML，但不会 Git 分支、Vercel 或域名配置，成品只能留在本地。",
+      "workflow": "让 Codex 阅读 DKFile API 文档；提供“Obsidian 新手教程”网页需求和安全配置的 API Key，Codex 生成 HTML、调用上传 API，并返回公网地址。",
+      "outcome": "得到本地文件路径和可访问链接；需实际打开链接检查资源、移动端和内容。API Key 应放环境变量或凭据管理中，不应直接写进提示词或仓库。",
+      "source": {
+        "title": "Codex × DKFile：AI 网页一键发布到公网",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/10-dkfile-deploy-codex.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "47",
+      "title": "DevOps：不拉取源码，远程修复 Docker 容器中的 Python Bug",
+      "section": "中文网络的可复现实操案例",
+      "category": "automation-research",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "云运维",
+      "roles": "DevOps、后端工程师",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "腾讯云容器 `codex-demo` 中的健康检查脚本读取 `status`，数据实际字段是 `state`，运行和 pytest 都报 `KeyError: 'status'`；本地没有源码。",
+      "workflow": "远端项目启动 `codex app-server`，本地用 SSH 隧道映射 9001 端口并以 remote 模式连接；提示 Codex 读取脚本和 JSON、找错、修改并运行 `pytest -q`。",
+      "outcome": "脚本输出 5 个容器、3 个 running、2 个 exited，并列出不健康实例；pytest 为 `1 passed in 0.00s`。演示 Bug 很简单，价值在于远程读写与验证闭环；生产服务器仍需变更控制和回滚。",
+      "source": {
+        "title": "Codex × 云服务器：远程定位并修复 Bug",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/11-remote-bug-fix.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "48",
+      "title": "学习运营：在 Bilibili 筛选 RAG 入门教程",
+      "section": "中文网络的可复现实操案例",
+      "category": "automation-research",
+      "professions": [
+        "data",
+        "operations",
+        "creator"
+      ],
+      "industry": "内容检索",
+      "roles": "学习运营、研究助理",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "用户只知道主题，不想手工浏览大量搜索结果，又需要返回真正适合新手的页面而不是广告或无关内容。",
+      "workflow": "连接浏览器能力，给出明确目标站点、搜索词“RAG 知识库 教程”和预期输出；Codex 打开 Bilibili、搜索、进入候选结果并返回标题与链接。",
+      "outcome": "案例展示了完成后的结果摘要；人工检查站点、搜索词是否被改写、链接是否直达目标内容。默认只做只读低风险操作，不授权发帖、支付或删除。",
+      "source": {
+        "title": "Codex × Chrome：让 AI 直接控制浏览器",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/12-chrome-browser-plugin.md",
+        "note": "页面核对日期 2026-05-27。"
+      }
+    },
+    {
+      "id": "49",
+      "title": "DevOps：CI 失败后自动修复一个字符并创建 PR",
+      "section": "中文网络的可复现实操案例",
+      "category": "automation-research",
+      "professions": [
+        "developer",
+        "platform"
+      ],
+      "industry": "CI/CD",
+      "roles": "DevOps、维护者",
+      "sourceLanguage": "中文",
+      "evidence": "B",
+      "problem": "购物车项目“满 100 减 20”被误写成加 20，输入 120 的测试期望 100、实际得到 140，GitHub Actions 失败。",
+      "workflow": "`workflow_run` 只在 CI failure 时触发，检出失败 SHA；`openai/codex-action` 读取代码、跑 Jest、寻找最小修改；修复后再次 `npm test`，只有成功才由 action 创建 PR，并附失败运行链接。",
+      "outcome": "约一分钟完成，只把 `+` 改成 `-`，其余代码未动，自动 PR 可合并。一次正常修复约 0.05-0.10 美元；调试多次共花 0.40 美元。需开启 GitHub Actions 创建 PR 权限并设置消费上限。",
+      "source": {
+        "title": "Codex × GitHub Actions：CI 失败自动修复实测",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/13-github-actions-ci-fix.md",
+        "note": "页面核对日期 2026-06-29。"
+      }
+    },
+    {
+      "id": "50",
+      "title": "医护/研究生：把临床问题整理成可复核证据工作台",
+      "section": "中文网络的可复现实操案例",
+      "category": "automation-research",
+      "professions": [
+        "data",
+        "professional"
+      ],
+      "industry": "临床科研",
+      "roles": "医护、研究生",
+      "sourceLanguage": "中文",
+      "evidence": "C",
+      "problem": "综述常把研究事实、推断和临床建议混在一起，文献标识和适用人群也容易漏记。",
+      "workflow": "以“成人 2 型糖尿病患者使用连续葡萄糖监测”为例，先把问题拆成 PICO；读取 3-5 篇结构化论文笔记生成证据表；单独生成 `gaps-and-risks.md` 查过度推断；最后按“背景、证据、局限、后续问题”起草综述。",
+      "outcome": "目录包含 question、papers、evidence-table、gaps-and-risks 和 summary-draft；检查 PMID/DOI 是否来自输入、结论能否回到原文、是否越界成患者级建议。不得输入未脱敏病历，本例是工作流模板而非医学效果证据。",
+      "source": {
+        "title": "Codex × 临床文献综述：把医学问题整理成可复核证据表",
+        "url": "https://github.com/freestylefly/CodexGuide/blob/main/docs/recipes/14-clinical-literature-review.md",
+        "note": "页面核对日期 2026-05-27。"
+      }
+    }
+  ]
+}

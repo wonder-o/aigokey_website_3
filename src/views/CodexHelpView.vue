@@ -1,23 +1,6 @@
 <template>
   <div class="codex-page" :class="{ 'codex-page--embedded': embedded }">
-    <header v-if="!embedded" class="sticky top-0 z-20 border-b border-line/80 bg-[#f8fbfd]/90 backdrop-blur-[18px]">
-      <div class="flex items-center justify-between gap-5 max-w-[1180px] min-h-[72px] mx-auto px-6 max-[720px]:flex-col max-[720px]:items-start max-[720px]:py-3.5 max-[720px]:px-4">
-        <router-link to="/" class="inline-flex items-center gap-3 text-[21px] font-black" aria-label="AigoKey">
-          <img src="/assets/aigokey-logo.png" alt="AigoKey Logo" class="w-[42px] h-[42px] rounded-[10px] object-cover shadow-[0_10px_24px_rgba(36,104,242,0.16)]" />
-          <span>AigoKey</span>
-        </router-link>
-        <div class="flex items-center gap-3 max-[720px]:w-full max-[720px]:grid max-[720px]:grid-cols-[repeat(auto-fit,minmax(76px,1fr))] max-[720px]:gap-2">
-          <LanguageMenu />
-          <a class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" :href="registerUrl" target="_top">{{ t.navButtons.register }}</a>
-          <a class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" :href="loginUrl" target="_top">{{ t.navButtons.login }}</a>
-          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/image-creation">{{ t.navButtons.imageCreation }}</router-link>
-          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/skills">{{ t.navButtons.skills }}</router-link>
-          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/codex-help">{{ t.navButtons.help }}</router-link>
-          <router-link class="btn btn-ghost max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" to="/enterprise-service">{{ t.navButtons.enterprise }}</router-link>
-          <button class="btn btn-primary max-[720px]:min-h-[40px] max-[720px]:px-2.5 max-[720px]:text-[13px]" type="button" @click="showModal = true">{{ t.navButtons.trial }}</button>
-        </div>
-      </div>
-    </header>
+    <SiteHeader v-if="!embedded" @trial="showModal = true" />
 
     <main id="top">
       <section class="hero">
@@ -212,16 +195,7 @@
       </div>
     </main>
 
-    <footer v-if="!embedded" class="py-8 px-6 text-[#667583] border-t border-line bg-white">
-      <div class="grid grid-cols-[1fr_auto_1fr] items-center gap-4 max-w-[1180px] mx-auto text-[14px] max-[720px]:grid-cols-1 max-[720px]:justify-items-center max-[720px]:text-center">
-        <div class="inline-flex items-center gap-3 text-[21px] font-black text-[#111b24]">
-          <img src="/assets/aigokey-logo.png" alt="AigoKey Logo" class="w-[42px] h-[42px] rounded-[10px] object-cover" />
-          <span>AigoKey</span>
-        </div>
-        <div class="text-[#83909c] text-[13px]">{{ t.footer.copyright }}</div>
-        <div class="justify-self-end max-[720px]:justify-self-center">{{ t.footer.text }}</div>
-      </div>
-    </footer>
+    <SiteFooter v-if="!embedded" />
 
     <Teleport to="body">
       <div v-if="showModal" class="fixed inset-0 z-50 flex items-center justify-center p-6 bg-[rgba(17,27,36,0.56)] backdrop-blur-[10px]" @click.self="showModal = false">
@@ -241,11 +215,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { nextTick, onMounted, ref, watch } from 'vue'
 import { useHead } from '@unhead/vue'
-import LanguageMenu from '@/components/LanguageMenu.vue'
+import { useRoute } from 'vue-router'
+import SiteFooter from '@/components/SiteFooter.vue'
+import SiteHeader from '@/components/SiteHeader.vue'
 import { useI18n } from '@/composables/useI18n'
-import { useHostUrl } from '@/composables/useHostUrl'
 
 withDefaults(defineProps<{
   embedded?: boolean
@@ -254,8 +229,8 @@ withDefaults(defineProps<{
 })
 
 const { t } = useI18n()
-const { loginUrl, registerUrl } = useHostUrl()
 const showModal = ref(false)
+const route = useRoute()
 
 useHead(() => ({
   title: t.value.codexHelp.meta.title,
@@ -274,6 +249,22 @@ function scrollTo(id: string) {
     el.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 }
+
+async function scrollToHash(hash = route.hash) {
+  if (!hash) return
+  await nextTick()
+  await Promise.all([...document.images].map((image) => {
+    if (image.complete) return Promise.resolve()
+    return new Promise<void>((resolve) => {
+      image.addEventListener('load', () => resolve(), { once: true })
+      image.addEventListener('error', () => resolve(), { once: true })
+    })
+  }))
+  document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({ block: 'start' })
+}
+
+onMounted(() => { void scrollToHash() })
+watch(() => route.hash, (hash) => { void scrollToHash(hash) })
 
 async function copyText(text: string, event: Event) {
   const btn = event.currentTarget as HTMLButtonElement

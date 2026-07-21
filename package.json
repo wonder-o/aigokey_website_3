@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "node scripts/optimize-images.mjs && vue-tsc -b && vite-ssg build && node scripts/postbuild.mjs",
     "preview": "vite preview",
+    "update:cases": "node scripts/build-cases.mjs",
     "update:skills": "node scripts/update-skills.mjs",
     "validate:blog": "node scripts/validate-blog.mjs"
   },

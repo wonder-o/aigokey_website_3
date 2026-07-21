@@ -1,19 +1,6 @@
 <template>
   <div class="skills-page" :class="{ 'skills-page--embedded': embedded }">
-    <header v-if="!embedded" class="site-header">
-      <div class="header-inner">
-        <router-link to="/" class="brand" aria-label="AigoKey 首页">
-          <img src="/assets/aigokey-logo.png" alt="" />
-          <span>AigoKey</span>
-        </router-link>
-        <nav class="header-nav" aria-label="主导航">
-          <router-link to="/">{{ copy.home }}</router-link>
-          <router-link to="/skills" class="active">Skills</router-link>
-          <router-link to="/codex-help">{{ copy.help }}</router-link>
-        </nav>
-        <LanguageMenu class="language-control" />
-      </div>
-    </header>
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial')" />
 
     <main>
       <section v-if="!embedded" class="intro-band">
@@ -219,13 +206,7 @@
       </section>
     </main>
 
-    <footer v-if="!embedded" class="site-footer">
-      <div>
-        <span>© {{ new Date().getFullYear() }} AigoKey</span>
-        <p>{{ copy.disclaimer }}</p>
-      </div>
-      <a href="https://github.com" target="_blank" rel="noreferrer">GitHub <ArrowUpRight :size="14" /></a>
-    </footer>
+    <SiteFooter v-if="!embedded" />
 
     <Teleport to="body">
       <div v-if="selectedSkill" class="drawer-layer" @click.self="closeDetail">
@@ -382,7 +363,8 @@ import {
   Timer,
   X,
 } from '@lucide/vue'
-import LanguageMenu from '@/components/LanguageMenu.vue'
+import SiteFooter from '@/components/SiteFooter.vue'
+import SiteHeader from '@/components/SiteHeader.vue'
 import CodexIcon from '@/components/CodexIcon.vue'
 import { useI18n } from '@/composables/useI18n'
 import rawCatalog from '@/data/skills.json'

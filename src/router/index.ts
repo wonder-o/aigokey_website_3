@@ -26,6 +26,11 @@ export const routes = [
     component: () => import('@/views/SkillsView.vue'),
   },
   {
+    path: '/codex-cases',
+    name: 'codex-cases',
+    component: () => import('@/views/CasesView.vue'),
+  },
+  {
     path: '/skills-list',
     name: 'skills-list',
     component: () => import('@/views/SkillsListView.vue'),
@@ -34,6 +39,17 @@ export const routes = [
     path: '/image-creation',
     name: 'image-creation',
     component: () => import('@/views/ImageCreationView.vue'),
+  },
+  {
+    path: '/image-creation/cc-switch',
+    name: 'image-creation-cc-switch',
+    component: () => import('@/views/ImageCreationCcSwitchView.vue'),
+  },
+  {
+    path: '/image-creation/cc-switch/embed',
+    name: 'image-creation-cc-switch-embed',
+    component: () => import('@/views/ImageCreationCcSwitchView.vue'),
+    props: { embedded: true },
   },
   {
     path: '/image-setting',

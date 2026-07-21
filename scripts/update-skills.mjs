@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 
 const catalogPath = fileURLToPath(new URL('../src/data/skills.json', import.meta.url))
 const catalog = JSON.parse(await readFile(catalogPath, 'utf8'))
+const minimumCatalogSize = 100
 const token = process.env.GITHUB_TOKEN
 const headers = {
   Accept: 'application/vnd.github+json',
@@ -62,6 +63,12 @@ const invalid = catalog.skills.filter((skill) => (
   Object.keys(skill.dimensions || {}).length < 6
 ))
 if (invalid.length) throw new Error(`Catalog validation failed for: ${invalid.map((skill) => skill.id || 'unknown').join(', ')}`)
+
+const duplicateIds = catalog.skills.filter((skill, index, skills) => skills.findIndex((candidate) => candidate.id === skill.id) !== index)
+const duplicatePaths = catalog.skills.filter((skill, index, skills) => skills.findIndex((candidate) => candidate.repo === skill.repo && candidate.path === skill.path) !== index)
+if (duplicateIds.length) throw new Error(`Duplicate skill ids: ${duplicateIds.map((skill) => skill.id).join(', ')}`)
+if (duplicatePaths.length) throw new Error(`Duplicate GitHub skill paths: ${duplicatePaths.map((skill) => `${skill.repo}/${skill.path}`).join(', ')}`)
+if (catalog.skills.length < minimumCatalogSize) throw new Error(`Catalog must contain at least ${minimumCatalogSize} skills; found ${catalog.skills.length}`)
 
 await writeFile(catalogPath, `${JSON.stringify(catalog, null, 2)}\n`)
 

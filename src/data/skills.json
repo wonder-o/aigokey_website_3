@@ -1,5 +1,5 @@
 {
-  "lastSyncedAt": "2026-07-17T14:08:30.594Z",
+  "lastSyncedAt": "2026-07-20T16:48:54.215Z",
   "skills": [
     {
       "id": "openai-openai-docs",
@@ -18,9 +18,9 @@
       "branch": "main",
       "path": "skills/.curated/openai-docs",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "stars": 23982,
+      "forks": 1628,
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.5,
       "dimensions": {
         "usefulness": 9.8,
@@ -93,9 +93,9 @@
       "branch": "main",
       "path": "skills/systematic-debugging",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "stars": 258067,
+      "forks": 22997,
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.4,
       "dimensions": {
         "usefulness": 9.8,
@@ -148,7 +148,7 @@
         "en": "Code, tests, or reviewable changes"
       },
       "license": "MIT",
-      "openIssues": 318,
+      "openIssues": 322,
       "available": true
     },
     {
@@ -169,9 +169,9 @@
       "branch": "main",
       "path": "skills/docx",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "stars": 162910,
+      "forks": 19308,
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.4,
       "dimensions": {
         "usefulness": 9.7,
@@ -224,7 +224,7 @@
         "en": "Deliverable documents with visual verification"
       },
       "license": "NOASSERTION",
-      "openIssues": 1034,
+      "openIssues": 1041,
       "available": true
     },
     {
@@ -245,9 +245,9 @@
       "branch": "main",
       "path": "skills/xlsx",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "stars": 162910,
+      "forks": 19308,
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.4,
       "dimensions": {
         "usefulness": 9.8,
@@ -300,7 +300,7 @@
         "en": "Analyses, charts, models, or workbooks"
       },
       "license": "NOASSERTION",
-      "openIssues": 1034,
+      "openIssues": 1041,
       "available": true
     },
     {
@@ -321,9 +321,9 @@
       "branch": "main",
       "path": "skills/pptx",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "stars": 162910,
+      "forks": 19308,
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.4,
       "dimensions": {
         "usefulness": 9.7,
@@ -376,7 +376,7 @@
         "en": "Designs, visual assets, or implementation guidance"
       },
       "license": "NOASSERTION",
-      "openIssues": 1034,
+      "openIssues": 1041,
       "available": true
     },
     {
@@ -396,9 +396,9 @@
       "branch": "main",
       "path": "skills/.curated/playwright",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "stars": 23982,
+      "forks": 1628,
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.4,
       "dimensions": {
         "usefulness": 9.8,
@@ -473,9 +473,9 @@
       "branch": "main",
       "path": "skills/test-driven-development",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "stars": 258067,
+      "forks": 22997,
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.6,
@@ -529,7 +529,7 @@
         "en": "Code, tests, or reviewable changes"
       },
       "license": "MIT",
-      "openIssues": 318,
+      "openIssues": 322,
       "available": true
     },
     {
@@ -549,9 +549,9 @@
       "branch": "main",
       "path": "skills/frontend-design",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "stars": 162910,
+      "forks": 19308,
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.5,
@@ -604,7 +604,7 @@
         "en": "Designs, visual assets, or implementation guidance"
       },
       "license": "NOASSERTION",
-      "openIssues": 1034,
+      "openIssues": 1041,
       "available": true
     },
     {
@@ -625,9 +625,9 @@
       "branch": "main",
       "path": "skills/skill-creator",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "stars": 162910,
+      "forks": 19308,
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.5,
@@ -680,7 +680,7 @@
         "en": "Organized outputs, automations, or knowledge assets"
       },
       "license": "NOASSERTION",
-      "openIssues": 1034,
+      "openIssues": 1041,
       "available": true
     },
     {
@@ -701,11 +701,11 @@
       "branch": "main",
       "path": "skills/algorithmic-art",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -776,11 +776,11 @@
       "branch": "main",
       "path": "skills/brand-guidelines",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -851,11 +851,11 @@
       "branch": "main",
       "path": "skills/canvas-design",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -926,11 +926,11 @@
       "branch": "main",
       "path": "skills/doc-coauthoring",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -1001,11 +1001,11 @@
       "branch": "main",
       "path": "skills/internal-comms",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -1076,11 +1076,11 @@
       "branch": "main",
       "path": "skills/pdf",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -1152,11 +1152,11 @@
       "branch": "main",
       "path": "skills/slack-gif-creator",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -1227,11 +1227,11 @@
       "branch": "main",
       "path": "skills/theme-factory",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.3,
@@ -1300,9 +1300,9 @@
       "branch": "main",
       "path": "skills/react-best-practices",
       "source": "Vercel Labs",
-      "stars": 29159,
-      "forks": 2615,
-      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "stars": 29244,
+      "forks": 2627,
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.7,
@@ -1355,7 +1355,7 @@
         "en": "Code, tests, or reviewable changes"
       },
       "license": "NOASSERTION",
-      "openIssues": 159,
+      "openIssues": 161,
       "available": true
     },
     {
@@ -1375,9 +1375,9 @@
       "branch": "main",
       "path": "skills/.curated/security-best-practices",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "stars": 23982,
+      "forks": 1628,
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.3,
       "dimensions": {
         "usefulness": 9.6,
@@ -1451,11 +1451,11 @@
       "branch": "main",
       "path": "skills/brainstorming",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "openIssues": 318,
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
       "license": "MIT",
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.1,
@@ -1526,11 +1526,11 @@
       "branch": "main",
       "path": "skills/verification-before-completion",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "openIssues": 318,
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
       "license": "MIT",
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.1,
@@ -1585,6 +1585,460 @@
       "available": true
     },
     {
+      "id": "superpowers-parallel-agents",
+      "name": "Dispatching Parallel Agents",
+      "description": {
+        "zh": "识别彼此独立且没有共享状态的任务，并协调多个 Agent 并行推进。",
+        "en": "Identify independent tasks without shared state and coordinate multiple agents to work on them in parallel."
+      },
+      "category": "project",
+      "professions": [
+        "developer",
+        "manager",
+        "researcher"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/dispatching-parallel-agents",
+      "source": "Superpowers",
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.4,
+        "documentation": 8.9,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "用明确的步骤和检查点组织工程任务，适合降低多任务协作中的遗漏。",
+        "en": "Organizes engineering work with explicit steps and checkpoints to reduce omissions across multiple tasks."
+      },
+      "bestFor": {
+        "zh": "实施规划、并行协作与分支收尾",
+        "en": "Implementation planning, parallel collaboration, and branch completion"
+      },
+      "caution": {
+        "zh": "涉及多 Agent 或分支操作时，应先确认任务独立性和共享状态。",
+        "en": "Confirm task independence and shared state before multi-agent or branch operations."
+      },
+      "tags": [
+        "agents",
+        "parallel",
+        "coordination"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "none"
+      ],
+      "taskTypes": [
+        "plan",
+        "execute",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务拆分、验收标准和版本控制环境。",
+        "en": "Requires clear task decomposition, acceptance criteria, and version control."
+      },
+      "outputs": {
+        "zh": "实施结果、验证记录或可集成的分支变更",
+        "en": "Implementation results, verification records, or integrable branch changes"
+      }
+    },
+    {
+      "id": "superpowers-finish-branch",
+      "name": "Finishing a Development Branch",
+      "description": {
+        "zh": "在实现和测试完成后，以结构化方式选择合并、PR、保留或清理开发分支。",
+        "en": "Choose a structured merge, PR, retention, or cleanup path after implementation and tests are complete."
+      },
+      "category": "project",
+      "professions": [
+        "developer",
+        "devops",
+        "manager"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/finishing-a-development-branch",
+      "source": "Superpowers",
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.4,
+        "documentation": 8.9,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "用明确的步骤和检查点组织工程任务，适合降低多任务协作中的遗漏。",
+        "en": "Organizes engineering work with explicit steps and checkpoints to reduce omissions across multiple tasks."
+      },
+      "bestFor": {
+        "zh": "实施规划、并行协作与分支收尾",
+        "en": "Implementation planning, parallel collaboration, and branch completion"
+      },
+      "caution": {
+        "zh": "涉及多 Agent 或分支操作时，应先确认任务独立性和共享状态。",
+        "en": "Confirm task independence and shared state before multi-agent or branch operations."
+      },
+      "tags": [
+        "git",
+        "branch",
+        "delivery"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "git",
+        "shell"
+      ],
+      "taskTypes": [
+        "verify",
+        "review",
+        "integrate"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务拆分、验收标准和版本控制环境。",
+        "en": "Requires clear task decomposition, acceptance criteria, and version control."
+      },
+      "outputs": {
+        "zh": "实施结果、验证记录或可集成的分支变更",
+        "en": "Implementation results, verification records, or integrable branch changes"
+      }
+    },
+    {
+      "id": "superpowers-subagent-development",
+      "name": "Subagent-Driven Development",
+      "description": {
+        "zh": "按实施计划拆分独立任务，并在当前会话中用子 Agent 分工实现和复核。",
+        "en": "Split an implementation plan into independent tasks and use subagents in the current session for delivery and review."
+      },
+      "category": "project",
+      "professions": [
+        "developer",
+        "architect",
+        "manager"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/subagent-driven-development",
+      "source": "Superpowers",
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.4,
+        "documentation": 8.9,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "用明确的步骤和检查点组织工程任务，适合降低多任务协作中的遗漏。",
+        "en": "Organizes engineering work with explicit steps and checkpoints to reduce omissions across multiple tasks."
+      },
+      "bestFor": {
+        "zh": "实施规划、并行协作与分支收尾",
+        "en": "Implementation planning, parallel collaboration, and branch completion"
+      },
+      "caution": {
+        "zh": "涉及多 Agent 或分支操作时，应先确认任务独立性和共享状态。",
+        "en": "Confirm task independence and shared state before multi-agent or branch operations."
+      },
+      "tags": [
+        "agents",
+        "implementation",
+        "review"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "plan",
+        "execute",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务拆分、验收标准和版本控制环境。",
+        "en": "Requires clear task decomposition, acceptance criteria, and version control."
+      },
+      "outputs": {
+        "zh": "实施结果、验证记录或可集成的分支变更",
+        "en": "Implementation results, verification records, or integrable branch changes"
+      }
+    },
+    {
+      "id": "superpowers-git-worktrees",
+      "name": "Using Git Worktrees",
+      "description": {
+        "zh": "为功能开发创建隔离工作区，并验证目录、分支和仓库状态，避免干扰当前改动。",
+        "en": "Create isolated workspaces for feature development and verify paths, branches, and repository state without disturbing current changes."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "devops"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/using-git-worktrees",
+      "source": "Superpowers",
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.4,
+        "documentation": 8.9,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "把成熟工程实践固化为可重复执行的流程，适合减少实现偏差和返工。",
+        "en": "Turns established engineering practice into a repeatable workflow that reduces implementation drift and rework."
+      },
+      "bestFor": {
+        "zh": "代码实现、架构调整与工程协作",
+        "en": "Implementation, architecture changes, and engineering collaboration"
+      },
+      "caution": {
+        "zh": "可能执行代码或修改仓库，使用前应确认分支、权限与验证范围。",
+        "en": "May execute code or modify a repository; confirm the branch, permissions, and verification scope first."
+      },
+      "tags": [
+        "git",
+        "worktree",
+        "isolation"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "git",
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "configure",
+        "build",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的代码仓库和对应开发环境。",
+        "en": "Requires an accessible repository and the relevant development environment."
+      },
+      "outputs": {
+        "zh": "代码、配置、测试或可审查的工程变更",
+        "en": "Code, configuration, tests, or reviewable engineering changes"
+      }
+    },
+    {
+      "id": "superpowers-using-skills",
+      "name": "Using Superpowers",
+      "description": {
+        "zh": "建立先发现、再调用适用 Skill 的工作方式，让 Agent 在任务开始时遵循明确流程。",
+        "en": "Establish a discover-then-invoke workflow so agents follow applicable skill guidance from the start of a task."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "manager",
+        "operations"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/using-superpowers",
+      "source": "Superpowers",
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.4,
+        "documentation": 8.9,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "聚焦 Agent 能力的创建、安装和调试，适合维护可复用的智能工作流。",
+        "en": "Focuses on creating, installing, and debugging agent capabilities for reusable intelligent workflows."
+      },
+      "bestFor": {
+        "zh": "Agent 构建、Skill 管理与运行调试",
+        "en": "Agent building, skill management, and runtime debugging"
+      },
+      "caution": {
+        "zh": "安装或共享能力前应审查来源、指令和所请求的工具权限。",
+        "en": "Review the source, instructions, and requested tool access before installing or sharing capabilities."
+      },
+      "tags": [
+        "skills",
+        "workflow",
+        "agents"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "none"
+      ],
+      "taskTypes": [
+        "research",
+        "plan",
+        "execute"
+      ],
+      "prerequisites": {
+        "zh": "需要 Codex 或兼容 Agent 环境以及目标仓库访问权限。",
+        "en": "Requires Codex or a compatible agent environment and access to the target repository."
+      },
+      "outputs": {
+        "zh": "Skill、Agent 配置、调试报告或安装结果",
+        "en": "Skills, agent configuration, debug reports, or installation results"
+      }
+    },
+    {
+      "id": "superpowers-writing-skills",
+      "name": "Writing Skills",
+      "description": {
+        "zh": "创建、编辑并在部署前验证 Skills 的触发条件、指令结构和实际工作流。",
+        "en": "Create, edit, and verify skill triggers, instruction structure, and real workflows before deployment."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "operations",
+        "manager"
+      ],
+      "repo": "obra/superpowers",
+      "branch": "main",
+      "path": "skills/writing-skills",
+      "source": "Superpowers",
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
+      "license": "MIT",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.3,
+        "ease": 8.8,
+        "maintenance": 9.4,
+        "documentation": 8.9,
+        "safety": 9.1
+      },
+      "review": {
+        "zh": "聚焦 Agent 能力的创建、安装和调试，适合维护可复用的智能工作流。",
+        "en": "Focuses on creating, installing, and debugging agent capabilities for reusable intelligent workflows."
+      },
+      "bestFor": {
+        "zh": "Agent 构建、Skill 管理与运行调试",
+        "en": "Agent building, skill management, and runtime debugging"
+      },
+      "caution": {
+        "zh": "安装或共享能力前应审查来源、指令和所请求的工具权限。",
+        "en": "Review the source, instructions, and requested tool access before installing or sharing capabilities."
+      },
+      "tags": [
+        "skills",
+        "authoring",
+        "testing"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "build",
+        "edit",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要 Codex 或兼容 Agent 环境以及目标仓库访问权限。",
+        "en": "Requires Codex or a compatible agent environment and access to the target repository."
+      },
+      "outputs": {
+        "zh": "Skill、Agent 配置、调试报告或安装结果",
+        "en": "Skills, agent configuration, debug reports, or installation results"
+      }
+    },
+    {
       "id": "anthropic-claude-api",
       "name": "Claude API",
       "description": {
@@ -1601,11 +2055,11 @@
       "branch": "main",
       "path": "skills/claude-api",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -1677,11 +2131,11 @@
       "branch": "main",
       "path": "skills/web-artifacts-builder",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -1752,11 +2206,11 @@
       "branch": "main",
       "path": "skills/webapp-testing",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -1827,9 +2281,9 @@
       "branch": "main",
       "path": "skills/web-design-guidelines",
       "source": "Vercel Labs",
-      "stars": 29159,
-      "forks": 2615,
-      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "stars": 29244,
+      "forks": 2627,
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.4,
@@ -1882,7 +2336,7 @@
         "en": "Designs, visual assets, or implementation guidance"
       },
       "license": "NOASSERTION",
-      "openIssues": 159,
+      "openIssues": 161,
       "available": true
     },
     {
@@ -1902,11 +2356,11 @@
       "branch": "main",
       "path": "skills/composition-patterns",
       "source": "Vercel Labs",
-      "stars": 29159,
-      "forks": 2615,
-      "openIssues": 159,
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -1977,11 +2431,11 @@
       "branch": "main",
       "path": "skills/writing-guidelines",
       "source": "Vercel Labs",
-      "stars": 29159,
-      "forks": 2615,
-      "openIssues": 159,
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -2053,11 +2507,11 @@
       "branch": "main",
       "path": "skills/.curated/define-goal",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -2128,11 +2582,11 @@
       "branch": "main",
       "path": "skills/.curated/jupyter-notebook",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -2204,11 +2658,11 @@
       "branch": "main",
       "path": "skills/.curated/screenshot",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -2281,11 +2735,11 @@
       "branch": "main",
       "path": "skills/.curated/security-threat-model",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.2,
       "dimensions": {
         "usefulness": 9.3,
@@ -2339,6 +2793,1295 @@
       "available": true
     },
     {
+      "id": "openai-aspnet-core",
+      "name": "ASP.NET Core",
+      "description": {
+        "zh": "使用最新官方指南构建、审查和升级 ASP.NET Core 应用，覆盖 Blazor、MVC、API、SignalR、gRPC、安全和部署。",
+        "en": "Build, review, and upgrade ASP.NET Core applications with current official guidance across Blazor, MVC, APIs, SignalR, gRPC, security, and deployment."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/aspnet-core",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把成熟工程实践固化为可重复执行的流程，适合减少实现偏差和返工。",
+        "en": "Turns established engineering practice into a repeatable workflow that reduces implementation drift and rework."
+      },
+      "bestFor": {
+        "zh": "代码实现、架构调整与工程协作",
+        "en": "Implementation, architecture changes, and engineering collaboration"
+      },
+      "caution": {
+        "zh": "可能执行代码或修改仓库，使用前应确认分支、权限与验证范围。",
+        "en": "May execute code or modify a repository; confirm the branch, permissions, and verification scope first."
+      },
+      "tags": [
+        "aspnet",
+        "dotnet",
+        "web"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell",
+        "network"
+      ],
+      "taskTypes": [
+        "build",
+        "review",
+        "migrate"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的代码仓库和对应开发环境。",
+        "en": "Requires an accessible repository and the relevant development environment."
+      },
+      "outputs": {
+        "zh": "代码、配置、测试或可审查的工程变更",
+        "en": "Code, configuration, tests, or reviewable engineering changes"
+      }
+    },
+    {
+      "id": "openai-figma-code-connect",
+      "name": "Figma Code Connect Components",
+      "description": {
+        "zh": "使用 Code Connect 将 Figma 设计组件映射到代码组件，保持设计系统与实现一致。",
+        "en": "Map Figma design components to code components with Code Connect to keep design systems aligned with implementation."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-code-connect-components",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "code-connect",
+        "components"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "network"
+      ],
+      "taskTypes": [
+        "integrate",
+        "configure"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-figma-design-system-rules",
+      "name": "Figma Design System Rules",
+      "description": {
+        "zh": "分析代码库并生成项目专属的设计系统规则，规范 Figma 到代码的协作方式。",
+        "en": "Analyze a codebase and generate project-specific design system rules for consistent Figma-to-code workflows."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-create-design-system-rules",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "design-system",
+        "rules"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "filesystem",
+        "network"
+      ],
+      "taskTypes": [
+        "analyze",
+        "document",
+        "configure"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-figma-create-file",
+      "name": "Figma Create New File",
+      "description": {
+        "zh": "在 Figma 或 FigJam 中创建新的空白文件，并处理账号与工作区选择。",
+        "en": "Create a new blank Figma or FigJam file while handling account and workspace selection."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "product"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-create-new-file",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "figjam",
+        "file"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "network"
+      ],
+      "taskTypes": [
+        "build",
+        "configure"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-figma-generate-design",
+      "name": "Figma Generate Design",
+      "description": {
+        "zh": "从代码或描述在 Figma 中增量搭建完整页面，复用现有组件、变量和设计令牌。",
+        "en": "Build complete Figma screens incrementally from code or a description while reusing existing components, variables, and tokens."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer",
+        "product"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-generate-design",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "screen",
+        "design-system"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 25,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "filesystem",
+        "network"
+      ],
+      "taskTypes": [
+        "design",
+        "build"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-figma-generate-library",
+      "name": "Figma Generate Library",
+      "description": {
+        "zh": "从代码库构建或更新专业 Figma 设计系统，包括令牌、主题、组件库和基础规范。",
+        "en": "Build or update a professional Figma design system from a codebase, including tokens, themes, component libraries, and foundations."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-generate-library",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "library",
+        "tokens"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 30,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "filesystem",
+        "network"
+      ],
+      "taskTypes": [
+        "design",
+        "build",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-figma-use",
+      "name": "Figma Use",
+      "description": {
+        "zh": "为 Figma 文件中的节点、变量、组件和自动布局提供受控的程序化读写流程。",
+        "en": "Provide a controlled programmatic workflow for reading and writing Figma nodes, variables, components, and auto layout."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma-use",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "plugin-api",
+        "automation"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "network"
+      ],
+      "taskTypes": [
+        "edit",
+        "automation",
+        "analyze"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-figma",
+      "name": "Figma",
+      "description": {
+        "zh": "通过 Figma MCP 获取设计上下文、截图、变量和资产，并把设计节点转成生产代码。",
+        "en": "Use the Figma MCP server to retrieve design context, screenshots, variables, and assets and translate nodes into production code."
+      },
+      "category": "design",
+      "professions": [
+        "designer",
+        "developer",
+        "product"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/figma",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把设计上下文、组件和令牌连接到可交付产物，适合系统化设计工作。",
+        "en": "Connects design context, components, and tokens to deliverables for systematic design work."
+      },
+      "bestFor": {
+        "zh": "设计系统、界面设计与设计转代码",
+        "en": "Design systems, interface design, and design-to-code"
+      },
+      "caution": {
+        "zh": "写入设计文件前应核对目标文件、组件范围和团队规范。",
+        "en": "Confirm the target file, component scope, and team conventions before writing to design files."
+      },
+      "tags": [
+        "figma",
+        "mcp",
+        "design-to-code"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "figma",
+        "network",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "extract",
+        "build",
+        "integrate"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的设计目标；涉及 Figma 时需要可用的 Figma 连接。",
+        "en": "Requires a clear design goal and, for Figma tasks, an available Figma connection."
+      },
+      "outputs": {
+        "zh": "设计文件、组件映射、设计规则或视觉资产",
+        "en": "Design files, component mappings, design rules, or visual assets"
+      }
+    },
+    {
+      "id": "openai-notion-knowledge-capture",
+      "name": "Notion Knowledge Capture",
+      "description": {
+        "zh": "把对话、笔记和决策整理为带链接的 Notion 知识库、操作指南、决策记录或 FAQ。",
+        "en": "Turn conversations, notes, and decisions into linked Notion wiki pages, how-tos, decision records, or FAQs."
+      },
+      "category": "productivity",
+      "professions": [
+        "operations",
+        "manager",
+        "product",
+        "support"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/notion-knowledge-capture",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把重复协作步骤整理成明确流程，适合提升团队执行一致性。",
+        "en": "Structures recurring collaboration steps into a clear workflow for more consistent execution."
+      },
+      "bestFor": {
+        "zh": "团队协作、知识整理与日常自动化",
+        "en": "Team collaboration, knowledge capture, and routine automation"
+      },
+      "caution": {
+        "zh": "连接外部服务或共享内容前，应核对接收方和数据范围。",
+        "en": "Confirm recipients and data scope before connecting services or sharing content."
+      },
+      "tags": [
+        "notion",
+        "knowledge",
+        "wiki"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "notion",
+        "network"
+      ],
+      "taskTypes": [
+        "capture",
+        "organize",
+        "document"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务边界以及相关服务的访问权限。",
+        "en": "Requires a defined task boundary and access to any relevant services."
+      },
+      "outputs": {
+        "zh": "结构化记录、协作结果或自动化操作",
+        "en": "Structured records, collaboration results, or automated actions"
+      }
+    },
+    {
+      "id": "openai-pdf",
+      "name": "PDF (OpenAI)",
+      "description": {
+        "zh": "读取、创建和审阅重视版式的 PDF，并通过页面渲染完成视觉校验。",
+        "en": "Read, create, and review layout-sensitive PDFs with page rendering for visual verification."
+      },
+      "category": "documents",
+      "professions": [
+        "operations",
+        "designer",
+        "legal",
+        "student"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/pdf",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "兼顾内容处理与交付前校验，适合对格式和可读性有要求的文档任务。",
+        "en": "Combines content handling with pre-delivery checks for document work where layout and readability matter."
+      },
+      "bestFor": {
+        "zh": "文档创建、提取、审阅与格式校验",
+        "en": "Document creation, extraction, review, and formatting checks"
+      },
+      "caution": {
+        "zh": "处理敏感文件时应限制访问范围并检查输出中的隐私信息。",
+        "en": "Limit access and inspect outputs for private information when handling sensitive files."
+      },
+      "tags": [
+        "pdf",
+        "layout",
+        "rendering"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem",
+        "python"
+      ],
+      "taskTypes": [
+        "extract",
+        "edit",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可读取的源文件或明确的文档交付要求。",
+        "en": "Requires readable source files or clear document delivery requirements."
+      },
+      "outputs": {
+        "zh": "文档文件、提取内容或视觉校验结果",
+        "en": "Document files, extracted content, or visual verification results"
+      }
+    },
+    {
+      "id": "openai-playwright-interactive",
+      "name": "Playwright Interactive",
+      "description": {
+        "zh": "通过持久浏览器或 Electron 会话快速迭代 UI 调试、检查和交互验证。",
+        "en": "Use persistent browser or Electron sessions for fast iterative UI debugging, inspection, and interaction checks."
+      },
+      "category": "testing",
+      "professions": [
+        "developer",
+        "qa"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/playwright-interactive",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "通过真实交互和持续会话复现问题，适合需要快速观察、修正和回归验证的界面任务。",
+        "en": "Reproduces issues through real interactions and persistent sessions for fast UI inspection, fixes, and regression checks."
+      },
+      "bestFor": {
+        "zh": "浏览器测试、UI 调试与交互验证",
+        "en": "Browser testing, UI debugging, and interaction verification"
+      },
+      "caution": {
+        "zh": "自动化会操作浏览器或桌面应用，应限制目标环境和账号权限。",
+        "en": "Automation controls browsers or desktop applications, so restrict the target environment and account permissions."
+      },
+      "tags": [
+        "playwright",
+        "browser",
+        "electron"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "browser",
+        "shell"
+      ],
+      "taskTypes": [
+        "test",
+        "debug",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可运行的应用、测试环境和浏览器自动化运行时。",
+        "en": "Requires a runnable application, test environment, and browser automation runtime."
+      },
+      "outputs": {
+        "zh": "测试记录、截图、故障证据或验证结果",
+        "en": "Test records, screenshots, failure evidence, or verification results"
+      }
+    },
+    {
+      "id": "openai-security-ownership-map",
+      "name": "Security Ownership Map",
+      "description": {
+        "zh": "基于 Git 历史构建人员到文件的安全所有权关系，识别低巴士因子、敏感代码孤岛和责任缺口。",
+        "en": "Build people-to-file security ownership from Git history to identify low bus factor, sensitive-code islands, and ownership gaps."
+      },
+      "category": "security",
+      "professions": [
+        "security",
+        "architect",
+        "manager"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/security-ownership-map",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "以仓库证据建立可追溯的安全判断，适合风险审查和责任边界分析。",
+        "en": "Builds traceable security findings from repository evidence for risk and ownership analysis."
+      },
+      "bestFor": {
+        "zh": "安全审计、所有权分析与风险治理",
+        "en": "Security audits, ownership analysis, and risk governance"
+      },
+      "caution": {
+        "zh": "结果可能包含敏感组织信息，应限制数据访问和报告传播范围。",
+        "en": "Results may expose sensitive organizational information; restrict data access and report distribution."
+      },
+      "tags": [
+        "security",
+        "ownership",
+        "git"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 20,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "git",
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "audit",
+        "analyze",
+        "report"
+      ],
+      "prerequisites": {
+        "zh": "需要有权访问目标仓库及其 Git 历史。",
+        "en": "Requires authorized access to the target repository and its Git history."
+      },
+      "outputs": {
+        "zh": "安全报告、所有权数据或风险清单",
+        "en": "Security reports, ownership data, or risk inventories"
+      }
+    },
+    {
+      "id": "openai-winui-app",
+      "name": "WinUI App",
+      "description": {
+        "zh": "依据 Microsoft 官方指南搭建、设计和排查现代 WinUI 3 桌面应用，覆盖 XAML、窗口、主题、性能与部署。",
+        "en": "Build, design, and troubleshoot modern WinUI 3 desktop apps with official Microsoft guidance across XAML, windowing, theming, performance, and deployment."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "designer",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.curated/winui-app",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把成熟工程实践固化为可重复执行的流程，适合减少实现偏差和返工。",
+        "en": "Turns established engineering practice into a repeatable workflow that reduces implementation drift and rework."
+      },
+      "bestFor": {
+        "zh": "代码实现、架构调整与工程协作",
+        "en": "Implementation, architecture changes, and engineering collaboration"
+      },
+      "caution": {
+        "zh": "可能执行代码或修改仓库，使用前应确认分支、权限与验证范围。",
+        "en": "May execute code or modify a repository; confirm the branch, permissions, and verification scope first."
+      },
+      "tags": [
+        "winui",
+        "windows",
+        "dotnet"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 25,
+      "risk": "medium",
+      "platforms": [
+        "windows"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell",
+        "network"
+      ],
+      "taskTypes": [
+        "build",
+        "review",
+        "debug"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的代码仓库和对应开发环境。",
+        "en": "Requires an accessible repository and the relevant development environment."
+      },
+      "outputs": {
+        "zh": "代码、配置、测试或可审查的工程变更",
+        "en": "Code, configuration, tests, or reviewable engineering changes"
+      }
+    },
+    {
+      "id": "openai-imagegen",
+      "name": "Image Generation",
+      "description": {
+        "zh": "生成或编辑照片、插画、纹理、精灵图、产品样机和透明背景素材等位图资产。",
+        "en": "Generate or edit bitmap assets such as photos, illustrations, textures, sprites, product mockups, and transparent cutouts."
+      },
+      "category": "media",
+      "professions": [
+        "designer",
+        "creator",
+        "marketing"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.system/imagegen",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "把媒体生成或处理步骤纳入可验证工作流，适合稳定产出视觉素材。",
+        "en": "Brings media generation or processing into a verifiable workflow for reliable visual output."
+      },
+      "bestFor": {
+        "zh": "图像生成、增强与媒体素材制作",
+        "en": "Image generation, enhancement, and media asset production"
+      },
+      "caution": {
+        "zh": "应确认素材版权、人物授权和生成服务的数据使用政策。",
+        "en": "Confirm asset rights, likeness permissions, and the generation service data policy."
+      },
+      "tags": [
+        "image",
+        "generation",
+        "editing"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 10,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem"
+      ],
+      "taskTypes": [
+        "generate",
+        "edit"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的素材要求以及相应文件或生成服务。",
+        "en": "Requires clear asset requirements and the relevant files or generation service."
+      },
+      "outputs": {
+        "zh": "图像文件、媒体素材或处理后的视觉结果",
+        "en": "Image files, media assets, or processed visual results"
+      }
+    },
+    {
+      "id": "openai-plugin-creator",
+      "name": "Plugin Creator",
+      "description": {
+        "zh": "创建符合 Codex 规范的本地插件目录、清单和市场配置，为测试或发布提供可编辑脚手架。",
+        "en": "Create Codex-compliant local plugin directories, manifests, and marketplace configuration as editable scaffolding for testing or release."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "architect"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.system/plugin-creator",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "聚焦 Agent 能力的创建、安装和调试，适合维护可复用的智能工作流。",
+        "en": "Focuses on creating, installing, and debugging agent capabilities for reusable intelligent workflows."
+      },
+      "bestFor": {
+        "zh": "Agent 构建、Skill 管理与运行调试",
+        "en": "Agent building, skill management, and runtime debugging"
+      },
+      "caution": {
+        "zh": "安装或共享能力前应审查来源、指令和所请求的工具权限。",
+        "en": "Review the source, instructions, and requested tool access before installing or sharing capabilities."
+      },
+      "tags": [
+        "codex",
+        "plugin",
+        "scaffold"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "build",
+        "configure",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要 Codex 或兼容 Agent 环境以及目标仓库访问权限。",
+        "en": "Requires Codex or a compatible agent environment and access to the target repository."
+      },
+      "outputs": {
+        "zh": "Skill、Agent 配置、调试报告或安装结果",
+        "en": "Skills, agent configuration, debug reports, or installation results"
+      }
+    },
+    {
+      "id": "openai-skill-creator",
+      "name": "Skill Creator (OpenAI)",
+      "description": {
+        "zh": "指导创建或更新触发准确、结构清晰且可维护的 Codex Skills。",
+        "en": "Guide the creation or update of accurately triggered, well-structured, maintainable Codex skills."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "operations",
+        "manager"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.system/skill-creator",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "聚焦 Agent 能力的创建、安装和调试，适合维护可复用的智能工作流。",
+        "en": "Focuses on creating, installing, and debugging agent capabilities for reusable intelligent workflows."
+      },
+      "bestFor": {
+        "zh": "Agent 构建、Skill 管理与运行调试",
+        "en": "Agent building, skill management, and runtime debugging"
+      },
+      "caution": {
+        "zh": "安装或共享能力前应审查来源、指令和所请求的工具权限。",
+        "en": "Review the source, instructions, and requested tool access before installing or sharing capabilities."
+      },
+      "tags": [
+        "codex",
+        "skills",
+        "workflow"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "established",
+      "setupTimeMinutes": 15,
+      "risk": "medium",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "build",
+        "edit",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要 Codex 或兼容 Agent 环境以及目标仓库访问权限。",
+        "en": "Requires Codex or a compatible agent environment and access to the target repository."
+      },
+      "outputs": {
+        "zh": "Skill、Agent 配置、调试报告或安装结果",
+        "en": "Skills, agent configuration, debug reports, or installation results"
+      }
+    },
+    {
+      "id": "openai-skill-installer",
+      "name": "Skill Installer",
+      "description": {
+        "zh": "从官方目录或 GitHub 仓库安装 Codex Skills，也支持需要授权的私有仓库。",
+        "en": "Install Codex skills from the curated catalog or a GitHub repository, including authorized private repositories."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "operations"
+      ],
+      "repo": "openai/skills",
+      "branch": "main",
+      "path": "skills/.system/skill-installer",
+      "source": "OpenAI",
+      "stars": 23982,
+      "forks": 1628,
+      "openIssues": 276,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
+      "rating": 9.2,
+      "dimensions": {
+        "usefulness": 9.4,
+        "reliability": 9.5,
+        "ease": 9,
+        "maintenance": 9.6,
+        "documentation": 9.2,
+        "safety": 9
+      },
+      "review": {
+        "zh": "聚焦 Agent 能力的创建、安装和调试，适合维护可复用的智能工作流。",
+        "en": "Focuses on creating, installing, and debugging agent capabilities for reusable intelligent workflows."
+      },
+      "bestFor": {
+        "zh": "Agent 构建、Skill 管理与运行调试",
+        "en": "Agent building, skill management, and runtime debugging"
+      },
+      "caution": {
+        "zh": "安装或共享能力前应审查来源、指令和所请求的工具权限。",
+        "en": "Review the source, instructions, and requested tool access before installing or sharing capabilities."
+      },
+      "tags": [
+        "codex",
+        "skills",
+        "install"
+      ],
+      "official": true,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "established",
+      "setupTimeMinutes": 5,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "filesystem",
+        "github"
+      ],
+      "taskTypes": [
+        "research",
+        "integrate",
+        "configure"
+      ],
+      "prerequisites": {
+        "zh": "需要 Codex 或兼容 Agent 环境以及目标仓库访问权限。",
+        "en": "Requires Codex or a compatible agent environment and access to the target repository."
+      },
+      "outputs": {
+        "zh": "Skill、Agent 配置、调试报告或安装结果",
+        "en": "Skills, agent configuration, debug reports, or installation results"
+      }
+    },
+    {
       "id": "superpowers-receiving-code-review",
       "name": "Receiving Code Review",
       "description": {
@@ -2355,11 +4098,11 @@
       "branch": "main",
       "path": "skills/receiving-code-review",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "openIssues": 318,
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
       "license": "MIT",
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.1,
@@ -2429,11 +4172,11 @@
       "branch": "main",
       "path": "skills/requesting-code-review",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "openIssues": 318,
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
       "license": "MIT",
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.1,
@@ -2504,11 +4247,11 @@
       "branch": "main",
       "path": "skills/writing-plans",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "openIssues": 318,
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
       "license": "MIT",
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.1,
@@ -2578,11 +4321,11 @@
       "branch": "main",
       "path": "skills/mcp-builder",
       "source": "Anthropic",
-      "stars": 162015,
-      "forks": 19181,
-      "openIssues": 1034,
+      "stars": 162910,
+      "forks": 19308,
+      "openIssues": 1041,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:06:27Z",
+      "repoUpdatedAt": "2026-07-20T16:45:18Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -2656,11 +4399,11 @@
       "branch": "master",
       "path": "changelog-generator",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.1,
@@ -2732,11 +4475,11 @@
       "branch": "master",
       "path": "meeting-insights-analyzer",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.1,
@@ -2807,11 +4550,11 @@
       "branch": "master",
       "path": "tailored-resume-generator",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.1,
@@ -2882,11 +4625,11 @@
       "branch": "main",
       "path": "skills/react-native-skills",
       "source": "Vercel Labs",
-      "stars": 29159,
-      "forks": 2615,
-      "openIssues": 159,
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -2957,11 +4700,11 @@
       "branch": "main",
       "path": "skills/vercel-optimize",
       "source": "Vercel Labs",
-      "stars": 29159,
-      "forks": 2615,
-      "openIssues": 159,
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:51Z",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3016,6 +4759,233 @@
       "available": true
     },
     {
+      "id": "vercel-deploy-to-vercel",
+      "name": "Deploy to Vercel",
+      "description": {
+        "zh": "把应用或网站部署到 Vercel，并返回可访问的预览或生产地址。",
+        "en": "Deploy applications or websites to Vercel and return an accessible preview or production URL."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops",
+        "product"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/deploy-to-vercel",
+      "source": "Vercel Labs",
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.2,
+        "ease": 8.9,
+        "maintenance": 9.4,
+        "documentation": 8.8,
+        "safety": 8.8
+      },
+      "review": {
+        "zh": "把部署操作、身份验证和结果检查整合到同一流程，适合快速交付预览或生产版本。",
+        "en": "Combines deployment, authentication, and result checks for fast preview or production delivery."
+      },
+      "bestFor": {
+        "zh": "Vercel 部署、预览环境与项目配置",
+        "en": "Vercel deployment, preview environments, and project configuration"
+      },
+      "caution": {
+        "zh": "部署会产生外部状态和潜在费用，应先核对账号、环境变量与目标环境。",
+        "en": "Deployment creates external state and may incur cost; verify the account, environment variables, and target environment first."
+      },
+      "tags": [
+        "vercel",
+        "deploy",
+        "preview"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 10,
+      "risk": "high",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "vercel",
+        "cloud-account"
+      ],
+      "taskTypes": [
+        "deploy",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可部署项目、Vercel 账号和相应访问凭据。",
+        "en": "Requires a deployable project, a Vercel account, and appropriate credentials."
+      },
+      "outputs": {
+        "zh": "部署地址、项目配置或部署诊断结果",
+        "en": "Deployment URLs, project configuration, or deployment diagnostics"
+      }
+    },
+    {
+      "id": "vercel-react-view-transitions",
+      "name": "React View Transitions",
+      "description": {
+        "zh": "使用 React View Transition API 构建路由切换、共享元素、进出场和列表重排动画。",
+        "en": "Implement route, shared-element, enter/exit, and list-reorder animations with React View Transition APIs."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "designer"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/react-view-transitions",
+      "source": "Vercel Labs",
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.2,
+        "ease": 8.9,
+        "maintenance": 9.4,
+        "documentation": 8.8,
+        "safety": 8.8
+      },
+      "review": {
+        "zh": "把成熟工程实践固化为可重复执行的流程，适合减少实现偏差和返工。",
+        "en": "Turns established engineering practice into a repeatable workflow that reduces implementation drift and rework."
+      },
+      "bestFor": {
+        "zh": "代码实现、架构调整与工程协作",
+        "en": "Implementation, architecture changes, and engineering collaboration"
+      },
+      "caution": {
+        "zh": "可能执行代码或修改仓库，使用前应确认分支、权限与验证范围。",
+        "en": "May execute code or modify a repository; confirm the branch, permissions, and verification scope first."
+      },
+      "tags": [
+        "react",
+        "animation",
+        "transitions"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "low",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "build",
+        "optimize",
+        "review"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的代码仓库和对应开发环境。",
+        "en": "Requires an accessible repository and the relevant development environment."
+      },
+      "outputs": {
+        "zh": "代码、配置、测试或可审查的工程变更",
+        "en": "Code, configuration, tests, or reviewable engineering changes"
+      }
+    },
+    {
+      "id": "vercel-cli-tokens",
+      "name": "Vercel CLI with Tokens",
+      "description": {
+        "zh": "通过令牌认证使用 Vercel CLI 部署、配置项目和管理环境变量。",
+        "en": "Use token-authenticated Vercel CLI workflows to deploy, configure projects, and manage environment variables."
+      },
+      "category": "deployment",
+      "professions": [
+        "developer",
+        "devops"
+      ],
+      "repo": "vercel-labs/agent-skills",
+      "branch": "main",
+      "path": "skills/vercel-cli-with-tokens",
+      "source": "Vercel Labs",
+      "stars": 29244,
+      "forks": 2627,
+      "openIssues": 161,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:43:34Z",
+      "rating": 9.1,
+      "dimensions": {
+        "usefulness": 9.3,
+        "reliability": 9.2,
+        "ease": 8.9,
+        "maintenance": 9.4,
+        "documentation": 8.8,
+        "safety": 8.8
+      },
+      "review": {
+        "zh": "把部署操作、身份验证和结果检查整合到同一流程，适合快速交付预览或生产版本。",
+        "en": "Combines deployment, authentication, and result checks for fast preview or production delivery."
+      },
+      "bestFor": {
+        "zh": "Vercel 部署、预览环境与项目配置",
+        "en": "Vercel deployment, preview environments, and project configuration"
+      },
+      "caution": {
+        "zh": "部署会产生外部状态和潜在费用，应先核对账号、环境变量与目标环境。",
+        "en": "Deployment creates external state and may incur cost; verify the account, environment variables, and target environment first."
+      },
+      "tags": [
+        "vercel",
+        "cli",
+        "tokens"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "shell",
+        "vercel",
+        "api-key"
+      ],
+      "taskTypes": [
+        "configure",
+        "deploy",
+        "update"
+      ],
+      "prerequisites": {
+        "zh": "需要可部署项目、Vercel 账号和相应访问凭据。",
+        "en": "Requires a deployable project, a Vercel account, and appropriate credentials."
+      },
+      "outputs": {
+        "zh": "部署地址、项目配置或部署诊断结果",
+        "en": "Deployment URLs, project configuration, or deployment diagnostics"
+      }
+    },
+    {
       "id": "openai-notion-research-documentation",
       "name": "Notion Research Documentation",
       "description": {
@@ -3032,9 +5002,9 @@
       "branch": "main",
       "path": "skills/.curated/notion-research-documentation",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "stars": 23982,
+      "forks": 1628,
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.4,
@@ -3108,11 +5078,11 @@
       "branch": "main",
       "path": "skills/.curated/chatgpt-apps",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3184,11 +5154,11 @@
       "branch": "main",
       "path": "skills/.curated/cli-creator",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3261,11 +5231,11 @@
       "branch": "main",
       "path": "skills/.curated/cloudflare-deploy",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3336,11 +5306,11 @@
       "branch": "main",
       "path": "skills/.curated/figma-implement-design",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3411,11 +5381,11 @@
       "branch": "main",
       "path": "skills/.curated/gh-address-comments",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3487,11 +5457,11 @@
       "branch": "main",
       "path": "skills/.curated/gh-fix-ci",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3565,11 +5535,11 @@
       "branch": "main",
       "path": "skills/.curated/linear",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3640,11 +5610,11 @@
       "branch": "main",
       "path": "skills/.curated/migrate-to-codex",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3714,11 +5684,11 @@
       "branch": "main",
       "path": "skills/.curated/netlify-deploy",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3790,11 +5760,11 @@
       "branch": "main",
       "path": "skills/.curated/notion-meeting-intelligence",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3865,11 +5835,11 @@
       "branch": "main",
       "path": "skills/.curated/notion-spec-to-implementation",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -3942,11 +5912,11 @@
       "branch": "main",
       "path": "skills/.curated/render-deploy",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -4018,11 +5988,11 @@
       "branch": "main",
       "path": "skills/.curated/sentry",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -4094,11 +6064,11 @@
       "branch": "main",
       "path": "skills/.curated/speech",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -4170,11 +6140,11 @@
       "branch": "main",
       "path": "skills/.curated/transcribe",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -4246,11 +6216,11 @@
       "branch": "main",
       "path": "skills/.curated/vercel-deploy",
       "source": "OpenAI",
-      "stars": 23872,
-      "forks": 1615,
+      "stars": 23982,
+      "forks": 1628,
       "openIssues": 276,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:01:21Z",
+      "repoUpdatedAt": "2026-07-20T16:32:54Z",
       "rating": 9.1,
       "dimensions": {
         "usefulness": 9.3,
@@ -4322,11 +6292,11 @@
       "branch": "main",
       "path": "skills/executing-plans",
       "source": "Superpowers",
-      "stars": 256438,
-      "forks": 22830,
-      "openIssues": 318,
+      "stars": 258067,
+      "forks": 22997,
+      "openIssues": 322,
       "license": "MIT",
-      "repoUpdatedAt": "2026-07-17T14:07:28Z",
+      "repoUpdatedAt": "2026-07-20T16:47:39Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4396,9 +6366,9 @@
       "branch": "master",
       "path": "content-research-writer",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "stars": 68193,
+      "forks": 7735,
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.2,
@@ -4453,7 +6423,7 @@
         "en": "Structured content, copy, or publishable drafts"
       },
       "license": "NOASSERTION",
-      "openIssues": 1038,
+      "openIssues": 1056,
       "available": true
     },
     {
@@ -4473,9 +6443,9 @@
       "branch": "master",
       "path": "lead-research-assistant",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "stars": 68193,
+      "forks": 7735,
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4528,7 +6498,7 @@
         "en": "Lead lists, account briefs, or outreach guidance"
       },
       "license": "NOASSERTION",
-      "openIssues": 1038,
+      "openIssues": 1056,
       "available": true
     },
     {
@@ -4549,11 +6519,11 @@
       "branch": "master",
       "path": "competitive-ads-extractor",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4625,11 +6595,11 @@
       "branch": "master",
       "path": "developer-growth-analysis",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4701,11 +6671,11 @@
       "branch": "master",
       "path": "file-organizer",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4776,11 +6746,11 @@
       "branch": "master",
       "path": "invoice-organizer",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4851,11 +6821,11 @@
       "branch": "master",
       "path": "twitter-algorithm-optimizer",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4926,11 +6896,11 @@
       "branch": "master",
       "path": "video-downloader",
       "source": "Composio",
-      "stars": 67951,
-      "forks": 7693,
-      "openIssues": 1038,
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
       "license": "NOASSERTION",
-      "repoUpdatedAt": "2026-07-17T14:03:27Z",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
       "rating": 8.9,
       "dimensions": {
         "usefulness": 9.1,
@@ -4983,6 +6953,616 @@
         "en": "Media files, transcripts, or processed outputs"
       },
       "available": true
+    },
+    {
+      "id": "composio-artifacts-builder",
+      "name": "Artifacts Builder",
+      "description": {
+        "zh": "使用 React、Tailwind CSS 和组件库构建带状态、路由和复杂交互的多组件 HTML artifacts。",
+        "en": "Build multi-component HTML artifacts with state, routing, and rich interactions using React, Tailwind CSS, and component libraries."
+      },
+      "category": "development",
+      "professions": [
+        "developer",
+        "designer",
+        "creator"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "artifacts-builder",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把成熟工程实践固化为可重复执行的流程，适合减少实现偏差和返工。",
+        "en": "Turns established engineering practice into a repeatable workflow that reduces implementation drift and rework."
+      },
+      "bestFor": {
+        "zh": "代码实现、架构调整与工程协作",
+        "en": "Implementation, architecture changes, and engineering collaboration"
+      },
+      "caution": {
+        "zh": "可能执行代码或修改仓库，使用前应确认分支、权限与验证范围。",
+        "en": "May execute code or modify a repository; confirm the branch, permissions, and verification scope first."
+      },
+      "tags": [
+        "artifacts",
+        "react",
+        "frontend"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 20,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "filesystem",
+        "shell"
+      ],
+      "taskTypes": [
+        "build",
+        "design",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要可访问的代码仓库和对应开发环境。",
+        "en": "Requires an accessible repository and the relevant development environment."
+      },
+      "outputs": {
+        "zh": "代码、配置、测试或可审查的工程变更",
+        "en": "Code, configuration, tests, or reviewable engineering changes"
+      }
+    },
+    {
+      "id": "composio-connect-apps",
+      "name": "Connect Apps",
+      "description": {
+        "zh": "连接 Gmail、Slack、GitHub 等外部应用，发送邮件、创建 issue、发布消息或执行服务操作。",
+        "en": "Connect external apps such as Gmail, Slack, and GitHub to send email, create issues, post messages, or take service actions."
+      },
+      "category": "productivity",
+      "professions": [
+        "operations",
+        "developer",
+        "sales",
+        "support"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "connect-apps",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把重复协作步骤整理成明确流程，适合提升团队执行一致性。",
+        "en": "Structures recurring collaboration steps into a clear workflow for more consistent execution."
+      },
+      "bestFor": {
+        "zh": "团队协作、知识整理与日常自动化",
+        "en": "Team collaboration, knowledge capture, and routine automation"
+      },
+      "caution": {
+        "zh": "连接外部服务或共享内容前，应核对接收方和数据范围。",
+        "en": "Confirm recipients and data scope before connecting services or sharing content."
+      },
+      "tags": [
+        "integration",
+        "apps",
+        "automation"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "intermediate",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "api-key"
+      ],
+      "taskTypes": [
+        "integrate",
+        "automation",
+        "execute"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务边界以及相关服务的访问权限。",
+        "en": "Requires a defined task boundary and access to any relevant services."
+      },
+      "outputs": {
+        "zh": "结构化记录、协作结果或自动化操作",
+        "en": "Structured records, collaboration results, or automated actions"
+      }
+    },
+    {
+      "id": "composio-domain-brainstormer",
+      "name": "Domain Name Brainstormer",
+      "description": {
+        "zh": "为项目生成域名创意，并检查 .com、.io、.dev、.ai 等多个顶级域的可用性。",
+        "en": "Generate domain ideas for a project and check availability across TLDs such as .com, .io, .dev, and .ai."
+      },
+      "category": "marketing",
+      "professions": [
+        "founder",
+        "marketing",
+        "product",
+        "creator"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "domain-name-brainstormer",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把创意探索与外部信息核验结合起来，适合缩短品牌和增长任务的前期研究。",
+        "en": "Combines creative exploration with external verification to shorten early brand and growth research."
+      },
+      "bestFor": {
+        "zh": "品牌命名、市场研究与增长素材准备",
+        "en": "Brand naming, market research, and growth asset preparation"
+      },
+      "caution": {
+        "zh": "可用性和市场数据会变化，正式决策前应再次核验并处理商标风险。",
+        "en": "Availability and market data change; recheck before decisions and account for trademark risk."
+      },
+      "tags": [
+        "domain",
+        "naming",
+        "availability"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network"
+      ],
+      "taskTypes": [
+        "ideate",
+        "research",
+        "verify"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的品牌定位、目标受众和筛选标准。",
+        "en": "Requires clear brand positioning, target audience, and selection criteria."
+      },
+      "outputs": {
+        "zh": "候选清单、可用性结果或市场建议",
+        "en": "Candidate lists, availability results, or market recommendations"
+      }
+    },
+    {
+      "id": "composio-image-enhancer",
+      "name": "Image Enhancer",
+      "description": {
+        "zh": "增强截图和图片的分辨率、锐度与清晰度，为演示、文档或社交内容准备素材。",
+        "en": "Improve screenshot and image resolution, sharpness, and clarity for presentations, documentation, or social content."
+      },
+      "category": "media",
+      "professions": [
+        "designer",
+        "creator",
+        "marketing"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "image-enhancer",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把媒体生成或处理步骤纳入可验证工作流，适合稳定产出视觉素材。",
+        "en": "Brings media generation or processing into a verifiable workflow for reliable visual output."
+      },
+      "bestFor": {
+        "zh": "图像生成、增强与媒体素材制作",
+        "en": "Image generation, enhancement, and media asset production"
+      },
+      "caution": {
+        "zh": "应确认素材版权、人物授权和生成服务的数据使用政策。",
+        "en": "Confirm asset rights, likeness permissions, and the generation service data policy."
+      },
+      "tags": [
+        "image",
+        "enhance",
+        "upscale"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "low",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "filesystem"
+      ],
+      "taskTypes": [
+        "edit",
+        "optimize"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的素材要求以及相应文件或生成服务。",
+        "en": "Requires clear asset requirements and the relevant files or generation service."
+      },
+      "outputs": {
+        "zh": "图像文件、媒体素材或处理后的视觉结果",
+        "en": "Image files, media assets, or processed visual results"
+      }
+    },
+    {
+      "id": "composio-langsmith-fetch",
+      "name": "LangSmith Fetch",
+      "description": {
+        "zh": "拉取并分析 LangSmith Studio 执行轨迹，排查 LangChain 或 LangGraph Agent 的错误、工具调用和性能问题。",
+        "en": "Fetch and analyze LangSmith Studio traces to debug errors, tool calls, and performance in LangChain or LangGraph agents."
+      },
+      "category": "ai-agents",
+      "professions": [
+        "developer",
+        "data-scientist",
+        "architect"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "langsmith-fetch",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "聚焦 Agent 能力的创建、安装和调试，适合维护可复用的智能工作流。",
+        "en": "Focuses on creating, installing, and debugging agent capabilities for reusable intelligent workflows."
+      },
+      "bestFor": {
+        "zh": "Agent 构建、Skill 管理与运行调试",
+        "en": "Agent building, skill management, and runtime debugging"
+      },
+      "caution": {
+        "zh": "安装或共享能力前应审查来源、指令和所请求的工具权限。",
+        "en": "Review the source, instructions, and requested tool access before installing or sharing capabilities."
+      },
+      "tags": [
+        "langsmith",
+        "langchain",
+        "traces"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "cross-platform"
+      ],
+      "permissions": [
+        "network",
+        "shell",
+        "api-key"
+      ],
+      "taskTypes": [
+        "debug",
+        "analyze",
+        "report"
+      ],
+      "prerequisites": {
+        "zh": "需要 Codex 或兼容 Agent 环境以及目标仓库访问权限。",
+        "en": "Requires Codex or a compatible agent environment and access to the target repository."
+      },
+      "outputs": {
+        "zh": "Skill、Agent 配置、调试报告或安装结果",
+        "en": "Skills, agent configuration, debug reports, or installation results"
+      }
+    },
+    {
+      "id": "composio-skill-share",
+      "name": "Skill Share",
+      "description": {
+        "zh": "创建新的 Skills，并通过 Slack 分享给团队，支持内部能力发现和复用。",
+        "en": "Create new skills and share them with a team through Slack for internal discovery and reuse."
+      },
+      "category": "productivity",
+      "professions": [
+        "developer",
+        "operations",
+        "manager"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "skill-share",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把重复协作步骤整理成明确流程，适合提升团队执行一致性。",
+        "en": "Structures recurring collaboration steps into a clear workflow for more consistent execution."
+      },
+      "bestFor": {
+        "zh": "团队协作、知识整理与日常自动化",
+        "en": "Team collaboration, knowledge capture, and routine automation"
+      },
+      "caution": {
+        "zh": "连接外部服务或共享内容前，应核对接收方和数据范围。",
+        "en": "Confirm recipients and data scope before connecting services or sharing content."
+      },
+      "tags": [
+        "skills",
+        "slack",
+        "sharing"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "filesystem",
+        "api-key"
+      ],
+      "taskTypes": [
+        "build",
+        "document",
+        "execute"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务边界以及相关服务的访问权限。",
+        "en": "Requires a defined task boundary and access to any relevant services."
+      },
+      "outputs": {
+        "zh": "结构化记录、协作结果或自动化操作",
+        "en": "Structured records, collaboration results, or automated actions"
+      }
+    },
+    {
+      "id": "composio-connect",
+      "name": "Connect",
+      "description": {
+        "zh": "通过统一连接层在 Gmail、Slack、GitHub、Notion 等外部服务中执行真实操作。",
+        "en": "Use a unified connection layer to take real actions across services such as Gmail, Slack, GitHub, and Notion."
+      },
+      "category": "productivity",
+      "professions": [
+        "operations",
+        "developer",
+        "sales",
+        "support"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "connect",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把重复协作步骤整理成明确流程，适合提升团队执行一致性。",
+        "en": "Structures recurring collaboration steps into a clear workflow for more consistent execution."
+      },
+      "bestFor": {
+        "zh": "团队协作、知识整理与日常自动化",
+        "en": "Team collaboration, knowledge capture, and routine automation"
+      },
+      "caution": {
+        "zh": "连接外部服务或共享内容前，应核对接收方和数据范围。",
+        "en": "Confirm recipients and data scope before connecting services or sharing content."
+      },
+      "tags": [
+        "apps",
+        "actions",
+        "integration"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "advanced",
+      "maturity": "growing",
+      "setupTimeMinutes": 15,
+      "risk": "high",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "network",
+        "api-key"
+      ],
+      "taskTypes": [
+        "integrate",
+        "automation",
+        "execute"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务边界以及相关服务的访问权限。",
+        "en": "Requires a defined task boundary and access to any relevant services."
+      },
+      "outputs": {
+        "zh": "结构化记录、协作结果或自动化操作",
+        "en": "Structured records, collaboration results, or automated actions"
+      }
+    },
+    {
+      "id": "composio-raffle-picker",
+      "name": "Raffle Winner Picker",
+      "description": {
+        "zh": "从列表、电子表格或 Google Sheets 中透明、可复核地随机抽取活动获奖者。",
+        "en": "Select random giveaway winners transparently from lists, spreadsheets, or Google Sheets with reviewable results."
+      },
+      "category": "productivity",
+      "professions": [
+        "marketing",
+        "operations",
+        "creator"
+      ],
+      "repo": "ComposioHQ/awesome-claude-skills",
+      "branch": "master",
+      "path": "raffle-winner-picker",
+      "source": "Composio",
+      "stars": 68193,
+      "forks": 7735,
+      "openIssues": 1056,
+      "license": "NOASSERTION",
+      "repoUpdatedAt": "2026-07-20T16:36:55Z",
+      "rating": 8.7,
+      "dimensions": {
+        "usefulness": 8.9,
+        "reliability": 8.6,
+        "ease": 8.7,
+        "maintenance": 8.8,
+        "documentation": 8.5,
+        "safety": 8.3
+      },
+      "review": {
+        "zh": "把重复协作步骤整理成明确流程，适合提升团队执行一致性。",
+        "en": "Structures recurring collaboration steps into a clear workflow for more consistent execution."
+      },
+      "bestFor": {
+        "zh": "团队协作、知识整理与日常自动化",
+        "en": "Team collaboration, knowledge capture, and routine automation"
+      },
+      "caution": {
+        "zh": "连接外部服务或共享内容前，应核对接收方和数据范围。",
+        "en": "Confirm recipients and data scope before connecting services or sharing content."
+      },
+      "tags": [
+        "raffle",
+        "random",
+        "spreadsheet"
+      ],
+      "official": false,
+      "featured": false,
+      "available": true,
+      "difficulty": "starter",
+      "maturity": "growing",
+      "setupTimeMinutes": 5,
+      "risk": "medium",
+      "platforms": [
+        "web"
+      ],
+      "permissions": [
+        "filesystem",
+        "network"
+      ],
+      "taskTypes": [
+        "extract",
+        "analyze",
+        "report"
+      ],
+      "prerequisites": {
+        "zh": "需要明确的任务边界以及相关服务的访问权限。",
+        "en": "Requires a defined task boundary and access to any relevant services."
+      },
+      "outputs": {
+        "zh": "结构化记录、协作结果或自动化操作",
+        "en": "Structured records, collaboration results, or automated actions"
+      }
     }
   ]
 }

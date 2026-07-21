@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen overflow-x-hidden bg-[#f8fbfd] text-[#111b24]">
-    <SiteHeader @trial="$router.push('/free-trial')" />
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial')" />
 
     <main>
       <section class="relative isolate min-h-[min(720px,calc(100vh-72px))] overflow-hidden bg-[#0c1017] text-white">
@@ -76,29 +76,53 @@
                 <span class="text-[15px] font-black text-[#db4b32]">{{ step.number }}</span>
                 <div>
                   <h3 class="text-[19px] font-black">{{ step.title }}</h3>
-                  <template v-if="step.number === '01'">
-                    <p class="mt-2 text-[15px] leading-[1.7] text-[#586068]">{{ page.setup.githubBefore }} <a class="font-bold text-[#db4b32] underline decoration-2 underline-offset-4" href="https://github.com/wonder-o/agk2img-skill" target="_blank" rel="noopener">https://github.com/wonder-o/agk2img-skill</a>{{ page.setup.githubAfter }}</p>
-                    <p class="mt-3 border-l-2 border-[#db4b32] pl-4 text-[16px] font-bold leading-[1.7] text-[#252a2e]">{{ page.setup.installPrompt }}</p>
-                  </template>
-                  <p v-else class="mt-2 whitespace-pre-line text-[15px] leading-[1.7] text-[#586068]">{{ step.text }}</p>
+                  <p class="mt-2 whitespace-pre-line text-[15px] leading-[1.7] text-[#586068]">{{ step.text }}</p>
                 </div>
               </li>
             </ol>
           </div>
 
           <section class="mt-14 overflow-hidden border border-[#b8d1ef] bg-white shadow-[0_22px_56px_rgba(36,104,242,0.1)]">
+            <div class="flex items-center gap-2 border-b border-[#dce8f5] px-5 py-4"><span class="h-2.5 w-2.5 rounded-full bg-blue"></span><span class="h-2.5 w-2.5 rounded-full bg-[#79d478]"></span><span class="h-2.5 w-2.5 rounded-full bg-[#f4c45d]"></span><span class="ml-3 text-[13px] font-black tracking-[0.08em] text-[#486078]">CC-SWITCH / CONFIG.TOML</span></div>
+            <div class="p-6 max-[760px]:p-5">
+              <h3 class="text-[24px] font-black">{{ page.config.title }}</h3>
+              <p class="mt-3 text-[16px] leading-[1.7] text-[#586068]">{{ page.config.copy }}</p>
+
+              <figure class="mt-6 overflow-hidden border border-[#dce8f5] bg-[#f8fbfd]">
+                <img class="block h-auto w-full" src="/assets/cc-switch-provider-edit.png" :alt="page.config.editImageAlt" />
+                <figcaption class="border-t border-[#dce8f5] px-4 py-3 text-[13px] leading-[1.6] text-[#586068]">{{ page.config.editCaption }}</figcaption>
+              </figure>
+
+              <div class="mt-6 overflow-hidden border border-[#263d52] bg-[#101820]">
+                <div class="flex min-h-[46px] items-center justify-between gap-4 border-b border-white/10 px-4 text-[13px] font-black text-white/70">
+                  <span>TOML</span>
+                  <button class="inline-flex min-h-8 items-center gap-2 rounded-md border border-white/20 bg-white/5 px-3 font-sans text-[13px] font-black text-white transition-colors hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#8dc8ff]" type="button" @click="copyConfig">
+                    <Check v-if="copied" :size="15" aria-hidden="true" />
+                    <Clipboard v-else :size="15" aria-hidden="true" />
+                    {{ copied ? page.config.copied : page.config.copyAction }}
+                  </button>
+                </div>
+                <pre class="m-0 overflow-x-auto p-5 font-mono text-[13px] leading-[1.8] text-[#b9d9f4] max-[760px]:p-4 max-[760px]:text-[12px]"><code>{{ configSnippet }}</code></pre>
+              </div>
+
+              <figure class="mt-6 overflow-hidden border border-[#dce8f5] bg-[#f8fbfd]">
+                <img class="block h-auto w-full" src="/assets/cc-switch-config-toml.png" :alt="page.config.tomlImageAlt" />
+                <figcaption class="border-t border-[#dce8f5] px-4 py-3 text-[13px] leading-[1.6] text-[#586068]">{{ page.config.tomlCaption }}</figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="mt-6 overflow-hidden border border-[#b8d1ef] bg-white shadow-[0_22px_56px_rgba(36,104,242,0.1)]">
             <div class="flex items-center gap-2 border-b border-[#dce8f5] px-5 py-4"><span class="h-2.5 w-2.5 rounded-full bg-blue"></span><span class="h-2.5 w-2.5 rounded-full bg-[#79d478]"></span><span class="h-2.5 w-2.5 rounded-full bg-[#f4c45d]"></span><span class="ml-3 text-[13px] font-black tracking-[0.08em] text-[#486078]">CHATGPT CODEX APP</span></div>
             <div class="p-6 max-[760px]:p-5">
               <h3 class="text-[24px] font-black">{{ page.commands.title }}</h3>
               <p class="mt-3 text-[16px] leading-[1.7] text-[#586068]">{{ page.commands.copy }}</p>
-              <div class="mt-4 grid gap-5 bg-[#f4f8fd] p-5 font-mono text-[15px] leading-[1.75] text-[#172a3d] max-[760px]:p-4">
-                <section v-for="group in commandGroups" :key="group.title">
-                  <h4 class="font-sans text-[15px] font-black text-blue">{{ group.title }}</h4>
-                  <ul class="mt-2 grid gap-1.5 p-0 list-none">
-                    <li v-for="prompt in group.prompts" :key="prompt" class="grid grid-cols-[auto_1fr] gap-2"><span class="font-bold text-[#4775b7]">-</span><span>{{ prompt }}</span></li>
-                  </ul>
-                </section>
-              </div>
+              <ul class="mt-4 grid list-none gap-2 bg-[#f4f8fd] p-5 font-mono text-[15px] leading-[1.75] text-[#172a3d] max-[760px]:p-4">
+                <li v-for="prompt in page.commands.prompts" :key="prompt" class="grid grid-cols-[auto_1fr] gap-2">
+                  <span class="font-bold text-[#4775b7]">-</span>
+                  <span>{{ prompt }}</span>
+                </li>
+              </ul>
             </div>
           </section>
           <p class="mt-4 text-[14px] leading-[1.7] text-[#586068]">{{ page.setup.note }}</p>
@@ -113,22 +137,28 @@
       </section>
     </main>
 
-    <SiteFooter />
+    <SiteFooter v-if="!embedded" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useHead } from '@unhead/vue'
+import { Check, Clipboard } from '@lucide/vue'
 import SiteFooter from '@/components/SiteFooter.vue'
 import SiteHeader from '@/components/SiteHeader.vue'
 import { useHostUrl } from '@/composables/useHostUrl'
 import { useI18n } from '@/composables/useI18n'
 
+withDefaults(defineProps<{
+  embedded?: boolean
+}>(), {
+  embedded: false,
+})
+
 const imageCopy = {
   'zh-CN': {
-    meta: { title: '图像创作', description: '使用 AigoKey 套餐和 agk2img-skill，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AigoKey, 图像创作, AI 绘图, 插画, 漫画, 广告图, 电商图, ChatGPT Codex App, agk2img-skill' },
-    navLabel: '主导航',
+    meta: { title: '图像创作', description: '使用 AigoKey 套餐和 CC-Switch，在 ChatGPT Codex App 中完成插画、漫画、广告图与电商图等图像创作。', keywords: 'AigoKey, 图像创作, AI 绘图, CC-Switch, Codex, config.toml' },
     hero: { imageAlt: '插画、漫画、广告和电商产品的图像创作拼贴', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想象，变成', titleHighlight: '可以交付的画面', copy: '使用 AigoKey 套餐中的图像能力，在 ChatGPT Codex App 里完成插画、漫画、彩漫、广告图、电商图与更多视觉创作。', action: '配置图像能力' },
     strip: { copy: '一个配置，让创作工作流留在你熟悉的 ChatGPT Codex App 内。', action: '查看配置步骤' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '从一个灵感，展开不同的视觉表达', copy: '让模型承担画面探索和首稿生成，把你的时间留给选题、判断、修改与交付。' },
@@ -140,20 +170,20 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: '把图像任务说清楚，剩下的交给生成能力', copy: '适合从概念草图到成品视觉的连续尝试。可以描述主体、画面比例、材质、光线、构图和需要避免的内容。', cards: [{ label: '01 / 画面方向', text: '插画、漫画、彩漫、摄影感产品图' }, { label: '02 / 使用场景', text: '社媒封面、广告投放、电商详情页、提案与分镜' }, { label: '03 / 画面约束', text: '主体、构图、色彩、比例，以及不希望出现的元素' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: '配置一次，就能在 Codex 中开始创作', copy: '按照 agk2img-skill 的流程，在 ChatGPT Codex App 中用自然语言完成 Base URL 与 API Key 配置。它们只用于图像生成，不会覆盖你的其他 OpenAI 配置。', modelLabel: '支持模型', githubBefore: '打开', githubAfter: '，复制下面这句话到 ChatGPT Codex 即可快速安装：', installPrompt: 'https://github.com/wonder-o/agk2img-skill，帮我安装这个 skill，进行快速安装。', note: 'API Key 可在 AigoKey 的密钥管理中创建。ChatGPT Codex App 会在需要时引导你安全输入密钥；不要把密钥写入截图、代码仓库或公开文档。',
+      eyebrow: 'SETUP IN CODEX', title: '配置一次，就能在 Codex 中开始创作', copy: '在 CC-Switch 的密钥编辑面板中修改 config.toml，将 AigoKey 设为 Codex 的自定义模型提供商。', modelLabel: '支持模型', note: '只修改 [model_providers.custom] 对应的配置，保留文件中其他已有设置。编辑前建议备份现有 TOML 内容。',
       steps: [
-        { number: '01', title: '安装 agk2img-skill', text: '通过 GitHub 仓库在 ChatGPT Codex 中快速安装 agk2img-skill。' },
-        { number: '02', title: '创建 AigoKey API Key', text: '登录 AigoKey，可与现有的密钥共用，也可在密钥管理中创建专用于图像创作的 API Key。' },
-        { number: '03', title: '用自然语言配置端点与密钥', text: '在 ChatGPT Codex App 中依次说\n帮我配置 agk2img 的 base url 为 https://llm.aigokey.cn\n帮我配置 agk2img 的 api key 为 sk-*******\napi key为 网站上的API密钥即可。' },
-        { number: '04', title: '重启ChatGPT Codex App 后进行创作', text: '重启ChatGPT Codex App后，即可在ChatGPT Codex 中直接描述你要生成、修改或批量制作的画面。skill 会根据任务选择生成、编辑、参考图或批量工作流。' },
+        { number: '01', title: '打开 CC-Switch 密钥编辑', text: '在 CC-Switch 主界面找到正在使用的 AigoKey 配置，点击右侧的铅笔形编辑按钮。' },
+        { number: '02', title: '进入 config.toml（TOML）编辑区', text: '在编辑面板中找到 config.toml（TOML），确认顶部 model_provider 已设为 "custom"。' },
+        { number: '03', title: '添加自定义提供商配置', text: '在 [model_providers.custom] 中添加或修改下方 TOML，将 Base URL 指向 https://llm.aigokey.cn。' },
+        { number: '04', title: '保存并重启 Codex', text: '保存编辑内容，返回 CC-Switch 主界面并启用该配置，然后重启 Codex 使新设置生效。' },
       ],
     },
-    commands: { title: '支持指令', copy: '可以使用技能名明确调用，也可以不提技能名，直接用自然语言描述任务：', groups: [{ title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] }, { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] }, { title: '使用（直接自然语言）：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] }] },
+    config: { title: '按照截图写入 config.toml', copy: '红框标出了需要操作的入口和配置区。复制 TOML 后粘贴到对应位置。', copyAction: '复制配置', copied: '已复制', editImageAlt: 'CC-Switch 密钥列表，编辑按钮已用红色方框标出', editCaption: '在 CC-Switch 密钥列表中点击红框标出的编辑按钮。', tomlImageAlt: 'CC-Switch config.toml 编辑区，自定义模型提供商配置已用红框标出', tomlCaption: '红框内是需要添加或修改的 [model_providers.custom] 配置。' },
+    commands: { title: '支持指令', copy: '直接使用自然语言：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] },
     cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
   },
   'zh-TW': {
-    meta: { title: '圖像創作', description: '使用 AigoKey 方案與 agk2img-skill，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AigoKey, 圖像創作, AI 繪圖, 插畫, 漫畫, 廣告圖, 電商圖, ChatGPT Codex App, agk2img-skill' },
-    navLabel: '主導覽',
+    meta: { title: '圖像創作', description: '使用 AigoKey 方案與 CC-Switch，在 ChatGPT Codex App 中完成插畫、漫畫、廣告圖與電商圖等圖像創作。', keywords: 'AigoKey, 圖像創作, AI 繪圖, CC-Switch, Codex, config.toml' },
     hero: { imageAlt: '插畫、漫畫、廣告和電商產品的圖像創作拼貼', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: '把想像，變成', titleHighlight: '可以交付的畫面', copy: '使用 AigoKey 方案中的圖像能力，在 ChatGPT Codex App 裡完成插畫、漫畫、彩漫、廣告圖、電商圖與更多視覺創作。', action: '設定圖像能力' },
     strip: { copy: '一次設定，讓創作工作流程留在你熟悉的 ChatGPT Codex App 內。', action: '查看設定步驟' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: '從一個靈感，展開不同的視覺表達', copy: '讓模型承擔畫面探索和首稿生成，把你的時間留給選題、判斷、修改與交付。' },
@@ -165,20 +195,20 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: '把圖像任務說清楚，剩下的交給生成能力', copy: '適合從概念草圖到成品視覺的連續嘗試。可以描述主體、畫面比例、材質、光線、構圖和需要避免的內容。', cards: [{ label: '01 / 畫面方向', text: '插畫、漫畫、彩漫、攝影感產品圖' }, { label: '02 / 使用情境', text: '社群封面、廣告投放、電商詳情頁、提案與分鏡' }, { label: '03 / 畫面約束', text: '主體、構圖、色彩、比例，以及不希望出現的元素' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: '設定一次，就能在 Codex 中開始創作', copy: '按照 agk2img-skill 的流程，在 ChatGPT Codex App 中用自然語言完成 Base URL 與 API Key 設定。它們只用於圖像生成，不會覆蓋你的其他 OpenAI 設定。', modelLabel: '支援模型', githubBefore: '開啟', githubAfter: '，複製下方這句話到 ChatGPT Codex 即可快速安裝：', installPrompt: 'https://github.com/wonder-o/agk2img-skill，幫我安裝這個 skill，進行快速安裝。', note: 'API Key 可在 AigoKey 的金鑰管理中建立。ChatGPT Codex App 會在需要時引導你安全輸入金鑰；不要把金鑰寫入截圖、程式碼儲存庫或公開文件。',
+      eyebrow: 'SETUP IN CODEX', title: '設定一次，就能在 Codex 中開始創作', copy: '在 CC-Switch 的金鑰編輯面板中修改 config.toml，將 AigoKey 設為 Codex 的自訂模型提供商。', modelLabel: '支援模型', note: '只修改 [model_providers.custom] 對應的設定，保留檔案中其他已有設定。編輯前建議備份現有 TOML 內容。',
       steps: [
-        { number: '01', title: '安裝 agk2img-skill', text: '透過 GitHub 儲存庫在 ChatGPT Codex 中快速安裝 agk2img-skill。' },
-        { number: '02', title: '建立 AigoKey API Key', text: '登入 AigoKey，在金鑰管理中建立專用於圖像創作的 API Key，並妥善保管。' },
-        { number: '03', title: '用自然語言設定端點與金鑰', text: '在 ChatGPT Codex App 中依序說「幫我設定 agk2img 的 base url」和「幫我更新 agk2img 的 api key。」此 skill 不使用 OPENAI_API_KEY。' },
-        { number: '04', title: '在 ChatGPT Codex App 中創作', text: '直接描述你要生成、修改或批量製作的畫面。skill 會根據任務選擇生成、編輯、參考圖或批量工作流程。' },
+        { number: '01', title: '開啟 CC-Switch 金鑰編輯', text: '在 CC-Switch 主畫面找到正在使用的 AigoKey 設定，點擊右側的鉛筆形編輯按鈕。' },
+        { number: '02', title: '進入 config.toml（TOML）編輯區', text: '在編輯面板中找到 config.toml（TOML），確認頂部 model_provider 已設為 "custom"。' },
+        { number: '03', title: '新增自訂提供商設定', text: '在 [model_providers.custom] 中新增或修改下方 TOML，將 Base URL 指向 https://llm.aigokey.cn。' },
+        { number: '04', title: '儲存並重新啟動 Codex', text: '儲存編輯內容，返回 CC-Switch 主畫面並啟用該設定，然後重新啟動 Codex 使新設定生效。' },
       ],
     },
-    commands: { title: '支援指令', copy: '可以使用技能名明確呼叫，也可以不提技能名，直接用自然語言描述任務：', groups: [{ title: '安裝：', prompts: ['把 agk2img-skill 安裝到 Codex skills 目錄', '把 agk2img-skill 放到目前專案裡使用'] }, { title: '設定：', prompts: ['幫我設定 agk2img 的 base url', '幫我更新 agk2img 的 api key', '幫我清空 agk2img 的設定', '幫我檢查 agk2img 是否設定好了'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一張 xxx 圖', '用 agk2img 修改這張圖片裡的 xxx', '用 agk2img 把我上傳的圖片改成 xxx 風格', '用 agk2img 批量生成一組 xxx 素材'] }, { title: '使用（直接自然語言）：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] }] },
+    config: { title: '按照截圖寫入 config.toml', copy: '紅框標出了需要操作的入口和設定區。複製 TOML 後貼到對應位置。', copyAction: '複製設定', copied: '已複製', editImageAlt: 'CC-Switch 金鑰清單，編輯按鈕已用紅色方框標出', editCaption: '在 CC-Switch 金鑰清單中點擊紅框標出的編輯按鈕。', tomlImageAlt: 'CC-Switch config.toml 編輯區，自訂模型提供商設定已用紅框標出', tomlCaption: '紅框內是需要新增或修改的 [model_providers.custom] 設定。' },
+    commands: { title: '支援指令', copy: '直接使用自然語言：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] },
     cta: { eyebrow: 'READY TO CREATE', title: '用 AigoKey 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
   },
   en: {
-    meta: { title: 'Image Creation', description: 'Use AigoKey plans and agk2img-skill to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AigoKey, image creation, AI image generation, illustration, comics, advertising images, ecommerce images, ChatGPT Codex App, agk2img-skill' },
-    navLabel: 'Main navigation',
+    meta: { title: 'Image Creation', description: 'Use AigoKey plans and CC-Switch to create illustrations, comics, ads, ecommerce images, and more in the ChatGPT Codex App.', keywords: 'AigoKey, image creation, AI image generation, CC-Switch, Codex, config.toml' },
     hero: { imageAlt: 'A creative collage of illustration, comics, advertising, and ecommerce products', eyebrow: 'AIGOKEY IMAGE CREATION', titleBefore: 'Turn imagination into', titleHighlight: 'visual work you can deliver', copy: 'Use the image capabilities in your AigoKey plan to create illustrations, comics, color comics, ad creatives, ecommerce images, and more in the ChatGPT Codex App.', action: 'Set up image creation' },
     strip: { copy: 'One setup keeps your creative workflow inside the ChatGPT Codex App you already know.', action: 'View setup steps' },
     creation: { eyebrow: 'CREATIVE DIRECTIONS', title: 'Expand one idea into many visual expressions', copy: 'Let the model explore visual directions and generate first drafts, while you focus on selection, judgment, refinement, and delivery.' },
@@ -190,21 +220,52 @@ const imageCopy = {
     ],
     prompt: { eyebrow: 'FROM PROMPT TO OUTPUT', title: 'Describe the image task clearly, then let generation do the rest', copy: 'Designed for continuous exploration from concept sketches to finished visuals. Describe the subject, aspect ratio, materials, lighting, composition, and anything to avoid.', cards: [{ label: '01 / Visual direction', text: 'Illustration, comics, color comics, and photographic product imagery' }, { label: '02 / Use case', text: 'Social covers, ad campaigns, ecommerce pages, proposals, and storyboards' }, { label: '03 / Constraints', text: 'Subject, composition, palette, aspect ratio, and elements to exclude' }] },
     setup: {
-      eyebrow: 'SETUP IN CODEX', title: 'Set it up once, then create in Codex', copy: 'Follow the agk2img-skill workflow and use natural language in the ChatGPT Codex App to configure the Base URL and API Key. They are used only for image generation and do not override other OpenAI settings.', modelLabel: 'Supported model', githubBefore: 'Open', githubAfter: ', then copy the sentence below into ChatGPT Codex for a quick installation:', installPrompt: 'https://github.com/wonder-o/agk2img-skill, install this skill for me with a quick setup.', note: 'Create an API Key in AigoKey key management. ChatGPT Codex App will guide you to enter it securely when needed; never put keys in screenshots, repositories, or public documents.',
+      eyebrow: 'SETUP IN CODEX', title: 'Set it up once, then create in Codex', copy: 'Edit config.toml in the CC-Switch key editor and configure AigoKey as a custom model provider for Codex.', modelLabel: 'Supported model', note: 'Only change the settings under [model_providers.custom] and preserve the rest of the file. Back up the existing TOML before editing.',
       steps: [
-        { number: '01', title: 'Install agk2img-skill', text: 'Install agk2img-skill quickly in ChatGPT Codex from the GitHub repository.' },
-        { number: '02', title: 'Create an AigoKey API Key', text: 'Sign in to AigoKey, create an API Key dedicated to image creation in key management, and store it safely.' },
-        { number: '03', title: 'Configure the endpoint and key naturally', text: 'In the ChatGPT Codex App, say “Configure the agk2img base URL for me” and “Update the agk2img API key for me.” This skill does not use OPENAI_API_KEY.' },
-        { number: '04', title: 'Create in ChatGPT Codex App', text: 'Describe the image you want to generate, edit, or batch-produce. The skill selects the appropriate generation, editing, reference-image, or batch workflow.' },
+        { number: '01', title: 'Open the CC-Switch key editor', text: 'Find the AigoKey configuration currently in use and click the pencil-shaped edit button on the right.' },
+        { number: '02', title: 'Open the config.toml (TOML) editor', text: 'Locate config.toml (TOML) and confirm that model_provider at the top is set to "custom".' },
+        { number: '03', title: 'Add the custom provider settings', text: 'Add or update the TOML under [model_providers.custom] and point the Base URL to https://llm.aigokey.cn.' },
+        { number: '04', title: 'Save and restart Codex', text: 'Save the changes, enable the configuration from the CC-Switch home screen, and restart Codex so the new settings take effect.' },
       ],
     },
-    commands: { title: 'Supported requests', copy: 'You can name the skill explicitly or describe the task naturally without mentioning it:', groups: [{ title: 'Install:', prompts: ['Install agk2img-skill in the Codex skills directory', 'Use agk2img-skill in this project'] }, { title: 'Configure:', prompts: ['Configure the agk2img base URL for me', 'Update the agk2img API key for me', 'Clear the agk2img configuration for me', 'Check whether agk2img is configured correctly'] }, { title: 'Create (name the skill):', prompts: ['Generate a xxx image with agk2img', 'Edit xxx in this image with agk2img', 'Restyle my uploaded image as xxx with agk2img', 'Batch-generate a set of xxx assets with agk2img'] }, { title: 'Create (natural language):', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] }] },
+    config: { title: 'Add the settings shown below to config.toml', copy: 'The red outlines mark the edit control and the relevant configuration block. Copy the TOML and paste it into the matching section.', copyAction: 'Copy config', copied: 'Copied', editImageAlt: 'CC-Switch key list with the edit button outlined in red', editCaption: 'Click the edit button outlined in red in the CC-Switch key list.', tomlImageAlt: 'CC-Switch config.toml editor with the custom model provider settings outlined in red', tomlCaption: 'The red outline marks the [model_providers.custom] settings to add or update.' },
+    commands: { title: 'Supported requests', copy: 'Use natural language directly:', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] },
     cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AigoKey plan.', action: 'Sign in and create an API Key' },
   },
 } as const
 
-const { t, lang } = useI18n()
+const { lang } = useI18n()
 const page = computed(() => imageCopy[lang.value])
+const { loginUrl } = useHostUrl()
+const copied = ref(false)
+
+const configSnippet = `[model_providers.custom]
+name = "AigoKey"
+wire_api = "responses"
+base_url = "https://llm.aigokey.cn"
+requires_openai_auth = false
+http_headers = { "x-openai-actor-authorization" = "llm.aigokey.cn" }`
+
+const creationTypes = computed(() => page.value.creationTypes)
+const setupSteps = computed(() => page.value.setup.steps)
+
+async function copyConfig() {
+  try {
+    await navigator.clipboard.writeText(configSnippet)
+  } catch {
+    const textarea = document.createElement('textarea')
+    textarea.value = configSnippet
+    textarea.style.position = 'fixed'
+    textarea.style.opacity = '0'
+    document.body.appendChild(textarea)
+    textarea.select()
+    document.execCommand('copy')
+    textarea.remove()
+  }
+
+  copied.value = true
+  window.setTimeout(() => { copied.value = false }, 1800)
+}
 
 useHead({
   title: computed(() => `${page.value.meta.title} - AigoKey`),
@@ -213,10 +274,4 @@ useHead({
     { name: 'keywords', content: computed(() => page.value.meta.keywords) },
   ],
 })
-
-const { loginUrl } = useHostUrl()
-
-const creationTypes = computed(() => page.value.creationTypes)
-const setupSteps = computed(() => page.value.setup.steps)
-const commandGroups = computed(() => page.value.commands.groups)
 </script>
