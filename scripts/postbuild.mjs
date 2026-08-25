@@ -4,6 +4,7 @@ import { join, basename, relative, resolve } from 'path'
 
 const distDir = resolve('dist')
 const distAssets = join(distDir, 'assets')
+const siteOrigin = (process.env.VITE_SITE_ORIGIN || 'https://www.aigokey.com').trim().replace(/\/+$/, '')
 
 // Files to keep as PNG (icons, favicons, unhashed logo for favicon ref)
 const keepPng = new Set(['favicon-64x64.png', 'apple-touch-icon.png', 'aigokey-logo.png'])
@@ -119,7 +120,7 @@ function writeSeoFiles() {
   writeFileSync(join(distDir, 'sitemap.xml'), sitemap)
   writeFileSync(
     join(distDir, 'robots.txt'),
-    'User-agent: *\nAllow: /\n\nSitemap: https://www.aigokey.com/sitemap.xml\n',
+    `User-agent: *\nAllow: /\n\nSitemap: ${siteOrigin}/sitemap.xml\n`,
   )
   console.log(`  sitemap.xml (${uniqueUrls.length} canonical URLs)`)
   console.log('  robots.txt')

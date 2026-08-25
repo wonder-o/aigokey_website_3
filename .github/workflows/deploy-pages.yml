@@ -40,6 +40,9 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Verify canonical Pages host
+        run: test "$(cat public/CNAME)" = "www.aigokey.com"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

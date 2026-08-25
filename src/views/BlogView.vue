@@ -5,7 +5,7 @@
       <section class="py-[72px] px-6 bg-white max-[720px]:px-4">
         <div class="max-w-[1180px] mx-auto">
           <div class="flex items-end justify-between gap-7 mb-8 max-[1020px]:flex-col max-[1020px]:items-start">
-            <div><div class="text-blue text-[13px] font-black uppercase tracking-[.12em]">{{ copy.list.eyebrow }}</div><h2 class="max-w-[760px] mt-3 text-[clamp(30px,4vw,48px)] leading-[1.12] font-black">{{ copy.list.title }}</h2></div>
+            <div><div class="text-blue text-[13px] font-black uppercase tracking-[.12em]">{{ copy.list.eyebrow }}</div><h1 class="max-w-[760px] mt-3 text-[clamp(30px,4vw,48px)] leading-[1.12] font-black">{{ copy.list.title }}</h1></div>
             <p class="max-w-[460px] text-muted text-[16px] leading-[1.75]">{{ copy.list.summary }}</p>
           </div>
           <div class="flex items-center justify-between gap-5 mb-7 pb-4 border-b border-line max-[720px]:items-stretch max-[720px]:flex-col">

@@ -72,7 +72,9 @@ AIGOKEY 覆盖开发、产品、运营、设计、电商、自媒体、外贸、
 - 唯一规范域名为 `https://www.aigokey.com/`，登录与注册使用 `https://llm.aigokey.com/`。
 - GitHub Pages 的 Custom domain 必须设置为 `www.aigokey.com`；`.cn`、`.cc` 和其他历史域名应在 DNS/CDN 层永久重定向到 `.com` 对应路径。
 - `npm run build` 会为正式页面输出自引用 canonical，并自动生成 `dist/sitemap.xml` 和 `dist/robots.txt`；embed 页面会输出 `noindex,follow` 且不会进入 sitemap。
+- 构建结束会自动执行 `npm run validate:seo`，检查每个可索引页面的 canonical、robots、sitemap 是否一致；规范域名可通过 `VITE_SITE_ORIGIN` 覆盖，但生产构建应保持 `.com`。
 - 站内页面统一使用带尾斜杠的 URL。历史 `.html` 地址如有外链或索引记录，应在 CDN 层配置到对应目录 URL 的永久重定向。
+- `www.aigokey.cn`、裸域和其他历史域名必须在 DNS/CDN 层 301 到 `https://www.aigokey.com` 的同一路径；canonical 只能帮助 Google 选择主版本，不能替代服务器重定向。
 
 ## 📄 许可
 
