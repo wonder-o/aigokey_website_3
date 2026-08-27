@@ -15,7 +15,7 @@ const copy = {
     lang: 'zh-CN',
     title: 'AIGOKEY - Codex Agent + GPT + Image 稳定 AI 套餐',
     description: 'AIGOKEY 提供 14 档 AI Token 标准套餐，日额度从 $30 到 $1000，覆盖日卡、周卡和月卡，并支持企业按人数、并发和业务用量定制额度。',
-    navButtons: { toggle: 'EN', register: '注册', login: '登录', imageCreation: '图像创作', imageSkill: 'AGK生图skill', promptLibrary: '提示词库', skills: 'Skills', workflows: '工作流', cases: '案例库', blog: '博客', download: '下载', downloadPanel: '下载资源', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'OpenAI 官方下载', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: '官方网站', help: '文档', enterprise: '企业FDE服务', trial: '免费体验' },
+    navButtons: { toggle: 'EN', register: '注册', login: '登录', imageCreation: '图像创作', imageSkill: 'AGK生图skill', promptLibrary: '提示词库', skills: 'Skills', workflows: '工作流', cases: '案例库', blog: '博客', download: '下载', downloadPanel: '下载资源', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'OpenAI 官方下载', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: '官方网站', help: '文档', volcengine: '火山引擎服务', enterprise: '企业FDE服务', trial: '免费体验' },
     eyebrow: 'Codex Agent · GPT + Image 系列模型',
     heroTitleBefore: '稳定可靠的 ',
     heroTitleHighlight: 'AI Token',
@@ -98,6 +98,17 @@ const copy = {
         { icon: '$', title: '每天 $30-$1000 额度', text: '从个人轻量体验到团队密集开发、批量内容和图像生产，日额度按真实强度逐级覆盖。' },
         { icon: '14', title: '14 档标准套餐', text: '日卡 4 档、周卡 4 档、月卡 6 档；当天急用、一周冲刺和长期使用都有直接选项。' },
         { icon: 'E', title: '企业额度按需定制', text: '可根据使用人数、并发峰值、部门场景和预算周期，设计不受标准档位限制的专属套餐。' },
+      ],
+    },
+    volcenginePartner: {
+      eyebrow: '火山引擎生态合作伙伴',
+      head: '火山引擎能力，配合 AIGOKEY 的落地服务',
+      desc: '面向希望把云、AI 与业务流程真正连接起来的团队。我们以生态合作伙伴身份，提供火山引擎相关产品的咨询、方案设计、实施集成与持续运营支持。',
+      action: '了解服务能力',
+      items: [
+        { title: '需求与方案梳理', text: '结合现有业务、系统边界和上线目标，明确合适的产品路径与实施优先级。' },
+        { title: '产品接入与集成', text: '协助完成账号、权限、接口、应用与工作流的连接，减少从选型到可用之间的断层。' },
+        { title: '上线后的持续支持', text: '围绕实际使用反馈优化配置、排查问题，并持续推进可复制的业务场景。' },
       ],
     },
     price: {
@@ -205,6 +216,7 @@ const copy = {
       blog: '博客',
       help: '帮助文档',
       about: '关于我们',
+      volcengine: '火山引擎服务',
       enterprise: '企业FDE服务',
       trial: '免费体验',
       support: '联系客服',
@@ -398,7 +410,7 @@ const copy = {
     lang: 'en',
     title: 'AIGOKEY - Stable AI Plans for Codex Agent + GPT + Image',
     description: 'AIGOKEY offers 14 standard AI Token plans with $30-$1000 daily quotas across day, week, and monthly options, plus tailored enterprise quotas.',
-    navButtons: { toggle: '中文', register: 'Register', login: 'Log in', imageCreation: 'Image Studio', imageSkill: 'AGK Image Skill', promptLibrary: 'Prompts', skills: 'Skills', workflows: 'Workflows', cases: 'Cases', blog: 'Blog', download: 'Downloads', downloadPanel: 'Downloads', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'Official website', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'Official website', help: 'Docs', enterprise: 'Enterprise FDE', trial: 'Free Trial' },
+    navButtons: { toggle: '中文', register: 'Register', login: 'Log in', imageCreation: 'Image Studio', imageSkill: 'AGK Image Skill', promptLibrary: 'Prompts', skills: 'Skills', workflows: 'Workflows', cases: 'Cases', blog: 'Blog', download: 'Downloads', downloadPanel: 'Downloads', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'Official website', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'Official website', help: 'Docs', volcengine: 'Volcengine Services', enterprise: 'Enterprise FDE', trial: 'Free Trial' },
     eyebrow: 'Codex Agent · GPT + Image models',
     heroTitleBefore: 'Stable ',
     heroTitleHighlight: 'AI Token',
@@ -481,6 +493,17 @@ const copy = {
         { icon: '$', title: '$30-$1000 daily quota', text: 'Quota levels span personal trials through dense team development, batch content work, and image production.' },
         { icon: '14', title: '14 standard plans', text: 'Four day passes, four week passes, and six monthly plans cover urgent work, sprints, and long-term use.' },
         { icon: 'E', title: 'Tailored enterprise quotas', text: 'Design a dedicated plan by user count, peak concurrency, department workflows, and budget cycle.' },
+      ],
+    },
+    volcenginePartner: {
+      eyebrow: 'Volcengine Ecosystem Partner',
+      head: 'Volcengine capabilities, delivered with AIGOKEY',
+      desc: 'For teams connecting cloud, AI, and real business processes. As an ecosystem partner, we provide consulting, solution design, implementation, integration, and continuing operational support around relevant Volcengine products.',
+      action: 'Explore service capabilities',
+      items: [
+        { title: 'Discovery and solution design', text: 'Map business goals, existing systems, and launch priorities into a practical product path.' },
+        { title: 'Product access and integration', text: 'Assist with accounts, permissions, APIs, applications, and workflows to move from selection to usable delivery.' },
+        { title: 'Ongoing operational support', text: 'Improve configurations, resolve issues, and develop repeatable business scenarios from real usage feedback.' },
       ],
     },
     price: {
@@ -588,6 +611,7 @@ const copy = {
       blog: 'Blog',
       help: 'Help Center',
       about: 'About Us',
+      volcengine: 'Volcengine Services',
       enterprise: 'Enterprise FDE',
       trial: 'Free Trial',
       support: 'Contact Support',
@@ -813,6 +837,7 @@ const phraseMap: Record<string, string> = {
   免费体验: '免費體驗',
   登录: '登入',
   注册: '註冊',
+  联系客服: '聯繫客服',
   客服: '客服',
 }
 

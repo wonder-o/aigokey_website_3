@@ -29,6 +29,7 @@
       <nav class="footer-column" :aria-label="t.footerNav.service">
         <h2><Building2 :size="16" aria-hidden="true" />{{ t.footerNav.service }}</h2>
         <router-link to="/about/">{{ t.footerNav.about }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
+        <router-link to="/volcengine-partner/">{{ t.footerNav.volcengine }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/enterprise-service/">{{ t.footerNav.enterprise }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/free-trial/">{{ t.footerNav.trial }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>
         <router-link to="/codex-help/#support">{{ t.footerNav.support }}<ArrowUpRight :size="14" aria-hidden="true" /></router-link>

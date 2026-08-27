@@ -5,7 +5,7 @@
       <div class="article-progress" aria-hidden="true"><span :style="{ width: `${progress}%` }"></span></div>
       <section class="py-10 px-6 bg-white max-[720px]:px-4">
         <div class="max-w-[1180px] mx-auto">
-          <nav class="flex items-center gap-2 text-[13px] text-muted" aria-label="Breadcrumb"><router-link to="/blog/" class="text-blue font-extrabold">{{ copy.breadcrumb.blog }}</router-link><span>/</span><span>{{ article.category }}</span></nav>
+          <nav class="flex items-center gap-2 text-[13px] text-muted" aria-label="Breadcrumb"><router-link to="/" class="text-blue font-extrabold">{{ copy.breadcrumb.home }}</router-link><span>/</span><router-link to="/blog/" class="text-blue font-extrabold">{{ copy.breadcrumb.blog }}</router-link><span>/</span><span>{{ article.category }}</span></nav>
           <div class="grid grid-cols-[minmax(0,1fr)_270px] gap-12 items-end mt-10 max-[900px]:grid-cols-1">
             <div>
               <div class="flex items-center gap-3 flex-wrap text-[13px] font-extrabold text-muted"><span class="inline-flex items-center min-h-[30px] px-2.5 rounded-full text-[#184ab7] bg-cyan">{{ article.category }}</span><span>{{ article.date }}</span><span>{{ article.readTime }} {{ copy.meta.minutes }}</span></div>
@@ -49,6 +49,7 @@ import { ArrowRight, ExternalLink } from '@lucide/vue'
 import { useRoute, useRouter } from 'vue-router'
 import SiteFooter from '@/components/SiteFooter.vue'
 import SiteHeader from '@/components/SiteHeader.vue'
+import { canonicalUrl, SITE_ORIGIN } from '@/config/site'
 import { getAdjacentArticles, getBlogArticle, getRelatedArticles } from '@/data/blog'
 import { useI18n } from '@/composables/useI18n'
 
@@ -58,12 +59,45 @@ const { lang } = useI18n()
 const articleContent = ref<HTMLElement | null>(null)
 const progress = ref(0)
 const copyByLang = {
-  zh: { breadcrumb: { blog: 'Agent 连载' }, meta: { minutes: '分钟阅读', source: '原始来源' }, article: { leadLabel: '编辑部导读', leadText: '本文从公开资料出发，补齐背景、判断和可执行步骤，适合边读边试。', visualLabel: '一眼看懂', toc: '文章目录', tags: '文章标签', actionLabel: '今天可以试', editorNote: '编辑说明', editorText: '本文是对公开来源的归纳与实践建议，不直接代表原作者立场。涉及产品能力、价格和实时信息时，请以官方最新页面为准。' }, related: { eyebrow: '继续阅读', title: '把一个方法带进下一个场景', all: '查看全部', read: '阅读' }, nav: { previous: '上一篇', next: '下一篇' }, empty: { eyebrow: 'Agent 连载', title: '这篇文章不存在', text: '文章可能尚未发布，或者链接中的 slug 已经变化。', action: '返回连载首页' } },
-  en: { breadcrumb: { blog: 'Agent Dispatch' }, meta: { minutes: 'min read', source: 'Original source' }, article: { leadLabel: 'Editor\'s guide', leadText: 'We turn public signals into context, judgment, and steps you can run while reading.', visualLabel: 'At a glance', toc: 'In this article', tags: 'Tags', actionLabel: 'Try this today', editorNote: 'Editorial note', editorText: 'This is an editorial synthesis of public sources and practice notes. It does not represent the source authors. Check official pages for current product behavior, pricing, and live information.' }, related: { eyebrow: 'Keep reading', title: 'Carry the method into another context', all: 'All articles', read: 'Read' }, nav: { previous: 'Previous', next: 'Next' }, empty: { eyebrow: 'Agent Dispatch', title: 'Article not found', text: 'This article may not be published yet, or its slug may have changed.', action: 'Back to dispatch' } },
+  zh: { breadcrumb: { home: '首页', blog: 'Agent 连载' }, meta: { minutes: '分钟阅读', source: '原始来源' }, article: { leadLabel: '编辑部导读', leadText: '本文从公开资料出发，补齐背景、判断和可执行步骤，适合边读边试。', visualLabel: '一眼看懂', toc: '文章目录', tags: '文章标签', actionLabel: '今天可以试', editorNote: '编辑说明', editorText: '本文是对公开来源的归纳与实践建议，不直接代表原作者立场。涉及产品能力、价格和实时信息时，请以官方最新页面为准。' }, related: { eyebrow: '继续阅读', title: '把一个方法带进下一个场景', all: '查看全部', read: '阅读' }, nav: { previous: '上一篇', next: '下一篇' }, empty: { eyebrow: 'Agent 连载', title: '这篇文章不存在', text: '文章可能尚未发布，或者链接中的 slug 已经变化。', action: '返回连载首页' } },
+  en: { breadcrumb: { home: 'Home', blog: 'Agent Dispatch' }, meta: { minutes: 'min read', source: 'Original source' }, article: { leadLabel: 'Editor\'s guide', leadText: 'We turn public signals into context, judgment, and steps you can run while reading.', visualLabel: 'At a glance', toc: 'In this article', tags: 'Tags', actionLabel: 'Try this today', editorNote: 'Editorial note', editorText: 'This is an editorial synthesis of public sources and practice notes. It does not represent the source authors. Check official pages for current product behavior, pricing, and live information.' }, related: { eyebrow: 'Keep reading', title: 'Carry the method into another context', all: 'All articles', read: 'Read' }, nav: { previous: 'Previous', next: 'Next' }, empty: { eyebrow: 'Agent Dispatch', title: 'Article not found', text: 'This article may not be published yet, or its slug may have changed.', action: 'Back to dispatch' } },
 } as const
 const copy = computed(() => lang.value === 'en' ? copyByLang.en : copyByLang.zh)
 const slug = computed(() => String(route.params.slug || ''))
 const article = computed(() => getBlogArticle(slug.value, lang.value === 'en' ? 'en' : 'zh-CN'))
+const articleUrl = computed(() => canonicalUrl(`/blog/${slug.value}/`))
+const articleImage = computed(() => {
+  const imagePath = article.value?.body.match(/!\[[^\]]*\]\((\/[^)\s]+)(?:\s+"[^"]*")?\)/)?.[1]
+  return imagePath ? `${SITE_ORIGIN}${imagePath}` : ''
+})
+const articleStructuredData = computed(() => {
+  if (!article.value) return ''
+  const blogPosting = {
+    '@type': 'BlogPosting',
+    '@id': `${articleUrl.value}#article`,
+    headline: article.value.title,
+    description: article.value.summary,
+    datePublished: article.value.date,
+    inLanguage: article.value.lang,
+    mainEntityOfPage: articleUrl.value,
+    isPartOf: { '@id': `${SITE_ORIGIN}/#website` },
+    publisher: { '@id': `${SITE_ORIGIN}/#organization` },
+    ...(articleImage.value ? { image: [articleImage.value] } : {}),
+  }
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      blogPosting,
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: copy.value.breadcrumb.home, item: `${SITE_ORIGIN}/` },
+          { '@type': 'ListItem', position: 2, name: copy.value.breadcrumb.blog, item: `${SITE_ORIGIN}/blog/` },
+        ],
+      },
+    ],
+  })
+})
 const related = computed(() => getRelatedArticles(slug.value, lang.value === 'en' ? 'en' : 'zh-CN'))
 const adjacent = computed(() => getAdjacentArticles(slug.value, lang.value === 'en' ? 'en' : 'zh-CN'))
 function goTrial() { router.push('/free-trial/') }
@@ -73,7 +107,18 @@ function refreshArticle() { nextTick(() => { decorateCodeBlocks(); updateProgres
 watch(article, refreshArticle)
 onMounted(() => { window.addEventListener('scroll', updateProgress, { passive: true }); refreshArticle() })
 onUnmounted(() => window.removeEventListener('scroll', updateProgress))
-useHead(() => ({ title: article.value ? `${article.value.title} | AIGOKEY` : 'Agent 连载 | AIGOKEY', meta: [{ name: 'description', content: article.value?.summary || 'AIGOKEY Agent 连载' }, { property: 'og:title', content: article.value?.title || 'Agent 连载 | AIGOKEY' }, { property: 'og:description', content: article.value?.summary || '' }, { property: 'og:type', content: 'article' }] }))
+useHead(() => ({
+  title: article.value ? `${article.value.title} | AIGOKEY` : 'Agent 连载 | AIGOKEY',
+  meta: [
+    { name: 'description', content: article.value?.summary || 'AIGOKEY Agent 连载' },
+    { property: 'og:title', content: article.value?.title || 'Agent 连载 | AIGOKEY' },
+    { property: 'og:description', content: article.value?.summary || '' },
+    { property: 'og:type', content: 'article' },
+    ...(article.value ? [{ property: 'article:published_time', content: article.value.date }] : []),
+    ...(articleImage.value ? [{ property: 'og:image', content: articleImage.value }] : []),
+  ],
+  script: articleStructuredData.value ? [{ type: 'application/ld+json', children: articleStructuredData.value }] : [],
+}))
 </script>
 
 <style scoped>

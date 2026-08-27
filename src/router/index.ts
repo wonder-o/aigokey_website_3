@@ -89,6 +89,11 @@ export const routes = [
     component: () => import('@/views/EnterpriseServiceView.vue'),
   },
   {
+    path: '/volcengine-partner/',
+    name: 'volcengine-partner',
+    component: () => import('@/views/VolcenginePartnerView.vue'),
+  },
+  {
     path: '/about/',
     name: 'about',
     component: () => import('@/views/AboutView.vue'),

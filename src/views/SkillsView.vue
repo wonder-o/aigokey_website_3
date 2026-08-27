@@ -630,7 +630,6 @@ useHead({
   title: embedded ? 'Skills List - AIGOKEY' : 'AIGOKEY Skills - 找到值得安装的 Codex Skills',
   meta: [
     { name: 'description', content: 'AIGOKEY Skills 每日整理 GitHub 上高质量 Codex Skills，按类别和职业筛选，提供评分、评价与安装指令。' },
-    { name: 'keywords', content: 'Codex Skills, Skills 索引, AI 工作流, Codex 安装, AIGOKEY' },
   ],
 })
 </script>

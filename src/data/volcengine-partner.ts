@@ -1,0 +1,163 @@
+export const volcenginePartnerZh = {
+  meta: {
+    title: '火山引擎生态合作伙伴服务 - AIGOKEY',
+    description: 'AIGOKEY 作为火山引擎生态合作伙伴，提供火山引擎相关产品的咨询、方案设计、实施集成与持续运营支持。',
+    ogDescription: '从需求澄清到实施集成与持续运营，帮助团队将火山引擎相关产品能力落到真实业务中。',
+  },
+  breadcrumb: { label: '面包屑', home: '首页', current: '火山引擎服务' },
+  hero: {
+    eyebrow: '火山引擎生态合作伙伴',
+    titleBefore: '让云与 AI 能力',
+    titleHighlight: '真正进入业务现场',
+    summary: 'AIGOKEY 已成为火山引擎生态合作伙伴。我们面向企业与团队，围绕火山引擎相关产品提供从需求澄清、方案设计到接入集成与持续运营的落地服务。',
+    primary: '咨询合作方案',
+    secondary: '查看服务范围',
+    disclaimer: '具体产品开通、服务范围与交付边界，以实际沟通及双方确认的方案为准。',
+  },
+  console: {
+    label: '云与 AI 交付流程',
+    title: '交付协同工作台',
+    live: '在线',
+    steps: [
+      { code: '01', title: '业务目标', text: '明确场景、范围与优先级' },
+      { code: '02', title: '产品方案', text: '组合适合的能力与接入路径' },
+      { code: '03', title: '实施联调', text: '推进配置、集成与上线验证' },
+    ],
+    outcomeLabel: '交付结果',
+    outcome: '可使用、可运营、可持续迭代',
+  },
+  proof: ['生态合作伙伴身份', '方案到上线的全程协同', '面向实际场景的持续支持'],
+  value: {
+    eyebrow: '合作价值',
+    titleBefore: '不是增加一个供应商',
+    titleAfter: '而是补齐落地的一段能力',
+    paragraphs: [
+      '企业采用云与 AI 产品时，难点往往不在于知道某项能力存在，而在于把它放进现有业务、数据、团队协作和上线节奏中。',
+      '我们将火山引擎相关产品能力与 AIGOKEY 的工程化服务结合，帮助团队把“可用的产品”推进为“业务正在使用的能力”。',
+    ],
+  },
+  capabilities: {
+    eyebrow: '服务能力',
+    title: '围绕业务目标组织产品与交付',
+    description: '服务以实际需求为起点，覆盖从准备到运行的关键环节。我们会在沟通中确认可提供的产品范围、实施路径与支持方式。',
+    items: [
+      { title: '需求澄清与方案设计', text: '从业务问题出发，梳理目标、现有条件、关键约束和优先级，形成可讨论的产品与实施路径。', points: ['场景与目标拆解', '产品能力匹配', '阶段性实施建议'] },
+      { title: '产品接入与系统集成', text: '协助推进账号、权限、接口、应用与业务流程的连接，让选定能力可以更顺畅地进入现有工作环境。', points: ['接入路径规划', '应用与流程联调', '上线前验证支持'] },
+      { title: '运营优化与持续支持', text: '基于实际使用反馈，支持配置优化、问题协同与场景迭代，让能力在业务中持续产生价值。', points: ['使用反馈复盘', '配置与流程优化', '问题排查协同'] },
+    ],
+  },
+  scenarios: {
+    eyebrow: '协同场景',
+    title: '从一个明确场景开始',
+    description: '根据业务目标与现有基础，逐步选择适合推进的方向，而非一次性堆叠复杂能力。',
+    items: [
+      { label: 'AI 应用', title: '智能化业务流程', text: '围绕内容生成、知识问答、智能助手等明确任务，规划从试点到业务使用的路径。' },
+      { label: '数据与平台', title: '数据能力协同', text: '结合已有系统和数据基础，讨论数据接入、分析与业务应用之间的衔接方式。' },
+      { label: '云端交付', title: '应用上云与运行支撑', text: '为应用部署、环境配置与稳定运行梳理清晰的交付责任和支持边界。' },
+    ],
+  },
+  process: {
+    eyebrow: '合作方式',
+    titleBefore: '有节奏地把方案',
+    titleAfter: '变成可交付结果',
+    description: '每个阶段都以可确认的产出作为下一步的依据。',
+    items: [
+      { num: '01', title: '需求对齐', text: '确认业务目标、使用对象、现有条件和成功标准。', output: '明确问题范围' },
+      { num: '02', title: '方案确认', text: '梳理产品能力、实施步骤、协作方式与风险边界。', output: '形成实施路径' },
+      { num: '03', title: '接入实施', text: '推进配置、集成、联调与验证，解决落地过程中的关键问题。', output: '完成可用交付' },
+      { num: '04', title: '运行迭代', text: '根据真实使用持续优化，并识别下一阶段可复制的应用机会。', output: '进入持续运营' },
+    ],
+  },
+  contact: {
+    eyebrow: '联系 AIGOKEY',
+    title: '从你的业务场景开始讨论',
+    text: '联系时请说明目标场景、现有系统情况、计划时间和希望解决的问题。我们会据此确认适合的火山引擎相关产品服务与下一步沟通方式。',
+    items: ['需求与可行性初步评估', '产品能力与接入路径沟通', '实施、集成与持续支持范围确认'],
+    supportTitle: '添加客服咨询',
+    qrAlt: 'AIGOKEY 客服二维码',
+    qrText: '扫码添加客服，备注“火山引擎合作”。',
+    close: '关闭',
+  },
+}
+
+export const volcenginePartnerEn = {
+  meta: {
+    title: 'Volcengine Ecosystem Partner Services - AIGOKEY',
+    description: 'As a Volcengine ecosystem partner, AIGOKEY provides product consulting, solution design, implementation, integration, and ongoing operational support.',
+    ogDescription: 'From requirements discovery through integration and ongoing operations, we help teams bring Volcengine product capabilities into real business workflows.',
+  },
+  breadcrumb: { label: 'Breadcrumb', home: 'Home', current: 'Volcengine Services' },
+  hero: {
+    eyebrow: 'Volcengine Ecosystem Partner',
+    titleBefore: 'Bring cloud and AI capabilities',
+    titleHighlight: 'into real business operations',
+    summary: 'AIGOKEY is a Volcengine ecosystem partner. We help businesses and teams adopt Volcengine products through requirements discovery, solution design, implementation, integration, and ongoing operations.',
+    primary: 'Discuss a solution',
+    secondary: 'Explore our services',
+    disclaimer: 'Product activation, service scope, and delivery responsibilities are subject to the solution confirmed by both parties.',
+  },
+  console: {
+    label: 'Cloud and AI delivery process',
+    title: 'Delivery workspace',
+    live: 'Online',
+    steps: [
+      { code: '01', title: 'Business goal', text: 'Define the use case, scope, and priorities' },
+      { code: '02', title: 'Product solution', text: 'Match capabilities with an adoption path' },
+      { code: '03', title: 'Implementation', text: 'Configure, integrate, and validate launch' },
+    ],
+    outcomeLabel: 'Delivery outcome',
+    outcome: 'Ready to use, operate, and improve',
+  },
+  proof: ['Ecosystem partner status', 'Coordination from solution to launch', 'Ongoing support for real use cases'],
+  value: {
+    eyebrow: 'Partnership value',
+    titleBefore: 'More than another vendor',
+    titleAfter: 'a delivery capability your team can rely on',
+    paragraphs: [
+      'When businesses adopt cloud and AI products, the hard part is rarely discovering that a capability exists. The challenge is fitting it into current operations, data, team collaboration, and launch schedules.',
+      'We combine Volcengine product capabilities with AIGOKEY engineering services to move teams from a product that is available to a capability the business actively uses.',
+    ],
+  },
+  capabilities: {
+    eyebrow: 'Service capabilities',
+    title: 'Organize products and delivery around business outcomes',
+    description: 'Every engagement starts with the actual requirement and covers the critical steps from preparation through operations. Product scope, implementation path, and support model are confirmed during discovery.',
+    items: [
+      { title: 'Requirements discovery and solution design', text: 'Start with the business problem, then clarify goals, current conditions, constraints, and priorities to form a practical product and implementation path.', points: ['Use-case and goal definition', 'Product capability matching', 'Phased implementation guidance'] },
+      { title: 'Product onboarding and system integration', text: 'Connect accounts, permissions, APIs, applications, and business processes so selected capabilities fit more naturally into the current working environment.', points: ['Onboarding path planning', 'Application and workflow integration', 'Pre-launch validation support'] },
+      { title: 'Optimization and ongoing support', text: 'Use real feedback to improve configuration, coordinate issue resolution, and iterate on use cases so the capability continues to create business value.', points: ['Usage review', 'Configuration and workflow optimization', 'Issue investigation and coordination'] },
+    ],
+  },
+  scenarios: {
+    eyebrow: 'Collaboration scenarios',
+    title: 'Start with one well-defined use case',
+    description: 'Choose the right direction step by step based on business goals and current foundations instead of introducing unnecessary complexity all at once.',
+    items: [
+      { label: 'AI applications', title: 'Intelligent business workflows', text: 'Plan a path from pilot to business adoption for focused tasks such as content generation, knowledge Q&A, and intelligent assistants.' },
+      { label: 'Data and platform', title: 'Connected data capabilities', text: 'Use existing systems and data foundations to connect data onboarding, analysis, and practical business applications.' },
+      { label: 'Cloud delivery', title: 'Cloud deployment and operations', text: 'Clarify delivery responsibilities and support boundaries for application deployment, environment configuration, and reliable operations.' },
+    ],
+  },
+  process: {
+    eyebrow: 'How we work',
+    titleBefore: 'Turn a solution into',
+    titleAfter: 'a deliverable outcome',
+    description: 'Each phase produces a result that can be confirmed before the next phase begins.',
+    items: [
+      { num: '01', title: 'Align requirements', text: 'Confirm the business goal, users, current conditions, and success criteria.', output: 'Define the problem' },
+      { num: '02', title: 'Confirm the solution', text: 'Clarify product capabilities, implementation steps, collaboration model, and risks.', output: 'Set the delivery path' },
+      { num: '03', title: 'Implement and integrate', text: 'Configure, integrate, test, and resolve key issues before launch.', output: 'Deliver a usable result' },
+      { num: '04', title: 'Operate and iterate', text: 'Improve from real usage and identify repeatable opportunities for the next phase.', output: 'Move into operations' },
+    ],
+  },
+  contact: {
+    eyebrow: 'Contact AIGOKEY',
+    title: 'Start with your business scenario',
+    text: 'Tell us about the target scenario, current systems, planned timeline, and the problem you need to solve. We will use that context to confirm suitable Volcengine product services and the next step.',
+    items: ['Initial requirements and feasibility review', 'Product capability and onboarding discussion', 'Implementation, integration, and ongoing support scope'],
+    supportTitle: 'Contact support',
+    qrAlt: 'AIGOKEY support QR code',
+    qrText: 'Scan with WeChat and mention “Volcengine partnership”.',
+    close: 'Close',
+  },
+}

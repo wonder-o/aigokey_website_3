@@ -97,6 +97,22 @@
       </section>
 
       <!-- Pricing -->
+      <section class="volcengine-partner-band py-[76px] px-6 max-[720px]:px-4">
+        <div class="max-w-[1180px] mx-auto volcengine-partner-layout">
+          <div class="volcengine-partner-statement">
+            <span class="volcengine-partner-kicker"><i></i>{{ t.volcenginePartner.eyebrow }}</span>
+            <h2>{{ t.volcenginePartner.head }}</h2>
+            <p>{{ t.volcenginePartner.desc }}</p>
+            <router-link class="volcengine-partner-link" to="/volcengine-partner/">{{ t.volcenginePartner.action }} <ArrowRight :size="17" aria-hidden="true" /></router-link>
+          </div>
+          <div class="volcengine-partner-steps" aria-label="Service delivery capabilities">
+            <article v-for="(item, index) in t.volcenginePartner.items" :key="item.title">
+              <span>0{{ index + 1 }}</span><h3>{{ item.title }}</h3><p>{{ item.text }}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="pricing-section">
         <div class="pricing-inner">
           <div class="pricing-head">
@@ -245,14 +261,11 @@ import { useI18n } from '@/composables/useI18n'
 import { useHostUrl } from '@/composables/useHostUrl'
 
 useHead({
-  title: 'AIGOKEY - Codex Agent + GPT + Image 稳定 AI 套餐',
+  title: 'AIGOKEY - AI Token 套餐、企业 FDE 与火山引擎服务',
   meta: [
-    { name: 'description', content: 'AIGOKEY 提供 14 档 AI Token 标准套餐，日额度从 $30 到 $1000，覆盖日卡、周卡和月卡，并支持企业定制额度。' },
-    { name: 'keywords', content: 'AIGOKEY, AI Token, Codex Agent, GPT, Image, AI套餐, 日卡, 周卡, 月卡, 企业定制额度' },
-    { property: 'og:title', content: 'AIGOKEY - Codex Agent + GPT + Image 稳定 AI 套餐' },
-    { property: 'og:description', content: '14 档日卡、周卡和月卡可选，日额度 $30-$1000，并支持企业定制额度套餐。' },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: 'AIGOKEY' },
+    { name: 'description', content: 'AIGOKEY 提供 Codex Agent、GPT 与 Image 系列 AI Token 套餐，并为企业提供 FDE 工程交付和火山引擎产品咨询、方案、集成与运营支持。' },
+    { property: 'og:title', content: 'AIGOKEY - AI Token 套餐、企业 FDE 与火山引擎服务' },
+    { property: 'og:description', content: 'AI Token 标准套餐、企业 FDE 工程交付与火山引擎相关产品服务，覆盖个人高频使用与企业落地场景。' },
   ],
 })
 
@@ -409,6 +422,14 @@ onBeforeUnmount(stopBanner)
 
 .hero-controls { position: absolute; right: 0; bottom: 23px; left: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; }.hero-controls [role='tab'] { display: inline-flex; align-items: center; gap: 7px; min-height: 31px; padding: 0 9px; border: 0; border-radius: 5px; color: #788792; background: transparent; font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }.hero-controls [role='tab'] b { display: none; }.hero-controls [role='tab'].active { color: #184ab7; background: rgba(255,255,255,.8); box-shadow: 0 6px 16px rgba(17,27,36,.07); }.hero-controls [role='tab'].active b { display: block; max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.hero-control-button { display: grid; width: 33px; height: 33px; place-items: center; padding: 0; border: 1px solid #d7e1e7; border-radius: 6px; color: #3b4e59; background: rgba(255,255,255,.84); cursor: pointer; }.hero-control-button:hover { border-color: #2468f2; color: #2468f2; }.hero-slide-enter-active, .hero-slide-leave-active { transition: opacity .32s ease, transform .32s ease; }.hero-slide-enter-from { opacity: 0; transform: translateX(22px); }.hero-slide-leave-to { opacity: 0; transform: translateX(-22px); }
 
+.volcengine-partner-band { position: relative; overflow: hidden; color: #183246; background: #fff; border-top: 1px solid #dce5ec; border-bottom: 1px solid #dce5ec; }
+.volcengine-partner-band::before { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,106,26,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,106,26,.07) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(90deg, transparent, #000 35%, #000 78%, transparent); content: ''; }
+.volcengine-partner-layout { position: relative; display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 58px; align-items: center; }
+.volcengine-partner-kicker { display: inline-flex; align-items: center; gap: 9px; color: #bd4912; font: 800 12px/1.3 Consolas, monospace; text-transform: uppercase; }.volcengine-partner-kicker i { width: 9px; height: 9px; background: #ff6a1a; transform: rotate(45deg); }
+.volcengine-partner-statement h2 { max-width: 640px; margin-top: 14px; color: #162c3c; font-size: clamp(30px, 4vw, 47px); line-height: 1.16; font-weight: 900; }.volcengine-partner-statement > p { max-width: 620px; margin-top: 17px; color: #5d707d; font-size: 16px; line-height: 1.82; }
+.volcengine-partner-link { display: inline-flex; align-items: center; gap: 8px; min-height: 43px; margin-top: 25px; padding: 0 15px; border-radius: 6px; color: #fff; background: #ea5b17; font-size: 13px; font-weight: 850; transition: transform .2s ease, background .2s ease; }.volcengine-partner-link:hover { color: #fff; background: #c8440c; transform: translateY(-2px); }
+.volcengine-partner-steps { display: grid; border-top: 1px solid #b7c6d0; }.volcengine-partner-steps article { display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 14px; padding: 20px 0; border-bottom: 1px solid #cdd9e0; }.volcengine-partner-steps span { grid-row: 1 / span 2; color: #e55a19; font: 850 12px/1.2 Consolas, monospace; }.volcengine-partner-steps h3 { margin: 0; color: #183246; font-size: 18px; }.volcengine-partner-steps p { margin: 7px 0 0; color: #607380; font-size: 13px; line-height: 1.65; }
+
 .pricing-section {
   position: relative;
   padding: 86px 24px;
@@ -467,7 +488,7 @@ onBeforeUnmount(stopBanner)
 .enterprise-plan-link:hover { color: #ffffff; background: #174fbd; transform: translateY(-1px); }
 .enterprise-plan-link:focus-visible { outline: 3px solid rgba(74,166,223,.4); outline-offset: 3px; }
 
-@media (max-width: 1020px) { .hero-carousel { min-height: 0; }.hero-slide { grid-template-columns: 1fr; gap: 38px; min-height: 0; padding-top: 52px; padding-bottom: 98px; }.hero-copy { max-width: 760px; }.hero-visual { width: min(100%,560px); min-height: 460px; justify-self: center; }.hero-controls { position: relative; bottom: auto; padding-top: 0; padding-bottom: 20px; } }
+@media (max-width: 1020px) { .hero-carousel { min-height: 0; }.hero-slide { grid-template-columns: 1fr; gap: 38px; min-height: 0; padding-top: 52px; padding-bottom: 98px; }.hero-copy { max-width: 760px; }.hero-visual { width: min(100%,560px); min-height: 460px; justify-self: center; }.hero-controls { position: relative; bottom: auto; padding-top: 0; padding-bottom: 20px; } .volcengine-partner-layout { grid-template-columns: 1fr; gap: 35px; } }
 @media (max-width: 1020px) { .pricing-head { grid-template-columns: 1fr; gap: 16px; align-items: start; }.pricing-head p { max-width: 680px; }.plan-family-grid { grid-template-columns: 1fr 1fr; }.plan-family--month { grid-column: 1 / -1; }.plan-family--month .plan-tier-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18px; }.plan-family--month .plan-tier-list::before { display: none; }.plan-family--month .plan-tier::before { left: -2px; }.enterprise-plan-rail { grid-template-columns: 48px minmax(0,1fr) auto; }.enterprise-plan-tags { grid-column: 2 / 3; }.enterprise-plan-link { grid-column: 3; grid-row: 1 / 3; } }
-@media (max-width: 720px) { .hero-slide { padding-top: 38px; }.hero-copy h1 { font-size: clamp(42px,13vw,59px); }.hero-description { font-size: 16px; }.hero-proof-grid { grid-template-columns: 1fr; gap: 9px; }.hero-proof-grid > div { display: grid; grid-template-columns: minmax(130px,.8fr) 1.2fr; align-items: start; gap: 9px; min-height: auto; }.hero-proof-grid span { margin-top: 0; }.hero-visual { min-height: 400px; }.quota-visual { margin: 16px 16px 0; padding: 16px; }.quota-visual > strong { font-size: 38px; }.plan-visual-list { margin: 10px 16px 0; }.image-visual-main { inset: 23px 18px 18px 62px; }.image-visual-card--top { top: 39px; left: 13px; width: 156px; padding: 12px; }.image-visual-card--bottom { bottom: 20px; left: 13px; width: 177px; }.hero-controls [role='tab'] { padding: 0 7px; }.hero-controls [role='tab'].active b { display: none; }.pricing-section { padding: 68px 16px; }.plan-family-grid { grid-template-columns: 1fr; }.plan-family--month { grid-column: auto; }.plan-family--month .plan-tier-list { display: block; }.plan-family--month .plan-tier-list::before { display: block; }.plan-family--month .plan-tier::before { left: -13px; }.plan-family-summary { min-height: auto; }.enterprise-plan-rail { grid-template-columns: 42px minmax(0,1fr); padding: 18px; }.enterprise-plan-icon { width: 42px; height: 42px; }.enterprise-plan-copy { grid-column: 2; }.enterprise-plan-tags, .enterprise-plan-link { grid-column: 1 / -1; }.enterprise-plan-link { grid-row: auto; width: 100%; }.enterprise-plan-tags { margin-top: 2px; } }
+@media (max-width: 720px) { .hero-slide { padding-top: 38px; }.hero-copy h1 { font-size: clamp(42px,13vw,59px); }.hero-description { font-size: 16px; }.hero-proof-grid { grid-template-columns: 1fr; gap: 9px; }.hero-proof-grid > div { display: grid; grid-template-columns: minmax(130px,.8fr) 1.2fr; align-items: start; gap: 9px; min-height: auto; }.hero-proof-grid span { margin-top: 0; }.hero-visual { min-height: 400px; }.quota-visual { margin: 16px 16px 0; padding: 16px; }.quota-visual > strong { font-size: 38px; }.plan-visual-list { margin: 10px 16px 0; }.image-visual-main { inset: 23px 18px 18px 62px; }.image-visual-card--top { top: 39px; left: 13px; width: 156px; padding: 12px; }.image-visual-card--bottom { bottom: 20px; left: 13px; width: 177px; }.hero-controls [role='tab'] { padding: 0 7px; }.hero-controls [role='tab'].active b { display: none; }.volcengine-partner-band { padding-top: 62px; padding-bottom: 62px; }.volcengine-partner-steps article { grid-template-columns: 38px minmax(0, 1fr); }.pricing-section { padding: 68px 16px; }.plan-family-grid { grid-template-columns: 1fr; }.plan-family--month { grid-column: auto; }.plan-family--month .plan-tier-list { display: block; }.plan-family--month .plan-tier-list::before { display: block; }.plan-family--month .plan-tier::before { left: -13px; }.plan-family-summary { min-height: auto; }.enterprise-plan-rail { grid-template-columns: 42px minmax(0,1fr); padding: 18px; }.enterprise-plan-icon { width: 42px; height: 42px; }.enterprise-plan-copy { grid-column: 2; }.enterprise-plan-tags, .enterprise-plan-link { grid-column: 1 / -1; }.enterprise-plan-link { grid-row: auto; width: 100%; }.enterprise-plan-tags { margin-top: 2px; } }
 </style>

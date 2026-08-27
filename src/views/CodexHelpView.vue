@@ -236,7 +236,6 @@ useHead(() => ({
   title: t.value.codexHelp.meta.title,
   meta: [
     { name: 'description', content: t.value.codexHelp.meta.description },
-    { name: 'keywords', content: t.value.codexHelp.meta.keywords },
     { property: 'og:title', content: t.value.codexHelp.meta.title },
     { property: 'og:description', content: t.value.codexHelp.meta.ogDescription },
     { property: 'og:type', content: 'article' },

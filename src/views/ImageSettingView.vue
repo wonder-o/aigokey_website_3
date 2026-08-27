@@ -72,7 +72,6 @@ useHead({
   title: '图像配置 - AIGOKEY',
   meta: [
     { name: 'description', content: '在 ChatGPT Codex App 中配置 agk2img 的 Base URL 与 API Key。' },
-    { name: 'keywords', content: 'AIGOKEY, 图像配置, agk2img, ChatGPT Codex App, API Key' },
   ],
 })
 </script>

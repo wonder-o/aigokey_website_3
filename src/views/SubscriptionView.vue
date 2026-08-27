@@ -149,7 +149,7 @@ const plansSchema = JSON.stringify({
 useHead(() => ({
   title: page.value.meta.title,
   meta: [
-    { name: 'description', content: page.value.meta.description }, { name: 'keywords', content: page.value.meta.keywords },
+    { name: 'description', content: page.value.meta.description },
     { property: 'og:title', content: page.value.meta.title }, { property: 'og:description', content: page.value.meta.description }, { property: 'og:type', content: 'website' },
   ],
   script: [{ type: 'application/ld+json', children: plansSchema }],

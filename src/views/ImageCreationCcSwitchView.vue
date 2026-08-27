@@ -279,7 +279,6 @@ useHead({
   title: computed(() => `${page.value.meta.title} - AIGOKEY`),
   meta: [
     { name: 'description', content: computed(() => page.value.meta.description) },
-    { name: 'keywords', content: computed(() => page.value.meta.keywords) },
   ],
 })
 </script>

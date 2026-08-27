@@ -84,6 +84,7 @@
         </div>
         <router-link to="/codex-help/">{{ t.navButtons.help }}</router-link>
         <router-link to="/enterprise-service/">{{ t.navButtons.enterprise }}</router-link>
+        <router-link to="/volcengine-partner/">{{ t.navButtons.volcengine }}</router-link>
       </nav>
 
       <div class="header-actions">
