@@ -1,8 +1,8 @@
 export const volcenginePartnerZh = {
   meta: {
     title: '火山引擎生态合作伙伴服务 - AIGOKEY',
-    description: 'AIGOKEY 作为火山引擎生态合作伙伴，提供火山引擎相关产品的咨询、方案设计、实施集成与持续运营支持。',
-    ogDescription: '从需求澄清到实施集成与持续运营，帮助团队将火山引擎相关产品能力落到真实业务中。',
+    description: 'AIGOKEY 作为火山引擎生态合作伙伴，支持企业和团队采购相关产品与服务，并提供咨询、方案设计、实施集成与持续运营支持；具体折扣以产品和服务为准。',
+    ogDescription: '企业和团队可通过 AIGOKEY 采购火山引擎相关产品与服务，具体产品和服务可享折扣，并获得从方案到落地的支持。',
   },
   breadcrumb: { label: '面包屑', home: '首页', current: '火山引擎服务' },
   hero: {
@@ -10,8 +10,10 @@ export const volcenginePartnerZh = {
     titleBefore: '让云与 AI 能力',
     titleHighlight: '真正进入业务现场',
     summary: 'AIGOKEY 已成为火山引擎生态合作伙伴。我们面向企业与团队，围绕火山引擎相关产品提供从需求澄清、方案设计到接入集成与持续运营的落地服务。',
-    primary: '咨询合作方案',
+    primary: '咨询采购与合作',
     secondary: '查看服务范围',
+    procurementTitle: '通过 AIGOKEY 采购，享受更优产品折扣',
+    procurementText: '企业和团队可通过我们采购火山引擎相关产品与服务，具体折扣根据实际产品和服务内容确认。',
     disclaimer: '具体产品开通、服务范围与交付边界，以实际沟通及双方确认的方案为准。',
   },
   console: {
@@ -71,8 +73,8 @@ export const volcenginePartnerZh = {
   contact: {
     eyebrow: '联系 AIGOKEY',
     title: '从你的业务场景开始讨论',
-    text: '联系时请说明目标场景、现有系统情况、计划时间和希望解决的问题。我们会据此确认适合的火山引擎相关产品服务与下一步沟通方式。',
-    items: ['需求与可行性初步评估', '产品能力与接入路径沟通', '实施、集成与持续支持范围确认'],
+    text: '企业和团队可以通过 AIGOKEY 采购火山引擎相关产品与服务，并同步获得选型、接入和落地支持。请说明目标场景、产品方向与计划时间，我们会确认适用的采购折扣和服务方案。',
+    items: ['按具体产品与服务确认可用折扣', '产品采购、能力与接入路径沟通', '实施、集成与持续支持范围确认'],
     supportTitle: '添加客服咨询',
     qrAlt: 'AIGOKEY 客服二维码',
     qrText: '扫码添加客服，备注“火山引擎合作”。',
@@ -83,8 +85,8 @@ export const volcenginePartnerZh = {
 export const volcenginePartnerEn = {
   meta: {
     title: 'Volcengine Ecosystem Partner Services - AIGOKEY',
-    description: 'As a Volcengine ecosystem partner, AIGOKEY provides product consulting, solution design, implementation, integration, and ongoing operational support.',
-    ogDescription: 'From requirements discovery through integration and ongoing operations, we help teams bring Volcengine product capabilities into real business workflows.',
+    description: 'As a Volcengine ecosystem partner, AIGOKEY helps businesses and teams purchase relevant products and services, with consulting, solution design, implementation, integration, and ongoing operational support; discounts depend on the specific product and service.',
+    ogDescription: 'Businesses and teams can purchase relevant Volcengine products and services through AIGOKEY, with product-specific discounts and support from solution design through delivery.',
   },
   breadcrumb: { label: 'Breadcrumb', home: 'Home', current: 'Volcengine Services' },
   hero: {
@@ -92,8 +94,10 @@ export const volcenginePartnerEn = {
     titleBefore: 'Bring cloud and AI capabilities',
     titleHighlight: 'into real business operations',
     summary: 'AIGOKEY is a Volcengine ecosystem partner. We help businesses and teams adopt Volcengine products through requirements discovery, solution design, implementation, integration, and ongoing operations.',
-    primary: 'Discuss a solution',
+    primary: 'Discuss purchase and delivery',
     secondary: 'Explore our services',
+    procurementTitle: 'Purchase through AIGOKEY for better product pricing',
+    procurementText: 'Businesses and teams can purchase relevant Volcengine products and services through us. Available discounts depend on the specific product and service.',
     disclaimer: 'Product activation, service scope, and delivery responsibilities are subject to the solution confirmed by both parties.',
   },
   console: {
@@ -153,8 +157,8 @@ export const volcenginePartnerEn = {
   contact: {
     eyebrow: 'Contact AIGOKEY',
     title: 'Start with your business scenario',
-    text: 'Tell us about the target scenario, current systems, planned timeline, and the problem you need to solve. We will use that context to confirm suitable Volcengine product services and the next step.',
-    items: ['Initial requirements and feasibility review', 'Product capability and onboarding discussion', 'Implementation, integration, and ongoing support scope'],
+    text: 'Businesses and teams can purchase relevant Volcengine products and services through AIGOKEY, with selection, onboarding, and delivery support included in the conversation. Share your target scenario, product direction, and timeline so we can confirm applicable pricing and the right service path.',
+    items: ['Confirm available discounts for the specific product and service', 'Discuss product purchase, capabilities, and onboarding', 'Confirm implementation, integration, and ongoing support scope'],
     supportTitle: 'Contact support',
     qrAlt: 'AIGOKEY support QR code',
     qrText: 'Scan with WeChat and mention “Volcengine partnership”.',

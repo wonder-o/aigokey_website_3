@@ -15,7 +15,7 @@ const copy = {
     lang: 'zh-CN',
     title: 'AIGOKEY - Codex Agent + GPT + Image 稳定 AI 套餐',
     description: 'AIGOKEY 提供 14 档 AI Token 标准套餐，日额度从 $30 到 $1000，覆盖日卡、周卡和月卡，并支持企业按人数、并发和业务用量定制额度。',
-    navButtons: { toggle: 'EN', register: '注册', login: '登录', imageCreation: '图像创作', imageSkill: 'AGK生图skill', promptLibrary: '提示词库', skills: 'Skills', workflows: '工作流', cases: '案例库', blog: '博客', download: '下载', downloadPanel: '下载资源', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'OpenAI 官方下载', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: '官方网站', help: '文档', volcengine: '火山引擎服务', enterprise: '企业FDE服务', trial: '免费体验' },
+    navButtons: { toggle: 'EN', register: '注册', login: '登录', imageCreation: '图像创作', imageSkill: 'AGK生图skill', promptLibrary: '提示词库', skills: 'Skills', workflows: '工作流', cases: '案例库', blog: '博客', download: '下载', downloadPanel: '下载资源', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'OpenAI 官方下载', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: '官方网站', help: '文档', volcengine: '火山引擎服务', enterpriseGroup: '企业服务', enterprise: '企业FDE服务', trial: '免费体验' },
     eyebrow: 'Codex Agent · GPT + Image 系列模型',
     heroTitleBefore: '稳定可靠的 ',
     heroTitleHighlight: 'AI Token',
@@ -61,6 +61,19 @@ const copy = {
           { strong: '读项目', text: '快速理解现有代码与任务边界。' },
           { strong: '改代码 + 验证', text: '从修改到验证连续推进。' },
           { strong: '补齐界面素材', text: '用 Image 模型完善 Demo 与界面。' },
+        ],
+      },
+      {
+        id: 'volcengine',
+        eyebrow: '火山引擎生态合作伙伴',
+        titleBefore: '企业采购火山引擎，', titleHighlight: '享受超低折扣', titleAfter: '',
+        copy: 'AIGOKEY 已成为火山引擎生态合作伙伴。企业和团队通过我们采购火山引擎相关产品和服务，可以享受超低折扣，并获得选型、接入与落地支持。',
+        note: '具体折扣根据实际产品和服务内容确认，欢迎联系我们规划采购方案。',
+        primary: '咨询采购方案', secondary: '免费开通体验', target: 'volcengine',
+        proof: [
+          { strong: '生态合作伙伴', text: 'AIGOKEY 对接火山引擎相关产品与服务。' },
+          { strong: '超低折扣', text: '通过我们采购，具体优惠按产品与服务确认。' },
+          { strong: '企业团队支持', text: '采购、选型、接入与落地协同推进。' },
         ],
       },
     ],
@@ -225,6 +238,39 @@ const copy = {
     modal: {
       title: '添加客服免费开通体验',
       text: '扫码添加客服，免费开通体验并确认可用额度。',
+    },
+    supportPage: {
+      meta: {
+        title: '联系客服 - AIGOKEY',
+        description: '联系 AIGOKEY 微信客服，获取 AI Token 套餐、免费试用、企业服务和火山引擎产品采购咨询。',
+      },
+      hero: {
+        eyebrow: 'AIGOKEY 客服中心',
+        title: '遇到问题，直接和我们聊',
+        summary: '无论是套餐开通、充值、密钥使用，还是企业服务与火山引擎产品采购，都可以添加微信客服，我们会先了解你的具体需求，再给出对应的处理方式。',
+        primary: '返回首页',
+        secondary: '查看帮助文档',
+      },
+      qr: {
+        label: '微信扫码添加客服',
+        tip: '打开微信扫一扫，添加客服后发送你的问题。',
+        note: '请在消息中备注咨询主题，方便我们快速分流。',
+        alt: 'AIGOKEY 微信客服二维码',
+      },
+      topics: {
+        eyebrow: '可以咨询什么',
+        title: '把问题交给客服处理',
+        description: '说明使用场景和遇到的问题即可，不需要先判断应该找哪个服务入口。',
+        items: [
+          { title: '套餐与账户', text: '开通、续费、充值、额度、发票和账户使用问题。' },
+          { title: 'Codex 与生图', text: '安装配置、密钥导入、模型使用和图像创作相关问题。' },
+          { title: '企业与云服务', text: '企业 FDE 服务、火山引擎产品采购、折扣与落地支持。' },
+        ],
+      },
+      note: {
+        title: '添加时请备注咨询主题',
+        text: '例如“免费试用”“企业服务”“火山引擎采购”或“Codex 配置”，我们可以更快识别你的需求。',
+      },
     },
     enterprise: {
       meta: {
@@ -410,7 +456,7 @@ const copy = {
     lang: 'en',
     title: 'AIGOKEY - Stable AI Plans for Codex Agent + GPT + Image',
     description: 'AIGOKEY offers 14 standard AI Token plans with $30-$1000 daily quotas across day, week, and monthly options, plus tailored enterprise quotas.',
-    navButtons: { toggle: '中文', register: 'Register', login: 'Log in', imageCreation: 'Image Studio', imageSkill: 'AGK Image Skill', promptLibrary: 'Prompts', skills: 'Skills', workflows: 'Workflows', cases: 'Cases', blog: 'Blog', download: 'Downloads', downloadPanel: 'Downloads', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'Official website', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'Official website', help: 'Docs', volcengine: 'Volcengine Services', enterprise: 'Enterprise FDE', trial: 'Free Trial' },
+    navButtons: { toggle: '中文', register: 'Register', login: 'Log in', imageCreation: 'Image Studio', imageSkill: 'AGK Image Skill', promptLibrary: 'Prompts', skills: 'Skills', workflows: 'Workflows', cases: 'Cases', blog: 'Blog', download: 'Downloads', downloadPanel: 'Downloads', downloadCodex: 'ChatGPT Codex', downloadCodexMeta: 'Official website', downloadCcSwitch: 'CC-Switch', downloadCcSwitchMeta: 'Official website', help: 'Docs', volcengine: 'Volcengine Services', enterpriseGroup: 'Enterprise Services', enterprise: 'Enterprise FDE', trial: 'Free Trial' },
     eyebrow: 'Codex Agent · GPT + Image models',
     heroTitleBefore: 'Stable ',
     heroTitleHighlight: 'AI Token',
@@ -456,6 +502,19 @@ const copy = {
           { strong: 'Read projects', text: 'Understand existing code and task boundaries quickly.' },
           { strong: 'Edit + verify', text: 'Move continuously from change to verification.' },
           { strong: 'Complete UI assets', text: 'Use Image models to finish demos and interfaces.' },
+        ],
+      },
+      {
+        id: 'volcengine',
+        eyebrow: 'Volcengine Ecosystem Partner',
+        titleBefore: 'Purchase Volcengine for your team, ', titleHighlight: 'with deep discounts', titleAfter: '',
+        copy: 'AIGOKEY is a Volcengine ecosystem partner. Businesses and teams can purchase relevant Volcengine products and services through us, with competitive pricing and delivery support.',
+        note: 'Available discounts depend on the specific product and service. Contact us to plan the right purchasing path.',
+        primary: 'Discuss a purchase plan', secondary: 'Start Free Trial', target: 'volcengine',
+        proof: [
+          { strong: 'Ecosystem partner', text: 'Connect with relevant Volcengine products and services.' },
+          { strong: 'Deep discounts', text: 'Product- and service-specific pricing support.' },
+          { strong: 'Team delivery support', text: 'Coordinate purchasing, selection, onboarding, and delivery.' },
         ],
       },
     ],
@@ -620,6 +679,39 @@ const copy = {
     modal: {
       title: 'Add support to start a free trial',
       text: 'Scan to add support, start a free trial, and confirm available quota.',
+    },
+    supportPage: {
+      meta: {
+        title: 'Contact Support - AIGOKEY',
+        description: 'Contact AIGOKEY support on WeChat for AI Token plans, free trials, enterprise services, and Volcengine product purchasing guidance.',
+      },
+      hero: {
+        eyebrow: 'AIGOKEY Support Center',
+        title: 'Have a question? Talk to us directly',
+        summary: 'Whether you need help with plans, recharge, keys, enterprise services, or Volcengine product purchasing, add our WeChat support. We will understand your situation first and route you to the right answer.',
+        primary: 'Back to home',
+        secondary: 'View help docs',
+      },
+      qr: {
+        label: 'Scan to add support on WeChat',
+        tip: 'Open WeChat, scan the QR code, and send us your question.',
+        note: 'Include the topic in your first message so we can route it quickly.',
+        alt: 'AIGOKEY WeChat support QR code',
+      },
+      topics: {
+        eyebrow: 'What can we help with',
+        title: 'Bring the question to support',
+        description: 'Share your use case and the issue you are facing. You do not need to choose the right service entry first.',
+        items: [
+          { title: 'Plans and account', text: 'Activation, renewal, recharge, quota, invoices, and account questions.' },
+          { title: 'Codex and images', text: 'Installation, configuration, key imports, model usage, and image creation.' },
+          { title: 'Enterprise and cloud', text: 'Enterprise FDE, Volcengine purchasing, product discounts, and delivery support.' },
+        ],
+      },
+      note: {
+        title: 'Add a topic in your first message',
+        text: 'For example: “free trial”, “enterprise service”, “Volcengine purchase”, or “Codex setup”. This helps us identify your request faster.',
+      },
     },
     enterprise: {
       meta: {

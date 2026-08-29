@@ -1,3 +1,5 @@
+import type { RouterScrollBehavior } from 'vue-router'
+
 export const routes = [
   {
     path: '/',
@@ -104,6 +106,11 @@ export const routes = [
     component: () => import('@/views/FreeTrialView.vue'),
   },
   {
+    path: '/contact/',
+    name: 'contact',
+    component: () => import('@/views/ContactSupportView.vue'),
+  },
+  {
     path: '/blog/',
     name: 'blog',
     component: () => import('@/views/BlogView.vue'),
@@ -121,3 +128,9 @@ export const routes = [
     component: () => import('@/views/BlogArticleView.vue'),
   },
 ]
+
+export const scrollBehavior: RouterScrollBehavior = (to, _from, savedPosition) => {
+  if (savedPosition) return savedPosition
+  if (to.hash) return { el: to.hash }
+  return { top: 0 }
+}

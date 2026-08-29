@@ -1,12 +1,12 @@
 import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
-import { routes } from './router'
+import { routes, scrollBehavior } from './router'
 import { blogSlugs } from './data/blog'
 import './style.css'
 
 export const createApp = ViteSSG(
   App,
-  { routes },
+  { routes, scrollBehavior },
   (ctx) => {
     // ctx.app, ctx.router, ctx.head 都可以直接用
   },
