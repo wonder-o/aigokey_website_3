@@ -12,6 +12,42 @@ export const routes = [
     component: () => import('@/views/SubscriptionView.vue'),
   },
   {
+    path: '/models/gpt/',
+    name: 'model-gpt',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'gpt' },
+  },
+  {
+    path: '/models/image/',
+    name: 'model-image',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'image' },
+  },
+  {
+    path: '/models/deepseek/',
+    name: 'model-deepseek',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'deepseek' },
+  },
+  {
+    path: '/models/glm/',
+    name: 'model-glm',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'glm' },
+  },
+  {
+    path: '/models/kimi/',
+    name: 'model-kimi',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'kimi' },
+  },
+  {
+    path: '/models/seedance/',
+    name: 'model-seedance',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'seedance' },
+  },
+  {
     path: '/codex-help/',
     name: 'codex-help',
     component: () => import('@/views/CodexHelpView.vue'),

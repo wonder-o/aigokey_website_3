@@ -52,8 +52,8 @@ const { lang } = useI18n()
 const activeFilter = ref('all')
 const searchQuery = ref('')
 const copyByLang = {
-  zh: { list: { eyebrow: 'Agent 应用观察', title: '每天一篇，真正拿去用', summary: '不做新闻搬运。每篇都回答：发生了什么、为什么重要、今天怎么试。', filterLabel: '按主题筛选', searchLabel: '搜索文章', searchPlaceholder: '搜索标题、主题或关键词', minutes: '分钟', read: '阅读文章', empty: '没有匹配文章，换个关键词试试。' } },
-  en: { list: { eyebrow: 'Agent field notes', title: 'One article a day, made useful', summary: 'No news dumping. Every piece answers what changed, why it matters, and what to try now.', filterLabel: 'Filter by topic', searchLabel: 'Search articles', searchPlaceholder: 'Search title, topic, or keyword', minutes: 'min', read: 'Read article', empty: 'No matching articles. Try another keyword.' } },
+  zh: { list: { eyebrow: 'Agent 应用观察', title: '我们的实践分享', summary: '不做新闻搬运。每篇都回答：发生了什么、为什么重要、今天怎么试。', filterLabel: '按主题筛选', searchLabel: '搜索文章', searchPlaceholder: '搜索标题、主题或关键词', minutes: '分钟', read: '阅读文章', empty: '没有匹配文章，换个关键词试试。' } },
+  en: { list: { eyebrow: 'Agent field notes', title: 'Our practice notes', summary: 'No news dumping. Every piece answers what changed, why it matters, and what to try now.', filterLabel: 'Filter by topic', searchLabel: 'Search articles', searchPlaceholder: 'Search title, topic, or keyword', minutes: 'min', read: 'Read article', empty: 'No matching articles. Try another keyword.' } },
 } as const
 const copy = computed(() => lang.value === 'en' ? copyByLang.en : copyByLang.zh)
 const displayArticles = computed(() => blogIndex.map((article) => getBlogArticle(article.slug, lang.value === 'en' ? 'en' : 'zh-CN') || article))
