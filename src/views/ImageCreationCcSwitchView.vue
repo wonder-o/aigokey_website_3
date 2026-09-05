@@ -242,8 +242,8 @@ const copied = ref(false)
 const configSnippet = `approval_policy = "on-request"
 approvals_reviewer = "user"
 model_provider = "custom"
-model = "gpt-5.6-sol"
-review_model = "gpt-5.6-sol"
+model = "gpt-6-astra"
+review_model = "gpt-6-astra"
 model_reasoning_effort = "high"
 
 [model_providers.custom]
