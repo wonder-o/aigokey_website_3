@@ -73,6 +73,18 @@ export const modelServices: ModelService[] = [
     planNote: '适合长文档、复杂项目和需要持续推进的 Agent 工作。',
   },
   {
+    slug: 'claude',
+    label: 'Claude',
+    vendor: 'Anthropic',
+    accent: '#c47745',
+    softAccent: '#fff3ea',
+    model: 'Claude 4.5',
+    tagline: '面向复杂推理、代码协作与长文档工作的可靠智能助手。',
+    intro: 'Claude 4.5 系列模型兼顾深度推理、代码能力与自然对话，适合处理长文档、复杂分析和需要稳定推进的工作流。',
+    capabilities: ['复杂推理与多步骤分析', '代码生成、审查与重构', '长文档理解与自然语言协作'],
+    planNote: '适合研究、写作、研发和需要高质量持续对话的团队工作流。',
+  },
+  {
     slug: 'seedance',
     label: 'Seedance',
     vendor: 'ByteDance Seed',

@@ -42,6 +42,12 @@ export const routes = [
     props: { slug: 'kimi' },
   },
   {
+    path: '/models/claude/',
+    name: 'model-claude',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'claude' },
+  },
+  {
     path: '/models/seedance/',
     name: 'model-seedance',
     component: () => import('@/views/ModelServiceView.vue'),
