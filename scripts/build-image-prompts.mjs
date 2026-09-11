@@ -87,7 +87,7 @@ async function selectEntries(entries) {
   const seenPrompts = new Set()
   const seenImages = new Set()
   for (const entry of entries) {
-    if (!entry.prompt || !entry.image || entry.model !== 'gpt-image-2' || entry.source_url === 'local-user-reference' || blocked.test(entry.prompt)) continue
+    if (!entry.prompt || !entry.image || entry.model !== 'gpt-image-2.5' || entry.source_url === 'local-user-reference' || blocked.test(entry.prompt)) continue
     const normalizedPrompt = entry.prompt.trim()
     if (seenPrompts.has(normalizedPrompt)) continue
     const category = classify(entry)

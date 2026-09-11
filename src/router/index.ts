@@ -42,6 +42,12 @@ export const routes = [
     props: { slug: 'kimi' },
   },
   {
+    path: '/models/claude/',
+    name: 'model-claude',
+    component: () => import('@/views/ModelServiceView.vue'),
+    props: { slug: 'claude' },
+  },
+  {
     path: '/models/seedance/',
     name: 'model-seedance',
     component: () => import('@/views/ModelServiceView.vue'),
@@ -53,9 +59,46 @@ export const routes = [
     component: () => import('@/views/CodexHelpView.vue'),
   },
   {
+    path: '/config-guides/',
+    name: 'config-guides',
+    component: () => import('@/views/ConfigGuidesView.vue'),
+  },
+  {
+    path: '/deepseek-harness/',
+    name: 'deepseek-harness',
+    component: () => import('@/views/DeepSeekHarnessView.vue'),
+  },
+  {
+    path: '/pi-config/',
+    name: 'pi-config',
+    component: () => import('@/views/PiConfigView.vue'),
+  },
+  {
+    path: '/workbuddy-config/',
+    name: 'workbuddy-config',
+    component: () => import('@/views/WorkBuddyConfigView.vue'),
+  },
+  {
+    path: '/trae-config/',
+    name: 'trae-config',
+    component: () => import('@/views/TraeConfigView.vue'),
+  },
+  {
+    path: '/claude-code-config/',
+    name: 'claude-code-config',
+    component: () => import('@/views/ClaudeCodeConfigView.vue'),
+  },
+  {
     path: '/codex-help/embed/',
     name: 'codex-help-embed',
     component: () => import('@/views/CodexHelpView.vue'),
+    props: { embedded: true },
+    meta: { noindex: true },
+  },
+  {
+    path: '/config-guides/embed/',
+    name: 'config-guides-embed',
+    component: () => import('@/views/ConfigGuidesView.vue'),
     props: { embedded: true },
     meta: { noindex: true },
   },
@@ -91,6 +134,13 @@ export const routes = [
     path: '/image-creation/',
     name: 'image-creation',
     component: () => import('@/views/ImageCreationView.vue'),
+  },
+  {
+    path: '/image-creation/embed/',
+    name: 'image-creation-embed',
+    component: () => import('@/views/ImageCreationView.vue'),
+    props: { embedded: true },
+    meta: { noindex: true },
   },
   {
     path: '/image-prompts/',

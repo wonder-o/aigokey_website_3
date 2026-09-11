@@ -3,14 +3,14 @@ slug: codex-image2-novel-to-webtoon-workflow
 lang: en
 date: '2026-07-19'
 category: Case Study
-title: "How I used Codex + gpt-image-2 to turn a long novel into a 72-panel webtoon"
+title: "How I used Codex + gpt-image-2.5 to turn a long novel into a 72-panel webtoon"
 summary: A production case study covering source mapping, character consistency, recoverable image jobs, human QA, and publishable slices across 281 chapters.
 readTime: 24
 featured: true
 notice: The novel Tian Mo Shen Tan was chosen solely because of the editor's personal affection for early-era Chinese web fiction. This is a non-commercial experiment. If you have any copyright concerns, please contact the editor and the article will be removed. Thank you.
 tags:
   - Codex
-  - gpt-image-2
+  - gpt-image-2.5
   - Novel adaptation
   - AI webtoon
   - Workflow
@@ -33,7 +33,7 @@ visual:
 
 Many first attempts at AI comics follow a one-line workflow: give a passage to a model and ask it to “turn this into a comic.” The first image may look impressive. By the third, the character has a different face, the location has changed, a prop disappears between panels, or dialogue is baked into the image as uneditable gibberish.
 
-For the _Tian Mo Shen Tan_ project, I used a different division of labor. Codex read and structured the novel, broke the story into beats, maintained the canon, prepared jobs, checked results, and organized the files. gpt-image-2 handled visual generation. A human remained responsible for taste, drama, continuity, and final approval.
+For the _Tian Mo Shen Tan_ project, I used a different division of labor. Codex read and structured the novel, broke the story into beats, maintained the canon, prepared jobs, checked results, and organized the files. gpt-image-2.5 handled visual generation. A human remained responsible for taste, drama, continuity, and final approval.
 
 The project turned a long novel containing three parts, 31 volumes, 281 numbered chapters, and three prologues into a traceable source library. EP000 through EP003 produced 72 approved panels and 16 platform-ready slices. More importantly, this was not a one-off image demo. It became a pipeline that can resume, revise, audit, and scale.
 
@@ -41,7 +41,7 @@ This case study explains the full method. The same structure can support wuxia, 
 
 One rights boundary matters from the outset: a notice included with source files does not prove permission for public adaptation or commercial distribution. This workflow assumes internal research and production testing. Before publishing, confirm the rights required for the novel text, characters, story, and derivative material.
 
-## 1. The whole system: what Codex, image2, and people each do
+## 1. The whole system: what Codex, image2.5, and people each do
 
 ![Novel-to-webtoon pipeline from rights confirmation and source ingestion to publishing slices](/assets/blog/codex-image2-webtoon/workflow.jpg)
 
@@ -50,10 +50,10 @@ The key is not asking one model to do everything. It is assigning clear responsi
 | Role | Best suited to | Should not decide alone |
 | --- | --- | --- |
 | Codex | Read the project, split the novel, build indexes, extract story beats, write storyboards, generate jobs, maintain state, run scripts, and validate structure | Final visual taste, copyright permission, or subjective approval of a character's presence |
-| gpt-image-2 (image2 below) | Generate locations, characters, actions, creatures, and atmosphere from text and references; perform local image revisions | Episode structure, facts across shots, or final webtoon layout |
+| gpt-image-2.5 (image2.5 below) | Generate locations, characters, actions, creatures, and atmosphere from text and references; perform local image revisions | Episode structure, facts across shots, or final webtoon layout |
 | Human | Choose the adaptation range, approve character designs and keyframes, judge expressions and dramatic force, and approve publication | Repetitive file transfer or manual upkeep of large amounts of shot state |
 
-In short, Codex combines the producer, screenwriter, continuity editor, and automation engineer. image2 executes the visual brief. The person is the director and final reviewer.
+In short, Codex combines the producer, screenwriter, continuity editor, and automation engineer. image2.5 executes the visual brief. The person is the director and final reviewer.
 
 ## 2. Why you cannot drop a whole chapter into an image model
 
@@ -389,7 +389,7 @@ Keep these fields in JSON instead of prompt prose alone so Codex can reuse them 
 
 ## Conclusion
 
-The hard part of making a novel webtoon with Codex and image2 is not whether one attractive picture can be generated. It is whether hundreds of thousands of words can become a production system that preserves facts, characters, and visual continuity over time.
+The hard part of making a novel webtoon with Codex and image2.5 is not whether one attractive picture can be generated. It is whether hundreds of thousands of words can become a production system that preserves facts, characters, and visual continuity over time.
 
 When the source is immutable, the adaptation is mapped, characters have approved references, shots carry state, generation jobs can resume, revisions are logged, and typography lives in its own layer, AI becomes more than an inspiration tool. It becomes a production capability that people can direct, audit, and deliver.
 

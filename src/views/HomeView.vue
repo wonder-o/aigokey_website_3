@@ -36,7 +36,7 @@
               </template>
 
               <template v-else-if="activeBanner.id === 'image'">
-                <div class="image-visual-main"><img src="/assets/image-creation-hero.png" alt="GPT-Image-2 creative preview" /><span><Sparkles :size="16" aria-hidden="true" /> GPT-Image-2</span></div>
+                <div class="image-visual-main"><img src="/assets/image-creation-hero.png" alt="GPT-Image-2.5 creative preview" /><span><Sparkles :size="16" aria-hidden="true" /> GPT-Image-2.5</span></div>
                 <div class="image-visual-card image-visual-card--top"><Images :size="20" aria-hidden="true" /><b>插画 · 漫画 · 彩漫</b><small>Visual ideas, rendered</small></div>
                 <div class="image-visual-card image-visual-card--bottom"><span class="image-swatch image-swatch--orange"></span><span class="image-swatch image-swatch--blue"></span><span class="image-swatch image-swatch--green"></span><b>广告图 · 电商图</b></div>
               </template>

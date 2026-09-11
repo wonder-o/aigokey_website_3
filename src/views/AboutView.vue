@@ -109,7 +109,7 @@
           <div class="cta-actions">
             <router-link class="action action-primary" to="/subscription/">{{ page.cta.plans }}<ArrowRight :size="18" aria-hidden="true" /></router-link>
             <router-link class="action action-secondary" to="/enterprise-service/">{{ page.cta.enterprise }}</router-link>
-            <router-link class="support-link" to="/codex-help/#support">{{ page.cta.support }}<ArrowRight :size="16" aria-hidden="true" /></router-link>
+            <router-link class="support-link" to="/codex-help/">{{ page.cta.support }}<ArrowRight :size="16" aria-hidden="true" /></router-link>
           </div>
         </div>
       </section>
