@@ -38,6 +38,8 @@
             class="guide-card"
             :class="`guide-card--${guide.tone}`"
             :to="guide.path"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <span class="guide-card__index">0{{ index + 1 }}</span>
             <span class="guide-card__icon" :class="{ 'guide-card__icon--letter': guide.letter }">
