@@ -1,9 +1,9 @@
 <template>
   <div class="min-h-screen overflow-x-hidden bg-white text-[#111b24]">
-    <SiteHeader @trial="$router.push('/free-trial/')" />
+    <SiteHeader v-if="!embedded" @trial="$router.push('/free-trial/')" />
 
-    <main>
-      <section class="relative isolate min-h-[min(720px,calc(100vh-72px))] overflow-hidden bg-[#0c1017] text-white">
+    <main class="flex flex-col">
+      <section class="relative isolate order-1 min-h-[min(720px,calc(100vh-72px))] overflow-hidden bg-[#0c1017] text-white">
         <img src="/assets/image-creation-hero.png" :alt="page.hero.imageAlt" class="absolute inset-0 h-full w-full object-cover object-center" />
         <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,12,18,0.96)_0%,rgba(8,12,18,0.82)_31%,rgba(8,12,18,0.22)_65%,rgba(8,12,18,0.08)_100%)]"></div>
         <div class="absolute inset-x-0 bottom-0 h-44 bg-[linear-gradient(0deg,rgba(8,12,18,0.96),transparent)]"></div>
@@ -19,14 +19,14 @@
         </div>
       </section>
 
-      <section class="border-b border-line bg-white px-6 py-5 max-[760px]:px-4">
+      <section class="order-2 border-b border-line bg-white px-6 py-5 max-[760px]:px-4">
         <div class="mx-auto flex max-w-[1280px] items-center justify-between gap-6 max-[760px]:items-start">
           <p class="text-[14px] font-bold leading-[1.55] text-[#3f454a]">{{ page.strip.copy }}</p>
           <a href="#setup" class="shrink-0 text-[14px] font-black text-[#db4b32] underline decoration-2 underline-offset-4">{{ page.strip.action }}</a>
         </div>
       </section>
 
-      <section class="px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.06) 1px, transparent 1px); background-size: 56px 56px;">
+      <section class="order-4 px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.06) 1px, transparent 1px); background-size: 56px 56px;">
         <div class="mx-auto max-w-[1280px]">
           <div class="grid grid-cols-[minmax(0,0.85fr)_minmax(420px,1.15fr)] gap-12 max-[1020px]:grid-cols-1">
             <div>
@@ -44,7 +44,7 @@
         </div>
       </section>
 
-      <section class="bg-[#151719] px-6 py-[92px] text-white max-[760px]:px-4 max-[760px]:py-16">
+      <section class="order-5 bg-[#151719] px-6 py-[92px] text-white max-[760px]:px-4 max-[760px]:py-16">
         <div class="mx-auto max-w-[1280px]">
           <div class="grid grid-cols-[minmax(0,1fr)_minmax(360px,0.78fr)] gap-12 max-[1020px]:grid-cols-1">
             <div>
@@ -62,7 +62,7 @@
         </div>
       </section>
 
-      <section id="setup" class="scroll-mt-24 bg-[#eef6ff] px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.07) 1px, transparent 1px); background-size: 56px 56px;">
+      <section id="setup" class="order-3 scroll-mt-24 bg-[#eef6ff] px-6 py-[92px] max-[760px]:px-4 max-[760px]:py-16" style="background-image: linear-gradient(rgba(36,104,242,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(36,104,242,0.07) 1px, transparent 1px); background-size: 56px 56px;">
         <div class="mx-auto max-w-[1280px]">
           <div class="grid grid-cols-[minmax(0,0.92fr)_minmax(420px,1.08fr)] gap-12 max-[1020px]:grid-cols-1">
             <div>
@@ -105,7 +105,7 @@
         </div>
       </section>
 
-      <section class="bg-[#132231] px-6 py-[78px] text-white max-[760px]:px-4 max-[760px]:py-14">
+      <section class="order-6 bg-[#132231] px-6 py-[78px] text-white max-[760px]:px-4 max-[760px]:py-14">
         <div class="mx-auto grid max-w-[1280px] grid-cols-[minmax(0,1fr)_auto] items-end gap-8 max-[900px]:grid-cols-1">
           <div><p class="text-[13px] font-black tracking-[0.16em] text-[#9feb8b]">{{ page.cta.eyebrow }}</p><h2 class="mt-4 max-w-[780px] text-[clamp(34px,4.4vw,60px)] font-black leading-[1.08]">{{ page.cta.title }}</h2></div>
           <a class="btn border-green bg-green text-[#123412] shadow-[0_14px_28px_rgba(68,201,40,0.2)]" :href="loginUrl" target="_top">{{ page.cta.action }}</a>
@@ -113,7 +113,7 @@
       </section>
     </main>
 
-    <SiteFooter />
+    <SiteFooter v-if="!embedded" />
   </div>
 </template>
 
@@ -124,6 +124,12 @@ import SiteFooter from '@/components/SiteFooter.vue'
 import SiteHeader from '@/components/SiteHeader.vue'
 import { useHostUrl } from '@/composables/useHostUrl'
 import { useI18n } from '@/composables/useI18n'
+
+withDefaults(defineProps<{
+  embedded?: boolean
+}>(), {
+  embedded: false,
+})
 
 const imageCopy = {
   'zh-CN': {
@@ -148,7 +154,7 @@ const imageCopy = {
         { number: '04', title: '重启ChatGPT Codex App 后进行创作', text: '重启ChatGPT Codex App后，即可在ChatGPT Codex 中直接描述你要生成、修改或批量制作的画面。skill 会根据任务选择生成、编辑、参考图或批量工作流。' },
       ],
     },
-    commands: { title: '支持指令', copy: '可以使用技能名明确调用，也可以不提技能名，直接用自然语言描述任务：', groups: [{ title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] }, { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] }, { title: '设置模型：', prompts: ['帮我设置 agk2img 的模型为 gpt-image-2.5-flare', '帮我设置 agk2img 的模型为 gpt-image-2.5-sunburst', '帮我设置 agk2img 的模型为 gpt-image-2.2'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] }, { title: '使用（直接自然语言）：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] }] },
+    commands: { title: '支持指令', copy: '可以使用技能名明确调用，也可以不提技能名，直接用自然语言描述任务：', groups: [{ title: '安装：', prompts: ['把 agk2img-skill 安装到 Codex skills 目录', '把 agk2img-skill 放到当前项目里使用'] }, { title: '配置：', prompts: ['帮我配置 agk2img 的 base url', '帮我更新 agk2img 的 api key', '帮我清空 agk2img 的配置', '帮我检查 agk2img 是否配置好了'] }, { title: '设置模型：', prompts: ['帮我设置 agk2img 的模型为 gpt-image-2.5-flare', '帮我设置 agk2img 的模型为 gpt-image-2.5-sunburst', '帮我设置 agk2img 的模型为 gpt-image-2'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一张 xxx 图', '用 agk2img 修改这张图片里的 xxx', '用 agk2img 把我上传的图片改成 xxx 风格', '用 agk2img 批量生成一组 xxx 素材'] }, { title: '使用（直接自然语言）：', prompts: ['生成一张 xxx 图', '修改这张图片里的 xxx', '把我上传的图片改成 xxx 风格', '批量生成一组 xxx 素材'] }] },
     cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 套餐，把图像创作纳入你的日常工作流。', action: '登录并创建 API Key' },
   },
   'zh-TW': {
@@ -173,7 +179,7 @@ const imageCopy = {
         { number: '04', title: '在 ChatGPT Codex App 中創作', text: '直接描述你要生成、修改或批量製作的畫面。skill 會根據任務選擇生成、編輯、參考圖或批量工作流程。' },
       ],
     },
-    commands: { title: '支援指令', copy: '可以使用技能名明確呼叫，也可以不提技能名，直接用自然語言描述任務：', groups: [{ title: '安裝：', prompts: ['把 agk2img-skill 安裝到 Codex skills 目錄', '把 agk2img-skill 放到目前專案裡使用'] }, { title: '設定：', prompts: ['幫我設定 agk2img 的 base url', '幫我更新 agk2img 的 api key', '幫我清空 agk2img 的設定', '幫我檢查 agk2img 是否設定好了'] }, { title: '設定模型：', prompts: ['幫我設定 agk2img 的模型為 gpt-image-2.5-flare', '幫我設定 agk2img 的模型為 gpt-image-2.5-sunburst', '幫我設定 agk2img 的模型為 gpt-image-2.2'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一張 xxx 圖', '用 agk2img 修改這張圖片裡的 xxx', '用 agk2img 把我上傳的圖片改成 xxx 風格', '用 agk2img 批量生成一組 xxx 素材'] }, { title: '使用（直接自然語言）：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] }] },
+    commands: { title: '支援指令', copy: '可以使用技能名明確呼叫，也可以不提技能名，直接用自然語言描述任務：', groups: [{ title: '安裝：', prompts: ['把 agk2img-skill 安裝到 Codex skills 目錄', '把 agk2img-skill 放到目前專案裡使用'] }, { title: '設定：', prompts: ['幫我設定 agk2img 的 base url', '幫我更新 agk2img 的 api key', '幫我清空 agk2img 的設定', '幫我檢查 agk2img 是否設定好了'] }, { title: '設定模型：', prompts: ['幫我設定 agk2img 的模型為 gpt-image-2.5-flare', '幫我設定 agk2img 的模型為 gpt-image-2.5-sunburst', '幫我設定 agk2img 的模型為 gpt-image-2'] }, { title: '使用（指定技能名）：', prompts: ['用 agk2img 生成一張 xxx 圖', '用 agk2img 修改這張圖片裡的 xxx', '用 agk2img 把我上傳的圖片改成 xxx 風格', '用 agk2img 批量生成一組 xxx 素材'] }, { title: '使用（直接自然語言）：', prompts: ['生成一張 xxx 圖', '修改這張圖片裡的 xxx', '把我上傳的圖片改成 xxx 風格', '批量生成一組 xxx 素材'] }] },
     cta: { eyebrow: 'READY TO CREATE', title: '用 AIGOKEY 方案，把圖像創作納入你的日常工作流程。', action: '登入並建立 API Key' },
   },
   en: {
@@ -198,7 +204,7 @@ const imageCopy = {
         { number: '04', title: 'Create in ChatGPT Codex App', text: 'Describe the image you want to generate, edit, or batch-produce. The skill selects the appropriate generation, editing, reference-image, or batch workflow.' },
       ],
     },
-    commands: { title: 'Supported requests', copy: 'You can name the skill explicitly or describe the task naturally without mentioning it:', groups: [{ title: 'Install:', prompts: ['Install agk2img-skill in the Codex skills directory', 'Use agk2img-skill in this project'] }, { title: 'Configure:', prompts: ['Configure the agk2img base URL for me', 'Update the agk2img API key for me', 'Clear the agk2img configuration for me', 'Check whether agk2img is configured correctly'] }, { title: 'Set model:', prompts: ['Set the agk2img model to gpt-image-2.5-flare', 'Set the agk2img model to gpt-image-2.5-sunburst', 'Set the agk2img model to gpt-image-2.2'] }, { title: 'Create (name the skill):', prompts: ['Generate a xxx image with agk2img', 'Edit xxx in this image with agk2img', 'Restyle my uploaded image as xxx with agk2img', 'Batch-generate a set of xxx assets with agk2img'] }, { title: 'Create (natural language):', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] }] },
+    commands: { title: 'Supported requests', copy: 'You can name the skill explicitly or describe the task naturally without mentioning it:', groups: [{ title: 'Install:', prompts: ['Install agk2img-skill in the Codex skills directory', 'Use agk2img-skill in this project'] }, { title: 'Configure:', prompts: ['Configure the agk2img base URL for me', 'Update the agk2img API key for me', 'Clear the agk2img configuration for me', 'Check whether agk2img is configured correctly'] }, { title: 'Set model:', prompts: ['Set the agk2img model to gpt-image-2.5-flare', 'Set the agk2img model to gpt-image-2.5-sunburst', 'Set the agk2img model to gpt-image-2'] }, { title: 'Create (name the skill):', prompts: ['Generate a xxx image with agk2img', 'Edit xxx in this image with agk2img', 'Restyle my uploaded image as xxx with agk2img', 'Batch-generate a set of xxx assets with agk2img'] }, { title: 'Create (natural language):', prompts: ['Generate a xxx image', 'Edit xxx in this image', 'Restyle my uploaded image as xxx', 'Batch-generate a set of xxx assets'] }] },
     cta: { eyebrow: 'READY TO CREATE', title: 'Bring image creation into your everyday workflow with an AIGOKEY plan.', action: 'Sign in and create an API Key' },
   },
 } as const
