@@ -59,6 +59,26 @@ export const routes = [
     component: () => import('@/views/CodexHelpView.vue'),
   },
   {
+    path: '/deepseek-harness/',
+    name: 'deepseek-harness',
+    component: () => import('@/views/DeepSeekHarnessView.vue'),
+  },
+  {
+    path: '/workbuddy-config/',
+    name: 'workbuddy-config',
+    component: () => import('@/views/WorkBuddyConfigView.vue'),
+  },
+  {
+    path: '/trae-config/',
+    name: 'trae-config',
+    component: () => import('@/views/TraeConfigView.vue'),
+  },
+  {
+    path: '/claude-code-config/',
+    name: 'claude-code-config',
+    component: () => import('@/views/ClaudeCodeConfigView.vue'),
+  },
+  {
     path: '/codex-help/embed/',
     name: 'codex-help-embed',
     component: () => import('@/views/CodexHelpView.vue'),

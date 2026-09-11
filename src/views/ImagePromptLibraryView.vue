@@ -7,7 +7,7 @@
         <div class="intro-grid" aria-hidden="true"></div>
         <div class="intro-shell">
           <div class="intro-copy">
-            <div class="model-line"><span></span>GPT IMAGE 2 · CURATED INDEX</div>
+            <div class="model-line"><span></span>GPT IMAGE 2.5 · CURATED INDEX</div>
             <h1>{{ copy.title }}</h1>
             <p>{{ copy.subtitle }}</p>
             <div class="intro-actions">
@@ -213,8 +213,8 @@ let toastTimer: ReturnType<typeof setTimeout> | undefined
 
 const copies = {
   zh: {
-    metaTitle: 'GPT Image 2 提示词库', metaDescription: '300 个 GPT Image 2 提示词与图片案例，按创作类别和职业岗位筛选。',
-    title: 'GPT Image 2 提示词库', subtitle: '从公开社区案例中筛选 300 组提示词与对应生成图，按创作类别和职业用途重新索引。', explore: '浏览素材', random: '随机灵感',
+    metaTitle: 'GPT Image 2.5 提示词库', metaDescription: '300 个 GPT Image 2.5 提示词与图片案例，按创作类别和职业岗位筛选。',
+    title: 'GPT Image 2.5 提示词库', subtitle: '从公开社区案例中筛选 300 组提示词与对应生成图，按创作类别和职业用途重新索引。', explore: '浏览素材', random: '随机灵感',
     statsLabel: '提示词库数据', examples: '图文案例', categories: '创作类别', professions: '职业岗位', browseBy: '浏览方式', byCategory: '按类别', byProfession: '按职业',
     guide: '从用途出发选案例，保留结构，再替换主体、文案和品牌约束。', filters: '提示词筛选', sourceTitle: '真实社区案例', sourceCopy: '保留原创作者与帖子来源',
     search: '搜索主题、风格、职业或提示词', ratio: '画幅比例', allRatios: '全部画幅', style: '视觉风格', allStyles: '全部风格', results: '个案例', clear: '清除筛选', all: '全部案例',
@@ -223,8 +223,8 @@ const copies = {
     creator: '创作者', original: '原始帖子', license: '素材许可',
   },
   en: {
-    metaTitle: 'GPT Image 2 Prompt Library', metaDescription: '300 GPT Image 2 prompts with generated examples, indexed by creative category and profession.',
-    title: 'GPT Image 2 Prompt Library', subtitle: '300 prompt-and-output pairs curated from public community examples, re-indexed by creative category and professional use.', explore: 'Explore library', random: 'Random idea',
+    metaTitle: 'GPT Image 2.5 Prompt Library', metaDescription: '300 GPT Image 2.5 prompts with generated examples, indexed by creative category and profession.',
+    title: 'GPT Image 2.5 Prompt Library', subtitle: '300 prompt-and-output pairs curated from public community examples, re-indexed by creative category and professional use.', explore: 'Explore library', random: 'Random idea',
     statsLabel: 'Library statistics', examples: 'prompt examples', categories: 'categories', professions: 'professions', browseBy: 'Browse prompts', byCategory: 'By category', byProfession: 'By profession',
     guide: 'Start from a use case, keep the structure, then replace the subject, copy, and brand constraints.', filters: 'Prompt filters', sourceTitle: 'Real community examples', sourceCopy: 'Creator and original post links retained',
     search: 'Search topic, style, profession, or prompt', ratio: 'Aspect ratio', allRatios: 'All ratios', style: 'Visual style', allStyles: 'All styles', results: 'examples', clear: 'Clear filters', all: 'All examples',

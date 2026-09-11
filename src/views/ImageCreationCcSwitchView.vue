@@ -69,7 +69,7 @@
               <p class="text-[13px] font-black tracking-[0.16em] text-[#db4b32]">{{ page.setup.eyebrow }}</p>
               <h2 class="mt-4 max-w-[560px] text-[clamp(34px,4.3vw,58px)] font-black leading-[1.08]">{{ page.setup.title }}</h2>
               <p class="mt-5 max-w-[510px] text-[17px] leading-[1.8] text-[#586068]">{{ page.setup.copy }}</p>
-              <div class="mt-6 inline-flex items-center gap-3 border border-[#b8d1ef] bg-white px-4 py-3 text-[14px] shadow-[0_8px_22px_rgba(36,104,242,0.08)]"><span class="font-black text-[#486078]">{{ page.setup.modelLabel }}</span><span class="rounded-md bg-[#e9f3ff] px-2.5 py-1 font-mono font-bold text-blue">gpt-image-2</span></div>
+              <div class="mt-6 inline-flex items-center gap-3 border border-[#b8d1ef] bg-white px-4 py-3 text-[14px] shadow-[0_8px_22px_rgba(36,104,242,0.08)]"><span class="font-black text-[#486078]">{{ page.setup.modelLabel }}</span><span class="rounded-md bg-[#e9f3ff] px-2.5 py-1 font-mono font-bold text-blue">gpt-image-2.5</span></div>
             </div>
             <ol class="grid gap-0 border-t border-black/15">
               <li v-for="step in setupSteps" :key="step.number" class="grid grid-cols-[72px_1fr] gap-4 border-b border-black/15 py-5 max-[560px]:grid-cols-[54px_1fr]">
